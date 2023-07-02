@@ -81,7 +81,8 @@ function App() {
           <td width="68%"></td>
           <td>
             <form action="">
-
+            <input type="text" name="" id="" placeholder="Name" size="30%" /><br />
+            
             </form>
           </td>
         </tr>
