@@ -1,15 +1,15 @@
-import img1 from './images/1_xewrnv.jpg';
-import img2 from './images/2_t5rcog.jpg';
-import img3 from './images/70675883_131734314845640_6882239385903824896_o.png';
+// import img1 from './images/1_xewrnv.jpg';
+// import img2 from './images/2_t5rcog.jpg';
+// import img3 from './images/70675883_131734314845640_6882239385903824896_o.png';
 import fbLogo from './images/Fb logo.jpeg';
-import img4 from './images/images_kktpq7.png';
+// import img4 from './images/images_kktpq7.png';
 import img5 from './images/insta_cf1rkw.jpg';
 import img6 from './images/twiter_y8idrd.png';
 
 function App() {
   return (
     <div className="App">
-      <img src="./Images/images_kktpq7.png" alt="" width="100%" />
+      <img src={require('./images/images_kktpq7.png')} alt="" width="100%" />
       <table>
         <tr>
           <td width="65%" align="center"><b>Ara Profile</b></td>
@@ -32,7 +32,7 @@ function App() {
       <table>
         <tr>
           <td width="25%">
-            <img src="./Images/2_t5rcog.jpg" alt="" width="100%" height="290hv" />
+            <img src={require('./images/2_t5rcog.jpg')} alt="" width="100%" height="290hv" />
           </td>
           <td valign="top" width="40%">
             <b>Cable Tray</b>
@@ -89,11 +89,11 @@ function App() {
           <td width="68%"></td>
           <td>
             <form action="">
-              <input type="text" name="" id="" placeholder="Name" size="30%" /><br />
-              <input type="text" name="" id="" placeholder="Address" size="30%" /><br />
-              <input type="text" name="" id="" placeholder="City" size="30%" /><br />
-              <input type="text" name="" id="" placeholder="STATE" size="9.5%" /><br />
-              <input type="text" name="" id="" placeholder="ZIP" size="9.5%" /><br />
+              <input type="text" name="" id="" placeholder="Name" size="30" /><br />
+              <input type="text" name="" id="" placeholder="Address" size="30" /><br />
+              <input type="text" name="" id="" placeholder="City" size="30" /><br />
+              <input type="text" name="" id="" placeholder="STATE" size="9.5" /><br />
+              <input type="text" name="" id="" placeholder="ZIP" size="9.5" /><br />
               <select name="" id="">
               <option value=""><b>Newsweek &nbsp;&nbsp;&nbsp;&nbsp;</b></option>
               <option value="">Geo</option>
@@ -104,6 +104,7 @@ function App() {
           </td>
         </tr>
       </table>
+      <br />
     </div>
   );
 }
