@@ -1,3 +1,11 @@
+import img1 from './images/1_xewrnv.jpg';
+import img2 from './images/2_t5rcog.jpg';
+import img3 from './images/70675883_131734314845640_6882239385903824896_o.png';
+import fbLogo from './images/Fb logo.jpeg';
+import img4 from './images/images_kktpq7.png';
+import img5 from './images/insta_cf1rkw.jpg';
+import img6 from './images/twiter_y8idrd.png';
+
 function App() {
   return (
     <div className="App">
@@ -14,9 +22,9 @@ function App() {
               adipisicing </p>
           </td>
           <td>
-            <a href=""><img src="./Images/insta_cf1rkw.jpg" alt="" /></a>
-            <a href=""><img src="./Images/twiter_y8idrd.png" alt="" /></a>
-            <a href=""><img src="./Images/Fb logo.jpeg" alt="" width="30px" /></a><br />
+            <a href=""><img src={img5} alt="" /></a>
+            <a href=""><img src={img6} alt="" /></a>&nbsp;
+            <a href=""><img src={fbLogo} alt="" width="30px" /></a><br />
             <a href="">fb.com/naveed.trainer</a>
           </td>
         </tr>
@@ -81,8 +89,17 @@ function App() {
           <td width="68%"></td>
           <td>
             <form action="">
-            <input type="text" name="" id="" placeholder="Name" size="30%" /><br />
-            
+              <input type="text" name="" id="" placeholder="Name" size="30%" /><br />
+              <input type="text" name="" id="" placeholder="Address" size="30%" /><br />
+              <input type="text" name="" id="" placeholder="City" size="30%" /><br />
+              <input type="text" name="" id="" placeholder="STATE" size="9.5%" /><br />
+              <input type="text" name="" id="" placeholder="ZIP" size="9.5%" /><br />
+              <select name="" id="">
+              <option value=""><b>Newsweek &nbsp;&nbsp;&nbsp;&nbsp;</b></option>
+              <option value="">Geo</option>
+              </select><br />
+              <input type="radio" name="1year" id="" />1 Year <input type="radio" name="1year" />2 Years <br />
+              <textarea name="" id="" cols="30" rows="4" placeholder="Comment"></textarea>
             </form>
           </td>
         </tr>
