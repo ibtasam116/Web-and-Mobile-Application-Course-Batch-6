@@ -13,7 +13,6 @@ root.render(
 const IMAGES = {
   imgOne: require('./images/1_xewrnv.jpg'),
   img2: require('./images/2_t5rcog.jpg'),
-  img3: require('./images/70675883_131734314845640_6882239385903824896_o.png'),
   img4: require('./images/images_kktpq7.png')
 }
 export default IMAGES;
