@@ -47,7 +47,7 @@ function App() {
               Accusamus rem aliquid aperiam officiis eum impedit quidem۔</p>
           </td>
           <td valign="top">
-            <img src="./Images/1_xewrnv.jpg" alt="" width="80%" height="150hv" />
+            <img src={require('./images/1_xewrnv.jpg')} alt="" width="80%" height="150hv" />
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad soluta nihil cum labore totam non quis
               quisquam magni iste aut voluptatibus numquam accusantium veniam adipisci neque, recusandae debitis
               fugit jahsj sjka et!</p>

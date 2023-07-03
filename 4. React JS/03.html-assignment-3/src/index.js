@@ -10,6 +10,14 @@ root.render(
   </React.StrictMode>
 );
 
+const IMAGES = {
+  imgOne: require('./images/1_xewrnv.jpg'),
+  img2: require('./images/2_t5rcog.jpg'),
+  img3: require('./images/70675883_131734314845640_6882239385903824896_o.png'),
+  img4: require('./images/images_kktpq7.png')
+}
+export default IMAGES;
+
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
