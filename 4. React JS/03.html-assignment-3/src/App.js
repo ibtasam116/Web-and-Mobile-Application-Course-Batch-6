@@ -1,8 +1,4 @@
-// import img1 from './images/1_xewrnv.jpg';
-// import img2 from './images/2_t5rcog.jpg';
-// import img3 from './images/70675883_131734314845640_6882239385903824896_o.png';
 import fbLogo from './images/Fb logo.jpeg';
-// import img4 from './images/images_kktpq7.png';
 import img5 from './images/insta_cf1rkw.jpg';
 import img6 from './images/twiter_y8idrd.png';
 
