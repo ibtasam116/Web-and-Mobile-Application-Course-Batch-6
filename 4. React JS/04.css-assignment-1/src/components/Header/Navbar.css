@@ -1,5 +1,49 @@
-.new{
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 5px;
+/* ================================== Header ==================================  */
+.first-bar {
+    height: 60px;
+    line-height: 60px;
+    background: #fff;
+
 }
+
+.nordic {
+    margin-left: 130px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.nordic:hover {
+    color: blueviolet;
+    cursor: pointer;
+}
+
+.first-bar {
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.16);
+}
+
+.first-bar>.col>ul {
+    float: right;
+    margin-right: 130px;
+}
+
+.first-bar>.col>ul>li {
+    list-style: none;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+.first-bar>.col>ul> :first-child {
+    /* color: aqua;  */
+    border-bottom: 2px black solid;
+}
+
+.first-bar>.col>ul>li:hover {
+    color: blueviolet;
+    cursor: pointer;
+}
+
+
