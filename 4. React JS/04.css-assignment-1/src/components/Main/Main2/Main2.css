@@ -1,0 +1,155 @@
+/* Next Section */
+.line {
+    border-top: 2px black solid;
+    width: 100%;
+}
+
+.profile1 {
+    height: 60px;
+    line-height: 27px;
+}
+
+.image3 {
+    border-radius: 50%;
+}
+
+.profile1Text {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.profile1Time {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+.icon1 {
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    padding: 5px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.para1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17.5px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: justify;
+}
+
+.para1>p {
+    padding: 0px 3px;
+}
+
+.nexton {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.para2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17.5px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: justify;
+}
+
+.para2>p {
+    padding: 0px 3px;
+}
+
+.caption1 {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    padding: 0px 90px;
+}
+
+.para3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17.5px;
+    font-weight: 400;
+    line-height: 28px;
+    /* text-align: justify; */
+}
+
+.para3>p {
+    padding: 0px 3px;
+}
+
+.listheading {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    padding-left: 3px;
+}
+
+
+
+.pointList>.col>ul>li {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 34px;
+    list-style-type: square;
+    padding: 5px 0px;
+}
+
+
+.sharelink {
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+}
+
+.sharelink>span {
+    font-size: 15px;
+    padding-left: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.sharelink>i {
+    /* font-size: 20px; */
+    cursor: pointer;
+}
+
+.tags>.col>p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+    color: #0C0C0C;
+    padding: 0px 3px;
+}
+
+.line1 {
+    border: 1px dashed black;
+    width: 100%;
+}
+
+.profile2span1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.profile2span2 {
+    font-size: 15px;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: justify;
+    letter-spacing: 1px;
+}

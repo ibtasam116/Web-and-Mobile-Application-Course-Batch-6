@@ -8,12 +8,16 @@ import Footer from './components/Footer/Footer';
 
 import Main1 from './components/Main/Main1/Main1';
 
+import Main2 from './components/Main/Main2/Main2';
+
 function App() {
   return (
     <>
       <Header />
-      
+
       <Main1 />
+
+      <Main2 />
 
       <Footer />
     </>
