@@ -10,6 +10,8 @@ import Main1 from './components/Main/Main1/Main1';
 
 import Main2 from './components/Main/Main2/Main2';
 
+import Eyes from './components/Main/Eyes/Eyes';
+
 function App() {
   return (
     <>
@@ -18,6 +20,8 @@ function App() {
       <Main1 />
 
       <Main2 />
+
+      <Eyes />
 
       <Footer />
     </>
