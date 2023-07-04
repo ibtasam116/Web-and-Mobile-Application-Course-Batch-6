@@ -6,6 +6,11 @@ import img3 from '../../images/image3.png'
 
 import rectangle from '../../images/Rectangle8.png'
 
+
+import { FaBeer } from 'react-icons/fa';
+
+
+
 export default function Main2() {
     return (
 
@@ -24,6 +29,7 @@ export default function Main2() {
                             </div>
                             <div className="col py-2">
                                 <span className="icon1 float-end">
+                                    {/* < /> */}
                                     <i className="fa-brands fa-twitter"></i>
                                 </span>
                                 <span className="icon1 float-end">
