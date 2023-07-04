@@ -1,5 +1,7 @@
 .footer {
-    margin-top: 80px;
+    width: 98.2%;
+    margin: auto;
+    /* margin-top: 80px; */
     height: 400px;
     background-color: black;
     color: white;

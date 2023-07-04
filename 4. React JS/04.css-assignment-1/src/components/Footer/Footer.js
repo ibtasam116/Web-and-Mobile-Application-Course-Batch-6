@@ -4,9 +4,9 @@ import './Footer.css'
 
 import footerImg from '../images/NORDIC ROSE.png'
 
-let now = new Date()
-let year = now.getFullYear()
-document.getElementById("year").innerText = year
+// let now = new Date()
+// let year = now.getFullYear()
+// document.getElementById("year").innerText = year
 
 export default function Footer() {
     return (
