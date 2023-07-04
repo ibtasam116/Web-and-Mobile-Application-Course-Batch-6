@@ -7,7 +7,7 @@ import img3 from '../../images/image3.png'
 import rectangle from '../../images/Rectangle8.png'
 
 
-import { FaBeer } from 'react-icons/fa';
+import { FaTwitter, FaFacebook } from 'react-icons/fa';
 
 
 
@@ -25,15 +25,14 @@ export default function Main2() {
                             </div>
                             <div className="col ps-4">
                                 <span className="profile1Text">Mika MAtikainen</span><br />
-                                    <span className="profile1Time">Apr 15, 2020 · 4 min read</span>
+                                <span className="profile1Time">Apr 15, 2020 · 4 min read</span>
                             </div>
                             <div className="col py-2">
                                 <span className="icon1 float-end">
-                                    {/* < /> */}
-                                    <i className="fa-brands fa-twitter"></i>
+                                    <i className="fa-brands fa-twitter"><FaTwitter /></i>
                                 </span>
                                 <span className="icon1 float-end">
-                                    <i className="fa-brands fa-facebook"></i>
+                                    <i className="fa-brands fa-facebook"><FaFacebook /></i>
                                 </span>
                             </div>
                         </div>
