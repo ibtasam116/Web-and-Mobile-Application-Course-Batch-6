@@ -14,6 +14,8 @@ import Eyes from './components/Main/Eyes/Eyes';
 
 import Main3 from './components/Main/Main3/Main3';
 
+import Main4 from './components/Main/Main4/Main4';
+
 function App() {
   return (
     <>
@@ -27,6 +29,8 @@ function App() {
 
       <Main3 />
       
+      <Main4 />
+
       <Footer />
     </>
   );
