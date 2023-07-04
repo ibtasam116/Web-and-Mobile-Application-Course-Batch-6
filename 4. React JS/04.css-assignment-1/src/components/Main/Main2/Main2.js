@@ -141,11 +141,11 @@ export default function Main2() {
 
                     <div className="row">
                         <div className="col text-center sharelink py-2">
-                            <i className="fa-brands fa-facebook"></i>
+                            <i className="fa-brands fa-facebook"><FaFacebook /></i>
                             <span>Share on Facebook</span>
                         </div>
                         <div className="col text-center sharelink py-2">
-                            <i className="fa-brands fa-twitter"></i>
+                            <i className="fa-brands fa-twitter"><FaTwitter /></i>
                             <span>Share on Twitter</span>
                         </div>
                     </div>
