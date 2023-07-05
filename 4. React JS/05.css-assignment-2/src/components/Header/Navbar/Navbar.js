@@ -2,11 +2,13 @@ import React from "react";
 
 import './Navbar.css'
 
+import logo from '../../../images/logo.png'
+
 export default function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container">
-                <img src="./assests/images/logo.png" alt="" />
+                <img src={logo} alt="" />
                     <a className="navbar-brand ms-2 fw-bold" href="#">TROPIKO</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
