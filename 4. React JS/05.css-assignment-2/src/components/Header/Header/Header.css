@@ -1,0 +1,10 @@
+.header{
+    background-color: #F7F7F7;
+    /* height: 80vh; */
+}
+
+.welcome > h1{
+    font-weight: bold;
+    font-size: 70px;
+    color: black;
+}

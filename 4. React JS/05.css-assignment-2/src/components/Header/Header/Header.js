@@ -1,8 +1,8 @@
 import React from "react";
 
-import './Header.css';
+import "./Header.css";
 
-import slidImg from '../images/slide-img.png';
+import slidImg from '../../images/slide-img.png';
 
 export default function Header() {
     return (
