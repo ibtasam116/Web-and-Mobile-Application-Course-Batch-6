@@ -4,10 +4,15 @@ import 'bootstrap/dist/js/bootstrap.bundle'
 
 import Navbar from './components/Navbar/Navbar';
 
+import Header from './components/Header/Header';
+
 function App() {
   return (
-    <Navbar />
-    
+    <>
+      <Navbar />
+
+      <Header />
+    </>
   );
 }
 
