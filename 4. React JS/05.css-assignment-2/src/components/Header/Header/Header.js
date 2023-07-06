@@ -15,7 +15,7 @@ export default function Header() {
                             esse eligendi corrupti dicta deleniti eveniet architecto rem pariatur. Temporibus eveniet porro dolores
                             perspiciatis odio.</p>
                         <button className="px-4 bg-danger border-danger text-white py-1">SHOPE NOW</button>
-                        <button className="px-4 bg-black border-black text-white py-1">CONTACT US</button>
+                        <button className="px-4 bg-black border-black text-white py-1 ms-1">CONTACT US</button>
                     </div>
                     <div className="col-xl-6 col-lg-6 col-sm-12  mt-5 text-center">
                         <img src={slidImg} className="slide-img img-fluid" alt="" />
