@@ -1,7 +1,7 @@
-.contact-right-p{
+.contact-right-p {
     padding-left: 9%;
 }
 
-.height-textarea{
-    height: 100px;
+.height-textarea {
+    min-height: 100px !important;
 }

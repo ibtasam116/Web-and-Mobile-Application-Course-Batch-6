@@ -14,6 +14,10 @@ import Testimonial from './components/Main/Testimonial/Testimonial';
 
 import ContactUs from './components/Main/ContactUs/ContactUs';
 
+import Footer_Header from './components/Footer/Footer_Header/Footer_Header';
+
+import Footer_bottom from './components/Footer/Footer_bottom/Footer_bottom';
+
 function App() {
   return (
     <>
@@ -28,6 +32,10 @@ function App() {
       <Testimonial />
 
       <ContactUs />
+
+      <Footer_Header />
+
+      <Footer_bottom />
     </>
   );
 }
