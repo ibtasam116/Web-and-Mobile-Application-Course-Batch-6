@@ -1,0 +1,49 @@
+#top {
+    background: #FFFFFF;
+    /* Object shadow 1 */
+    box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29);
+}
+
+.foodwagon {
+    font-size: 25px;
+}
+
+.logo {
+    color: #F58D00;
+}
+
+.food {
+    color: #F17228;
+}
+
+.wagon {
+    color: #FFB30E;
+}
+
+.location {
+    font-size: 15px;
+}
+
+.location>i {
+    color: #F58D00;
+}
+
+.search {
+    font-size: 15px;
+}
+
+.search>i {
+    color: #F58D00;
+}
+
+.login>i {
+    color: #F58D00;
+}
+
+.login {
+    border: none;
+    background: #FFFFFF;
+    /* Shadow/1 */
+    box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29);
+    border-radius: 8px;
+}

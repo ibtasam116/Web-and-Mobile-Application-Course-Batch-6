@@ -1,0 +1,82 @@
+#header {
+    /* width: 1200px; */
+    /* background: url("/images/Group\ 1\ 1.png"); */
+    max-height: 70vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* or contain, depending on your needs */
+
+}
+
+
+.starving {
+    margin-top: 13%;
+    font-size: 58px;
+    text-shadow: 0px 14px 15px rgba(255, 174, 0, 0.01), 0px 27px 82px rgba(255, 174, 0, 0.28);
+}
+
+.fewClicks {
+    font-weight: 400;
+    font-size: 15px;
+    color: #504F4F;
+}
+
+.white1 {
+    width: 90%;
+    height: 10vh;
+    background: #FFFFFF;
+    border-radius: 10px 10px 0% 0%;
+    border-bottom: 1px #F5F5F5 solid;
+    padding-top: 20px;
+}
+
+.delivery {
+    background: rgba(241, 114, 40, 0.1);
+    border-radius: 8px;
+    color: #F17228;
+}
+
+.pickup {
+    color: #757575;
+}
+
+.white2 {
+    width: 90%;
+    height: 10vh;
+    background: #FFFFFF;
+    border-radius: 0px 0px 10px 10px;
+    padding-top: 12px;
+}
+
+.typeAddress {
+    /* width: 100%; */
+    background: #F5F5F5;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #FF7474;
+    padding: 6px 10px 6px 10px;
+}
+
+.yourAddress {
+    border: none;
+    color: #9E9E9E;
+    font-size: 15px;
+    background: #F5F5F5;
+    width: 66%;
+    margin-left: 5px;
+}
+
+.find {
+    background: linear-gradient(95.71deg, #FF7A7A -39.64%, #F75900 135.31%);
+    border: none;
+    padding: 10px 27px;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.imageBase {
+    margin-top: 26%;
+    width: 80%;
+}

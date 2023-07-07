@@ -13,6 +13,9 @@ import Search_Food from "./components/Main/Search_Food/Search_Food";
 import Card from "./components/Main/Card/Card";
 import App_Download from "./components/Main/App_Download/App_Download";
 import Deals from "./components/Main/Deals/Deals";
+import Footer_Header from "./components/Footer/Footer_Header/Footer_Header";
+import Footer_Main from "./components/Footer/Footer_Main/Footer_Main";
+import Footer_Bottom from "./components/Footer/Footer_Bottom/Footer_Bottom";
 
 function App() {
   return (
@@ -36,6 +39,12 @@ function App() {
       <App_Download />
 
       <Deals />
+
+      <Footer_Header />
+
+      <Footer_Main />
+
+      <Footer_Bottom />
     </>
   );
 }
