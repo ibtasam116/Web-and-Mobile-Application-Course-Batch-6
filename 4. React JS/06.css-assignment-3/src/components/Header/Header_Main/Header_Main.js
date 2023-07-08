@@ -2,6 +2,9 @@ import React from 'react';
 
 import './Header_Main.css'
 
+import Image_Base from '../../images/Image Base.png'
+
+
 function Header_Main() {
     return (
         <header id="header">
@@ -25,13 +28,13 @@ function Header_Main() {
                                 <i className="fa-solid fa-location-dot"></i>
                                 <input className="yourAddress" type="text" name="" id="" placeholder="Enter Your Address" />
                             </span>
-                            {/* <Button className="find text-white"><i className="fa-solid fa-magnifying-glass"></i>
-                                Find Food</Button> */}
+                            <input type='button' name='Find Food' value='Find Food' className='find text-white'/>
+                        
                         </div>
                     </div>
                     <div className="col-md-5 col-sm-12">
                         <div>
-                            <img src="./images/Image Base.png" className="imageBase img-fluid" alt="Image Base" />
+                            <img src={Image_Base} className="imageBase img-fluid" alt="Image Base" />
                         </div>
                     </div>
                 </div>
