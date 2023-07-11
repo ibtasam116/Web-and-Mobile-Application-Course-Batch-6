@@ -1,4 +1,8 @@
-import React from 'react'
+import React from 'react';
+
+import img1 from "../../assets/img/home1-img.png"
+
+import RedButton from '../redButton/RedButton'
 
 export default function Header() {
     return (
@@ -8,7 +12,7 @@ export default function Header() {
                     <section className="swiper-slide">
                         <div className="home__content grid">
                             <div className="home__group">
-                                <img src="assets/img/home1-img.png" alt="" className="home__img" />
+                                <img src={img1} alt="" className="home__img" />
                                 <div className="home__indicator"></div>
 
                                 <div className="home__details-img">
@@ -25,7 +29,7 @@ export default function Header() {
                                 </p>
 
                                 <div className="home__buttons">
-                                    <a href="#" className="button">Book Now</a>
+                                    <RedButton />
                                     <a href="#" className="button--link button--flex">Track Record <i className='bx bx-right-arrow-alt button__icon'></i></a>
                                 </div>
                             </div>
