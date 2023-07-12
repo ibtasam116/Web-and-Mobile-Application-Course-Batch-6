@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function redButton() {
+export default function redButton(props) {
     return (
-        <a href="#" className="button">Book Now</a>
+        <a href="#" className="button">{props.buttonTitle}</a>
     )
 }

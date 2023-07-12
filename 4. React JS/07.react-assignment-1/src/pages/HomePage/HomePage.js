@@ -29,7 +29,7 @@ export default function HomePage() {
                                 </p>
 
                                 <div className="home__buttons">
-                                    <RedButton />
+                                    <RedButton buttonTitle="Book Now"/>
                                     <a href="#" className="button--link button--flex">Track Record <i className='bx bx-right-arrow-alt button__icon'></i></a>
                                 </div>
                             </div>
