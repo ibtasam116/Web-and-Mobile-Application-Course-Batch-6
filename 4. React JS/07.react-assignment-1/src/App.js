@@ -1,5 +1,6 @@
 import Footer from './components/footer/Footer';
 import Navbar from './components/navbar/Navbar';
+import Scroll_up from './components/scroll_up/Scroll_up';
 import './css/styles.css';
 import './css/swiper-bundle.min.css'
 import AboutHalloween from './pages/aboutHalloween/AboutHalloween';
@@ -28,6 +29,7 @@ function App() {
       </main>
 
       <Footer />
+      <Scroll_up />
     </>
   );
 }

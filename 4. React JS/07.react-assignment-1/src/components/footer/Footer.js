@@ -5,6 +5,11 @@ import footerImg1 from '../../assets/img/footer1-img.png'
 import footerImg2 from '../../assets/img/footer2-img.png'
 import Footer_Content from '../footer_Content/Footer_Content'
 
+
+import { BiLogoFacebook } from "react-icons/bi";
+import { AiFillInstagram } from "react-icons/ai";
+import { BsTwitter } from 'react-icons/bs';
+
 export default function Footer() {
     return (
         <footer className="footer section">
@@ -19,20 +24,20 @@ export default function Footer() {
 
                     <div className="footer__social">
                         <a href="https://www.facebook.com/" target="_blank" className="footer__social-link">
-                            <i className='bx bxl-facebook'></i>
+                            <BiLogoFacebook />
                         </a>
                         <a href="https://www.instagram.com/" target="_blank" className="footer__social-link">
-                            <i className='bx bxl-instagram-alt' ></i>
+                            <AiFillInstagram />
                         </a>
                         <a href="https://twitter.com/" target="_blank" className="footer__social-link">
-                            <i className='bx bxl-twitter' ></i>
+                            <BsTwitter />
                         </a>
                     </div>
                 </div>
 
-                <Footer_Content footer_title="About" footer_link1="About Us" footer_link2="Features" footer_link3="News"/>
-                <Footer_Content footer_title="Our Services" footer_link1="Pricing" footer_link2="Discounts" footer_link3="Shipping mode"/>
-                <Footer_Content footer_title="Our Company" footer_link1="Our mision" footer_link2="About us" footer_link3="Our mision"/>
+                <Footer_Content footer_title="About" footer_link1="About Us" footer_link2="Features" footer_link3="News" />
+                <Footer_Content footer_title="Our Services" footer_link1="Pricing" footer_link2="Discounts" footer_link3="Shipping mode" />
+                <Footer_Content footer_title="Our Company" footer_link1="Blog" footer_link2="About us" footer_link3="Our mision" />
             </div>
 
             <span className="footer__copy">&#169; Bedimcode. All rigths reserved</span>
@@ -40,5 +45,6 @@ export default function Footer() {
             <img src={footerImg1} alt="" className="footer__img-one" />
             <img src={footerImg2} alt="" className="footer__img-two" />
         </footer>
+        
     )
 }
