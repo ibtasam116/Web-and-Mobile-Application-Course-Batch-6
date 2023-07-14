@@ -1,3 +1,4 @@
+import Footer from './components/footer/Footer';
 import Navbar from './components/navbar/Navbar';
 import './css/styles.css';
 import './css/swiper-bundle.min.css'
@@ -6,6 +7,7 @@ import DiscountOnNewProducts from './pages/discountOnNewProducts/DiscountOnNewPr
 import FavoriteScareCategory from './pages/favoriteScareCategory/FavoriteScareCategory';
 import HomePage from './pages/homePage/HomePage';
 import NewArrivals from './pages/newArrivals/NewArrivals';
+import Newsletter from './pages/newsletter/Newsletter';
 import TrickOrTreat from './pages/trickOrTreat/TrickOrTreat';
 
 function App() {
@@ -21,10 +23,11 @@ function App() {
         <TrickOrTreat />
         <DiscountOnNewProducts />
         <NewArrivals />
+        <Newsletter />
 
       </main>
 
-
+      <Footer />
     </>
   );
 }
