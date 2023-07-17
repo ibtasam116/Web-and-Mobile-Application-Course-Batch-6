@@ -1,0 +1,17 @@
+.work {
+    background: linear-gradient(180deg, rgba(255, 206, 103, 0.22) -42.47%, rgba(253, 237, 202, 0) 100%);
+}
+
+.doesWork {
+    color: #F17228;
+}
+
+.workIcon {
+    font-size: 100px;
+    color: #FFCD1E;
+}
+
+.iconDetail {
+    font-size: 13px;
+    color: #9E9E9E;
+}

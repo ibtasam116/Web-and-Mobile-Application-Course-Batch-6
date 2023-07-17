@@ -1,0 +1,35 @@
+.restaurantsImages {
+    border-radius: 10px;
+
+}
+
+.tomorrow {
+    background: rgba(241, 114, 40, 0.2);
+    border-radius: 10px;
+    color: #F17228;
+}
+
+.now {
+    background: rgba(121, 185, 60, 0.2);
+    border-radius: 10px;
+    color: #79B93C;
+}
+
+.restColor {
+    color: #FFB30E;
+}
+
+.pxxx {
+    width: 100%;
+    margin: auto;
+}
+
+.view {
+    border: none;
+    background: linear-gradient(97.86deg, #FFBA26 -8.95%, #FF9A0E 109.24%);
+    /* Shadow/1 */
+    box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29);
+    border-radius: 10px;
+    color: white;
+    font-size: 12px;
+}

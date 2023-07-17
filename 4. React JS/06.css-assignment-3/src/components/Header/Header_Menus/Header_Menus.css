@@ -1,0 +1,20 @@
+.menuImages {
+    border-radius: 10px;
+}
+
+.menuTime {
+    background: rgba(241, 114, 40, 0.2);
+    border-radius: 8px;
+    color: #F17228;
+}
+
+.off-to {
+    background: #FFB30E;
+    border-radius: 0px 32px 0px 0px;
+    position: relative;
+    z-index: 10;
+    width: 140px;
+    height: 83px;
+    left: 0px;
+    top: 219px;
+}

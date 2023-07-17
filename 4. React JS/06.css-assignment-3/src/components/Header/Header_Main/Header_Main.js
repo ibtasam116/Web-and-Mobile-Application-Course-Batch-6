@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Header_Main.css'
 
-import Image_Base from '../../images/Image Base.png'
+import Image_Base from '../../../assets/images/Image Base.png'
 
 
 function Header_Main() {
