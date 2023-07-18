@@ -15,6 +15,7 @@ import Deals from "./components/Main/Deals/Deals";
 import Footer_Header from "./components/Footer/Footer_Header/Footer_Header";
 import Footer_Main from "./components/Footer/Footer_Main/Footer_Main";
 import Footer_Bottom from "./components/Footer/Footer_Bottom/Footer_Bottom";
+import Proceed_Order_Button from "./components/proceed_order_button/Proceed_Order_Button";
 
 function App() {
   return (
@@ -37,11 +38,19 @@ function App() {
 
       <Deals />
 
-      <Footer_Header />
+      <Proceed_Order_Button />
 
-      <Footer_Main />
+      <div class="footer">
+        <div class="container py-5">
 
-      <Footer_Bottom />
+          <Footer_Header />
+
+          <Footer_Main />
+
+          <Footer_Bottom />
+          
+        </div>
+      </div>
     </>
   );
 }

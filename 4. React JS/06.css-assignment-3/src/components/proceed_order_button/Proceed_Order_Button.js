@@ -1,4 +1,7 @@
 import React from 'react'
+import "./Proceed_Order_Button.css"
+
+import { FaGreaterThan } from "react-icons/fa"
 
 export default function Proceed_Order_Button() {
     return (
@@ -11,7 +14,7 @@ export default function Proceed_Order_Button() {
                     <div className="text-center mt-3">
                         <button className="buton-proceed py-3 px-1 fw-bold">
                             <span>Proceed to order</span>
-                            <i className="fa-solid fa-greater-than"></i>
+                            <FaGreaterThan className='ms-2 mb-1'/>
                         </button>
                     </div>
                 </div>
