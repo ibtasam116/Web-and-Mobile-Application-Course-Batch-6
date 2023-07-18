@@ -10,7 +10,6 @@ import HowWork from "./components/Main/HowWork/HowWork";
 import Popular_items from "./components/Main/Popular_items/Popular_items";
 import Featured_Restaurants from "./components/Main/Featured_Restaurants/Featured_Restaurants";
 import Search_Food from "./components/Main/Search_Food/Search_Food";
-import Card from "./components/Main/Card/Card";
 import App_Download from "./components/Main/App_Download/App_Download";
 import Deals from "./components/Main/Deals/Deals";
 import Footer_Header from "./components/Footer/Footer_Header/Footer_Header";
@@ -33,8 +32,6 @@ function App() {
       <Featured_Restaurants />
 
       <Search_Food />
-
-      <Card />
 
       <App_Download />
 

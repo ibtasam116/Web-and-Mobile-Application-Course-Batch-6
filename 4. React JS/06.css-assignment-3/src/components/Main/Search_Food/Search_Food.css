@@ -1,0 +1,23 @@
+.search-food {
+    background: #FEFAF1;
+}
+
+
+.view-all {
+    color: #FFB30E;
+    cursor: pointer;
+}
+
+.search-lf {
+    background: #FFB30E;
+    border: 1px solid #FAAA01;
+    /* Button shadow ! */
+    box-shadow: 0px 5px 8px rgba(222, 151, 0, 0.24), 0px 14px 32px rgba(255, 178, 14, 0.29);
+    border-radius: 100px;
+    color: white;
+    cursor: pointer;
+}
+
+.search-images {
+    border-radius: 100px;
+}

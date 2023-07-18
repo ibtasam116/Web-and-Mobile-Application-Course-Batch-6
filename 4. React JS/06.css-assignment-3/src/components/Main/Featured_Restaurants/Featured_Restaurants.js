@@ -40,34 +40,13 @@ function Featured_Restaurants() {
                     <Featured_Restaurants_Card srcLarge={img8} srcSmall={img8_8} title="Taco Bell" rate={35} open="Opens Now" openColor="tomorrow" />
 
                 </div>
-
-                {/* 
-                    
-                    
-                   
-                    <div class="col">
-                        <img src="./images/Featured Restaurants/Image8.png" class="card-img-top restaurantsImages"
-                            alt="...">
-                            <div class="row my-3">
-                                <div class="col-3">
-                                    <img src="./images/Featured Restaurants/Image8-8.png" alt="">
-                                </div>
-                                <div class="col-9 ps-4 pt-1">
-                                    <span class="pt-3 fw-bold">Taco Bell</span><br>
-                                        <i class="fa-solid fa-star restColor"></i>
-                                        <span class="ps-1 restColor">35</span>
-                                </div>
-                            </div>
-                            <span class="now px-2 py-1 fw-bold">Open Now</span>
-                    </div> 
-            </div>*/}
-            <div class="text-center mt-5">
-                <button class="view py-2 px-4 fw-bold">
-                    <span>View All</span>
-                    <i class="fa-solid fa-greater-than"></i>
-                </button>
+                <div class="text-center mt-5">
+                    <button class="view py-2 px-4 fw-bold">
+                        <span>View All</span>
+                        <i class="fa-solid fa-greater-than"></i>
+                    </button>
+                </div>
             </div>
-        </div>
         </div >
     )
 }
