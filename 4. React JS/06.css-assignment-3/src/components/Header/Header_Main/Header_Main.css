@@ -63,14 +63,14 @@
     color: #9E9E9E;
     font-size: 15px;
     background: #F5F5F5;
-    width: 66%;
+    width: 60%;
     margin-left: 5px;
 }
 
 .find {
     background: linear-gradient(95.71deg, #FF7A7A -39.64%, #F75900 135.31%);
     border: none;
-    padding: 10px 27px;
+    padding: 3px 27px;
     border-radius: 5px;
     margin-left: 10px;
     font-size: 12px;

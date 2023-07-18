@@ -10,6 +10,8 @@ import img4 from "../../../assets/images/Rearch Food/Image4.png"
 import img5 from "../../../assets/images/Rearch Food/Image5.png"
 import img6 from "../../../assets/images/Rearch Food/Image6.png"
 
+import { FaGreaterThan, FaLessThan } from "react-icons/fa"
+
 function Search_Food() {
     return (
         <div className="search-food">
@@ -20,12 +22,12 @@ function Search_Food() {
                     </div>
                     <div className="col text-end">
                         <span className="view-all me-2">View All</span>
-                        <i className="fa-solid fa-greater-than view-all"></i>
+                        <FaGreaterThan className="view-all" />
                         <span className="px-4 py-3 mx-3 search-lf">
-                            <i className="fa-solid fa-less-than"></i>
+                            <FaLessThan />
                         </span>
                         <span className="px-4 py-3 search-lf">
-                            <i className="fa-solid fa-greater-than"></i>
+                        <FaGreaterThan />
                         </span>
                     </div>
                 </div>

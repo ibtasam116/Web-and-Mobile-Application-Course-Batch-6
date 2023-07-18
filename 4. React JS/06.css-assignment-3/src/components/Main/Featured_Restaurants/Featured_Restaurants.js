@@ -3,6 +3,7 @@ import React from "react";
 import "./Featured_Restaurants.css"
 import Featured_Restaurants_Card from "./Featured_Restaurants_Card/Featured_Restaurants_Card";
 
+import {FaGreaterThan} from "react-icons/fa"
 
 import img1 from "../../../assets/images/Featured Restaurants/Image1.png"
 import img1_1 from "../../../assets/images/Featured Restaurants/Image1-1.png"
@@ -43,7 +44,7 @@ function Featured_Restaurants() {
                 <div class="text-center mt-5">
                     <button class="view py-2 px-4 fw-bold">
                         <span>View All</span>
-                        <i class="fa-solid fa-greater-than"></i>
+                        <FaGreaterThan />
                     </button>
                 </div>
             </div>
