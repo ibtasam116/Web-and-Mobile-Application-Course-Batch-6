@@ -9,6 +9,8 @@ export default function navigation() {
           <div className="col"></div>
           <div className="col"></div>
           <div className="col"></div>
+          <div className="col"></div>
+          <div className="col"></div>
         </div>
       </div>
 
