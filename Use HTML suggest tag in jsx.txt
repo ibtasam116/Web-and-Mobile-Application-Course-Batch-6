@@ -1,0 +1,4 @@
+"emmet.includeLanguages": {"javascript": "javascriptreact"},
+
+pest the code in jsx file which can get by click on seting and choice the uper button which is Open Seting (JSX)
+pest in the line 10
