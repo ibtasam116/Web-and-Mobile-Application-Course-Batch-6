@@ -1,3 +1,13 @@
-/* div{
-    color: aqua;
-} */
+#navigation{
+    height: 10vh;
+    background-color: #2B2B2B;
+}
+
+.logo{
+    color: #A259FF;
+    font-size: 35px;
+}
+
+.logo:hover{
+    color: #b9b7bd;
+}
