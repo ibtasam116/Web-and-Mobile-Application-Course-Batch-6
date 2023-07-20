@@ -1,0 +1,15 @@
+.collection{
+    height: 100vh;
+    background-color: #2B2B2B;
+    color: white;
+}
+
+.collection_heading{
+    font-size: 35px;
+}
+
+.collection_subheading{
+    font-size: 21px;
+    text-transform: capitalize;
+    text-transform: capitalize;
+}
