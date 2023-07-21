@@ -46,7 +46,6 @@ export default function Hero_section() {
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     )

@@ -5,11 +5,27 @@
 }
 
 .collection_heading{
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .collection_subheading{
-    font-size: 21px;
+    font-size: 18px;
     text-transform: capitalize;
-    text-transform: capitalize;
+}
+
+.trending_card_img{
+    display: flex;
+    justify-content: space-around;
+}
+
+.number_addition{
+    max-width: 30%;
+    /* max-height: 5vh; */
+    border-radius: 15px;
+    background-color: #A259FF;
+    justify-content: space-between;
+}
+
+.number_addition>h5{
+    font-size: 25px;
 }
