@@ -55,5 +55,6 @@
 }
 
 .small_button:hover {
-    background-color: #3a2653;
+    background-color: #2a1d3b;
+    transition: 0.5s;
 }

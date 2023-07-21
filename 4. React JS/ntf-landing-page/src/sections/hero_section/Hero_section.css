@@ -6,6 +6,7 @@
 .section_title {
     font-size: 77px;
     line-height: 80px;
+    text-shadow: 2px 2px 5px #A259FF;
 }
 
 .section_description {
@@ -30,6 +31,7 @@
 
 .hero-button:hover {
     background-color: #2a1d3b;
+    transition: 0.5s;
 }
 
 .section_points {

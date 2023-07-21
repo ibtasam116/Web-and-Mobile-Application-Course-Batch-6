@@ -3,8 +3,8 @@ import "./Hero_section.css"
 
 import { PiRocketLaunchDuotone } from "react-icons/pi";
 
-// import hero_img from "../../../../assets/hero_img/hero_img.png";
-// import Avatar_Placeholder from "../../../../assets/hero_img/Avatar_Placeholder.png";
+import hero_img from "../../assets/images/hero_section/hero_placeholder.png";
+import Avatar_Placeholder from "../../assets/images/hero_section/avatar_placeholder.png";
 
 
 export default function Hero_section() {
@@ -34,12 +34,12 @@ export default function Hero_section() {
                     </div>
                     <div className="col-6 p-4">
                         <div className='hero_right_side'>
-                            {/* <img src={hero_img} alt="" className='hero_img w-100 img-fluid' /> */}
+                            <img src={hero_img} alt="" className='hero_img w-100 img-fluid' />
                             <div className='py-2 px-4'>
 
                                 <h5>Space Walking</h5>
                                 <div className='d-flex align-items-center'>
-                                    {/* <img src={Avatar_Placeholder} alt="" className='img-fluid' /> */}
+                                    <img src={Avatar_Placeholder} alt="" className='img-fluid' />
                                     <h6 className='ms-3 my-1'>Dish Studio</h6>
                                 </div>
                             </div>
