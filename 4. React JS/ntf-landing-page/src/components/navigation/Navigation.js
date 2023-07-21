@@ -2,21 +2,24 @@ import React from 'react'
 import './Navigation.css'
 
 import { PiStorefront } from "react-icons/pi"
+import { AiOutlineUser } from 'react-icons/ai'
+
 export default function navigation() {
   return (
     <>
       <div id="navigation">
         <div className="container">
           <div className="row">
-            <div className="col-6 d-flex align-items-center py-2">
+            <div className="col-6 d-flex align-items-center">
               <a href='#'><PiStorefront className='logo' /></a>
-              <a><h5 id='main-title' className='text-white mt-2 ms-3'>NFT Marketplace</h5></a>
+              <a href='#' className='main-title'><h5 className='mt-2 ms-3'>NFT Marketplace</h5></a>
             </div>
             <div className="col-6 navigation_menus">
-              <ul>
-                <li><a href="#">Marketplace</a></li>
-                <li><a href="#">Rankings</a></li>
-                <li><a href="#">Connect a wallet</a></li>
+              <ul className=''>
+                <li className='py-1'><a href="#">Marketplace</a></li>
+                <li className='py-1'><a href="#">Rankings</a></li>
+                <li className='py-1'><a href="#">Connect a wallet</a></li>
+                <li><button type="button" class="small_button py-1 px-3"><AiOutlineUser className='mb-1 me-2' /> Sign Up</button></li>
               </ul>
             </div>
           </div>
