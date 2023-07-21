@@ -10,4 +10,15 @@
 
 .logo:hover{
     color: #b9b7bd;
+    align-items: ;
+}
+
+.navigation_menus>ul{
+    display: flex;
+    justify-content: end;
+    justify-content: space-between;
+}
+
+.navigation_menus>ul>li>{
+
 }
