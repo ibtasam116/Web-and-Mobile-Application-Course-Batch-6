@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Navigation />
-      {/* <Hero_section /> */}
+      <Hero_section />
     </>
   );
 }

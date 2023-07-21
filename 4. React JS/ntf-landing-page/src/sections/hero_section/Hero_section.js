@@ -1,7 +1,7 @@
 import React from 'react'
-// import ""
+import "./Hero_section.css"
 
-// import { PiRocketLaunchDuotone } from "react-icons/pi";
+import { PiRocketLaunchDuotone } from "react-icons/pi";
 
 // import hero_img from "../../../../assets/hero_img/hero_img.png";
 // import Avatar_Placeholder from "../../../../assets/hero_img/Avatar_Placeholder.png";
@@ -15,8 +15,8 @@ export default function Hero_section() {
                     <div className="col-6 p-3">
                         <h1 className='section_title text-wrap'>Discover digital art & Collect NFTs</h1>
                         <p className='section_description mb-0 my-3'>NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.</p>
-                        {/* <button type="button" class="btn-sm hero-button my-4">
-                            <PiRocketLaunchDuotone className='mb-1 me-2 h4' /> Get Started</button> */}
+                        <button type="button" class="btn-sm hero-button my-4">
+                            <PiRocketLaunchDuotone className='mb-1 me-2 h4' /> Get Started</button>
                         <div className='section_points'>
                             <span>
                                 <h5>240k+</h5>

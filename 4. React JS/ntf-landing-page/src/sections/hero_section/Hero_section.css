@@ -51,7 +51,7 @@
 }
 
 .hero_right_side{
-    height: 78vh;
+    max-height: 78vh;
     background-color: #3B3B3B;
     border-radius: 5%;
 }
