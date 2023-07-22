@@ -1,0 +1,15 @@
+.dicover{
+    background-color: #2B2B2B;
+    
+}
+
+.discover_price{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.price{
+    color: #858584;
+    letter-spacing: 2px;
+}

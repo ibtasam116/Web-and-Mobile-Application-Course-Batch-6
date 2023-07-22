@@ -1,5 +1,5 @@
 .collection{
-    height: 100vh;
+    max-height: 100vh;
     background-color: #2B2B2B;
     color: white;
 }

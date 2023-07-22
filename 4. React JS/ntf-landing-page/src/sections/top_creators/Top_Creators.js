@@ -21,8 +21,8 @@ import img12 from '../../assets/images/top_creators/Avatar Placeholder12.png'
 export default function Top_Creators() {
     return (
         <>
-            <div className="collection">
-                <div className="container">
+            <div className="collection creator">
+                <div className="container py-3">
                     <div className="row py-3">
                         <Section_Tops heading="Top Creators" subheading="Checkout Top Rated Creators on the NFT Marketplace" />
 

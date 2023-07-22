@@ -1,9 +1,11 @@
+.creator{
+    max-height: 2000vh !important;
+}
+
 .creator_card{
     width: 40vh;
     height: 40vh;
-
     background-color: #858584;
-
 }
 
 .creator_row{
