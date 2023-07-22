@@ -7,6 +7,7 @@ import Hero_section from './sections/hero_section/Hero_section'
 import Trending_Collection from './sections/trending_collection/Trending_Collection';
 import Top_Creators from './sections/top_creators/Top_Creators';
 import Discover_More from './sections/discover_more/Discover_More';
+import Browse_Categories from './sections/browse_categories/Browse_Categories';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       <Trending_Collection />
       <Top_Creators />
       <Discover_More />
-
+      <Browse_Categories />
     </>
   );
 }
