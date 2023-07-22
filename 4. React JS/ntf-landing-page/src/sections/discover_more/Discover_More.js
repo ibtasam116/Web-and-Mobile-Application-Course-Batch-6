@@ -11,6 +11,8 @@ import img4 from "../../assets/images/discover_more/Avatar Placeholder1.png"
 import img5 from "../../assets/images/discover_more/Avatar Placeholder2.png"
 import img6 from "../../assets/images/discover_more/Avatar Placeholder3.png"
 
+console.log(1 + 2);
+
 export default function Discover_More() {
     return (
         <>

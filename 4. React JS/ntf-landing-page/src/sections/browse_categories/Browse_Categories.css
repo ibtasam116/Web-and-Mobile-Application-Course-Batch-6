@@ -1,3 +1,28 @@
 .browse {
     background-color: #2B2B2B;
 }
+
+.browse_back {
+    max-height: 78vh;
+    border-radius: 30px;
+    background-color: #3B3B3B;
+    
+}
+
+.browse_card {
+    background-image: url("../../assets/images/browse_categories/Image\ Placeholder1.png");
+    filter: blur(1px);
+    -webkit-filter: blur(2px);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+}
+
+.browse_img {
+    font-size: 100%;
+    padding: 30px;
+    z-index: 5;
+}
