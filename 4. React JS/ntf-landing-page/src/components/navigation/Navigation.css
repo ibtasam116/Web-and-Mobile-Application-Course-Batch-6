@@ -33,6 +33,7 @@
 
 .navigation_menus>ul>li {
     margin-top: 15px;
+    list-style: none;
 }
 
 .navigation_menus>ul>li>a {
@@ -57,4 +58,48 @@
 .small_button:hover {
     background-color: #2a1d3b;
     transition: 0.5s;
+}
+
+.menu_icon {
+    display: none;
+}
+
+@media screen and (min-width: 768px)and (max-width: 991px) {
+
+    .navigation_menus>ul {
+        display: none;
+    }
+
+    .menu_icon {
+        display: block;
+        position: absolute;
+        left: 90%;
+        top: 5px;
+        color: #fff;
+    }
+
+    .menu_icon:hover {
+        color: #A259FF;
+        transition: 0.5s;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .navigation_menus>ul {
+        display: none;
+    }
+
+    .menu_icon {
+        display: block;
+        position: absolute;
+        left: 90%;
+        top: 5px;
+        color: #fff;
+    }
+
+    .menu_icon:hover {
+        color: #A259FF;
+        transition: 0.5s;
+    }
 }
