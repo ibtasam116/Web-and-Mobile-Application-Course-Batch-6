@@ -6,9 +6,37 @@ import { AiOutlineUser } from 'react-icons/ai'
 import { RiMenu5Fill } from 'react-icons/ri'
 
 export default function navigation() {
+//   const toggleBtn = document.getElementsByClassName("toggle-btn")[0]
+// const navmenu = document.getElementsByClassName("nav-menu")[0]
+// toggleBtn.addEventListener("click", () => {
+// navmenu.classList.toggle("active")
+// })
+
+
+  
   return (
     <>
-      <div id="navigation">
+
+      <div class="nav-header">
+        <nav class="navbar ">
+          <div class="logo"><PiStorefront className='mb-1 me-3 icons'/>NFT Marketplace</div>
+          <a href="#" class="toggle-btn">
+            <span class="bar barSmall"></span>
+            <span class="bar"></span>
+            <span class="bar barSmall"></span>
+          </a>
+          <div class="nav-menu">
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Portfolio</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      {/* <div id="navigation">
         <div className="container">
           <div className="row">
             <div className="col-6 d-flex align-items-center">
@@ -26,7 +54,7 @@ export default function navigation() {
             <a href=""><RiMenu5Fill className='h1 menu_icon' /></a>
           </div>
         </div>
-      </div>
+      </div> */}
 
     </>
   )
