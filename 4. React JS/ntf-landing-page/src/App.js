@@ -13,11 +13,11 @@ function App() {
   return (
     <>
       <Navigation />
-      {/* <Hero_section />
+      <Hero_section />
       <Trending_Collection />
       <Top_Creators />
       <Discover_More />
-      <Browse_Categories /> */}
+      <Browse_Categories />
     </>
   );
 }

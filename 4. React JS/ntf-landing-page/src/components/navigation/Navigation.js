@@ -4,22 +4,23 @@ import './Navigation.css'
 import { PiStorefront } from "react-icons/pi"
 import { AiOutlineUser } from 'react-icons/ai'
 import { RiMenu5Fill } from 'react-icons/ri'
+import Button from '../button/Button'
 
 export default function navigation() {
-//   const toggleBtn = document.getElementsByClassName("toggle-btn")[0]
-// const navmenu = document.getElementsByClassName("nav-menu")[0]
-// toggleBtn.addEventListener("click", () => {
-// navmenu.classList.toggle("active")
-// })
+  //   const toggleBtn = document.getElementsByClassName("toggle-btn")[0]
+  // const navmenu = document.getElementsByClassName("nav-menu")[0]
+  // toggleBtn.addEventListener("click", () => {
+  // navmenu.classList.toggle("active")
+  // })
 
 
-  
+
   return (
     <>
 
       <div class="nav-header">
         <nav class="navbar ">
-          <div class="logo"><PiStorefront className='mb-1 me-3 icons'/>NFT Marketplace</div>
+          <div class="logo"><PiStorefront className='mb-1 me-3 icons' />NFT Marketplace</div>
           <a href="#" class="toggle-btn">
             <span class="bar barSmall"></span>
             <span class="bar"></span>
@@ -31,6 +32,7 @@ export default function navigation() {
               <li><a href="">About</a></li>
               <li><a href="">Services</a></li>
               <li><a href="">Portfolio</a></li>
+              <li><Button btnTitle="Sign Up" size="btn-padding-Sm" icon={AiOutlineUser}/></li>
             </ul>
           </div>
         </nav>

@@ -66,6 +66,7 @@
     width: 32px;
     display: none;
 }
+
 .toggle-btn .bar {
     height: 4px;
     width: 100%;
@@ -82,16 +83,18 @@
         display: flex;
         z-index: 2;
     }
-    .toggle-btn .bar:hover{
+
+    .toggle-btn .bar:hover {
         background-color: #A259FF;
         animation: zoomIn;
         animation-duration: 1s;
         transition: 0.5s ease;
     }
-    
+
 
     .navbar {
-        padding: 3px 60px;    }
+        padding: 3px 60px;
+    }
 
     .navbar .logo {
         /* margin: 5px 0px; */
@@ -142,7 +145,6 @@
     }
 
 }
-
 
 
 /* #navigation {
