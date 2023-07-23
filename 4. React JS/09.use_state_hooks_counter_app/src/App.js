@@ -11,20 +11,25 @@ function App() {
     Setincrement(initialValue + 1);
   };
 
-  const decrement = () =>{
+  const decrement = () => {
     Setincrement(initialValue - 1);
   };
 
-  const reset =()=>{
+  const reset = () => {
     Setincrement(0);
   };
 
   return (
     <>
-      <button onClick={increment}>+</button>
-      <p>Coount: {initialValue}</p>
-      <button onClick={decrement}>-</button>
-      <button onClick={reset}>Reset</button>
+        <h1 id='heading'>Counter App</h1>
+      <div id='main'>
+        <button onClick={decrement} className='incre'>DECRE -</button>
+        <span className='count'>Count: {initialValue}</span>
+        <button onClick={increment} className='decre'>INCRE +</button>
+        <br />
+        <button onClick={reset} className='reset'>Reset</button>
+      </div>
+      
     </>
   );
 }
