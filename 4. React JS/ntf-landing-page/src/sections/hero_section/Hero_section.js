@@ -6,6 +6,10 @@ import { PiRocketLaunchDuotone } from "react-icons/pi";
 import hero_img from "../../assets/images/hero_section/hero_placeholder.png";
 import Avatar_Placeholder from "../../assets/images/hero_section/avatar_placeholder.png";
 
+import Button from '../../components/button/Button';
+import Section_points from "./Section_points";
+
+
 
 export default function Hero_section() {
     return (
@@ -15,21 +19,16 @@ export default function Hero_section() {
                     <div className="col-6 p-3">
                         <h1 className='section_title text-wrap'>Discover digital art & Collect NFTs</h1>
                         <p className='section_description mb-0 my-3'>NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.</p>
-                        <button type="button" class="btn-sm hero-button my-4">
-                            <PiRocketLaunchDuotone className='mb-1 me-2 h4' /> Get Started</button>
+                        {/* <button type="button" class="btn-sm hero-button my-4">
+                            <PiRocketLaunchDuotone className='mb-1 me-2 h4' /> Get Started</button> */}
+                        <div className='my-4'>
+
+                            <Button btnTitle="Get Started" size="btn-padding-lg" fontSize="btn-fontSize-lg" hover="btn-hover-sm" icon={PiRocketLaunchDuotone} iconSize="icon-size-lg" marginEnd="icon-mar-lg" />
+                        </div>
                         <div className='section_points'>
-                            <span>
-                                <h5>240k+</h5>
-                                <h6>Total Sale</h6>
-                            </span>
-                            <span>
-                                <h5>100k+</h5>
-                                <h6>Auctions</h6>
-                            </span>
-                            <span>
-                                <h5>240k+</h5>
-                                <h6>Artists</h6>
-                            </span>
+                            <Section_points number="240" />
+                            <Section_points number="100" />
+                            <Section_points number="240" />
                         </div>
                     </div>
                     <div className="col-6 p-4">

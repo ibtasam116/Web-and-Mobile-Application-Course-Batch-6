@@ -7,7 +7,7 @@ import { AiOutlineUser } from 'react-icons/ai'
 export default function Button(props) {
     return (
         <>
-            <button className={`button ${props.size} ${props.new}`}><props.icon className='mb-1 me-2'/>{props.btnTitle}</button>
+            <button className={`button ${props.size} ${props.hover} ${props.fontSize}`}><props.icon className={`mb-1 ${props.iconSize} ${props.marginEnd}`}/>{props.btnTitle}</button>
         </>
     )
 }

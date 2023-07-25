@@ -8,5 +8,29 @@
 
 .btn-padding-Sm {
     padding: 5px 10px;
+}
 
+.btn-hover-sm:hover{
+    background-color: #2a1d3b;
+    transition: 0.5s;
+}
+
+.btn-padding-lg{
+    padding: 12px 60px;
+}
+
+.btn-fontSize-lg{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+
+.icon-size-lg{
+    font-size: 25px;
+}
+
+.icon-mar-lg{
+    margin-right: 10px;
 }
