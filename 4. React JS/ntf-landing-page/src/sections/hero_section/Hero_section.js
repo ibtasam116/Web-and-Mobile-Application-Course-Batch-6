@@ -21,7 +21,7 @@ export default function Hero_section() {
                         <h1 className='section_title text-wrap'>Discover digital art & Collect NFTs</h1>
                         <p className='section_description mb-0 my-3'>NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.</p>
                         <div className='my-3 my-sm-4 my-md-3 my-lg-4 text-center text-md-start text-lg-start'>
-                            <Button btnTitle="Get Started" size="btn-padding-lg" fontSize="btn-fontSize-lg" hover="btn-hover-sm" icon={PiRocketLaunchDuotone} iconSize="icon-size-lg" marginEnd="icon-mar-lg" />
+                            <Button btnTitle="Get Started" size="btn-padding-lg" fontSize="btn-fontSize-lg" hover="btn-hover" icon={PiRocketLaunchDuotone} iconSize="icon-size-lg" marginEnd="icon-mar-lg" />
                         </div>
                         <div className='section_points'>
                             <Section_points number="240" />

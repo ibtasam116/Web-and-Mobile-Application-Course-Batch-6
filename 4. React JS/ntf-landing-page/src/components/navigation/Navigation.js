@@ -30,7 +30,7 @@ export default function navigation() {
               <li><a href="">Marketplace</a></li>
               <li><a href="">Rankings</a></li>
               <li><a href="">Connect a wallet</a></li>
-              <li><Button btnTitle="Sign Up" size="btn-padding-Sm" hover="btn-hover-sm" icon={AiOutlineUser} marginEnd="icon-mar-sm" /></li>
+              <li><Button btnTitle="Sign Up" size="btn-padding-Sm" hover="btn-hover" icon={AiOutlineUser} marginEnd="icon-mar-sm" /></li>
             </ul>
           </div>
         </nav>

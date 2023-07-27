@@ -1,0 +1,28 @@
+.creator_card{
+    min-width: 100%;
+    height: 100%;
+    background-color: #3B3B3B;
+}
+/* 
+.creator_row{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+} */
+
+.count{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5vh;
+    height: 5vh;
+    background-color: #2B2B2B;
+}
+
+.creator_content h4{
+    text-transform: capitalize;
+}
+.creator_content .sale{
+    color: #858584;
+}

@@ -10,7 +10,7 @@
     padding: 5px 10px;
 }
 
-.btn-hover-sm:hover{
+.btn-hover:hover{
     background-color: #2a1d3b;
     transition: 0.5s;
 }
@@ -36,4 +36,13 @@
 
 .icon-mar-lg{
     margin-right: 10px;
+}
+
+.btn-color-section{
+    background-color: #2a1d3b;
+}
+
+.btn-hover-section:hover{
+    background-color: #A259FF;
+    transition: 0.5s;
 }

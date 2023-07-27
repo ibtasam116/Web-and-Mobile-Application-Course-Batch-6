@@ -1,29 +1,7 @@
 .creator{
-    max-height: 2000vh !important;
-}
-
-.creator_card{
-    width: 40vh;
-    height: 40vh;
-    background-color: #858584;
-}
-
-.creator_row{
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
-}
-
-.count{
-    display: block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 5vh;
-    height: 5vh;
+    /* max-height: 2000vh !important; */
+    max-height: 300vh;
     background-color: #2B2B2B;
+    color: white;
 }
 
-.creator_content>.sale{
-    color: #2B2B2B;
-}
