@@ -1,5 +1,15 @@
 .hero_right_side {
-    max-height: 78vh;
+    max-height: 150vh;
     background-color: #3B3B3B;
     border-radius: 5%;
+}
+
+.discover_price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price {
+    color: #858584;
+    letter-spacing: 2px;
 }

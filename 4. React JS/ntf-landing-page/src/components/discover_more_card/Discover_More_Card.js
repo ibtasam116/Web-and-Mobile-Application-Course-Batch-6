@@ -1,30 +1,23 @@
 import React from 'react'
+// import "./Discover_More_Card.css"
+import Marketplace_Card from '../marketplace_card/Marketplace_Card'
 
 export default function Discover_More_Card(props) {
     return (
         <>
-            <div className="col-4 p-4 text-white">
-                <div className='hero_right_side'>
-                    <img src={props.imgSrc} alt="" className='hero_img w-100 img-fluid' />
-                    <div className='py-2 px-4'>
-                        <h5>{props.heading}</h5>
-                        <div className='d-flex align-items-center'>
-                            <img src={props.imgSmall} alt="" className='img-fluid' />
-                            <h6 className='ms-3 my-1'>{props.subheading}</h6>
-                        </div>
-                        <div className='discover_price my-3'>
-                            <div>
-                                <h6 className='price'>Price</h6>
-                                <h5>1.63 ETH</h5>
-                            </div>
-                            <div>
-                                <h6 className='price'>Highest Bid</h6>
-                                <h5>0.33 wETH</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <Marketplace_Card
+                hero_img={props.imgSrc}
+                title="Space Walking"
+                Avatar_img={props.imgSmall}
+                Subtitle="Dish Studio"
+                PriceTile1={props.PriceTile1}
+                Price1={props.Price1}
+                PriceTile2={props.PriceTile2}
+                Price2={props.Price2}
+                display={props.display}
+                marTopBo="my-3"
+                sizeForDis="col-sm-12 col-md-6 col-lg-4"
+            />
         </>
     )
 }
