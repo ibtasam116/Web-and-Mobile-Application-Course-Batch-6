@@ -1,5 +1,5 @@
 import React from 'react'
-
+import "./Section_points.css"
 export default function section_points(props) {
     return (
         <>
