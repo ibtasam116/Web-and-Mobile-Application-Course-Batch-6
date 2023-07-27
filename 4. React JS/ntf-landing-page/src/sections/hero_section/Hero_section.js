@@ -19,10 +19,7 @@ export default function Hero_section() {
                     <div className="col-6 p-3">
                         <h1 className='section_title text-wrap'>Discover digital art & Collect NFTs</h1>
                         <p className='section_description mb-0 my-3'>NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.</p>
-                        {/* <button type="button" class="btn-sm hero-button my-4">
-                            <PiRocketLaunchDuotone className='mb-1 me-2 h4' /> Get Started</button> */}
                         <div className='my-4'>
-
                             <Button btnTitle="Get Started" size="btn-padding-lg" fontSize="btn-fontSize-lg" hover="btn-hover-sm" icon={PiRocketLaunchDuotone} iconSize="icon-size-lg" marginEnd="icon-mar-lg" />
                         </div>
                         <div className='section_points'>
@@ -31,19 +28,7 @@ export default function Hero_section() {
                             <Section_points number="240" />
                         </div>
                     </div>
-                    <div className="col-6 p-4">
-                        <div className='hero_right_side'>
-                            <img src={hero_img} alt="" className='hero_img w-100 img-fluid' />
-                            <div className='py-2 px-4'>
-
-                                <h5>Space Walking</h5>
-                                <div className='d-flex align-items-center'>
-                                    <img src={Avatar_Placeholder} alt="" className='img-fluid' />
-                                    <h6 className='ms-3 my-1'>Dish Studio</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
