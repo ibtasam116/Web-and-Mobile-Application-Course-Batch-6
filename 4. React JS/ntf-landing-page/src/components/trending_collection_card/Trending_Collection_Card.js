@@ -2,13 +2,13 @@ import React from 'react'
 
 export default function Trending_Collection_Card(props) {
     return (
-            <div className="col-sm-12 col-md-6 col-lg-4  trending_card text-center">
+            <div className={`col-sm-12 col-md-6 col-lg-4 trending_card text-center ${props.display}`}>
                 <img src={props.img1Src} alt="" className='img-fluid' />
-                <div className='trending_card_img my-3'>
+                <div className='trending_card_img my-3 gap-2'>
                     <img src={props.img2Src} alt="" className='img-fluid' />
                     <img src={props.img3Src} alt="" className='img-fluid' />
                     <div className='number_addition d-flex align-items-center justify-content-center'>
-                        <h5 className='px-4 py-4'>1025+</h5>
+                        <h5 className='py-4'>1025+</h5>
                     </div>
                 </div>
                 <div className='px-2 text-start'>

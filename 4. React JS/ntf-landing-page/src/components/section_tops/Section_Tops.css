@@ -1,0 +1,10 @@
+
+.section_heading{
+    font-size: 30px;
+}
+
+.section_subheading{
+    font-size: 18px;
+    text-transform: capitalize;
+    text-align: justify;
+}

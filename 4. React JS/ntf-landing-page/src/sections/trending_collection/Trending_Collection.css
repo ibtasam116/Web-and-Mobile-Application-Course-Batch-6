@@ -1,31 +1,33 @@
-.collection{
-    max-height: 100vh;
+.collection {
+    max-height: 300vh;
     background-color: #2B2B2B;
     color: white;
 }
 
-.collection_heading{
-    font-size: 30px;
-}
-
-.collection_subheading{
-    font-size: 18px;
-    text-transform: capitalize;
-}
-
-.trending_card_img{
+.trending_card_img {
     display: flex;
     justify-content: space-around;
 }
 
-.number_addition{
-    max-width: 30%;
-    /* max-height: 5vh; */
+.number_addition {
+    min-width: 30%;
     border-radius: 15px;
     background-color: #A259FF;
     justify-content: space-between;
 }
 
-.number_addition>h5{
-    font-size: 25px;
+.number_addition>h5 {
+    font-size: 23px;
+}
+
+@media screen and (max-width: 767px) {
+    .trending_card_img {
+        max-width: 65%;
+        margin: auto;
+        padding: 3px;
+    }
+
+    .number_addition {
+        min-width: 30%;
+    }
 }

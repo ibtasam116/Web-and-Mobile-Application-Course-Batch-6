@@ -29,8 +29,8 @@ export default function Trending_Collection() {
                     </div>
                     <div className="row">
                         <Trending_Collection_Card img1Src={img1} img2Src={img2} img3Src={img3} img4Src={img4} cardTitle="DSGN Animals" cardSubTitle="Mrfox" />
-                        <Trending_Collection_Card img1Src={img5} img2Src={img6} img3Src={img7} img4Src={img8} cardTitle="Magic Mushrooms" cardSubTitle="Shroomie" />
-                        <Trending_Collection_Card img1Src={img9} img2Src={img10} img3Src={img11} img4Src={img12} cardTitle="Disco Machines" cardSubTitle="BeKind2Robots" />
+                        <Trending_Collection_Card display="d-none d-md-block d-lg-block" img1Src={img5} img2Src={img6} img3Src={img7} img4Src={img8} cardTitle="Magic Mushrooms" cardSubTitle="Shroomie" />
+                        <Trending_Collection_Card display="d-none d-lg-block" img1Src={img9} img2Src={img10} img3Src={img11} img4Src={img12} cardTitle="Disco Machines" cardSubTitle="BeKind2Robots" />
                     </div>
                 </div>
             </div>
