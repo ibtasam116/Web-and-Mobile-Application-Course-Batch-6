@@ -3,26 +3,29 @@
 }
 
 .browse_back {
-    max-height: 78vh;
+    max-height: 100vh;
     border-radius: 30px;
     background-color: #3B3B3B;
-    
 }
 
-.browse_card {
-    background-image: url("../../assets/images/browse_categories/Image\ Placeholder1.png");
-    filter: blur(1px);
-    -webkit-filter: blur(2px);
+.browse-img {
+    background-image: url("../../assets//images/browse_categories/Image\ Placeholder1.png");
     background-size: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 30vh;
+    max-height: 50vh;
+}
+
+/* .browse-img:hover {
+    filter: blur(5px);
+    transition: 2s;
+} */
+
+
+.browse-icons-card {
     display: flex;
     justify-content: center;
 }
 
-.browse_img {
-    font-size: 100%;
-    padding: 30px;
-    z-index: 5;
-}
+
+

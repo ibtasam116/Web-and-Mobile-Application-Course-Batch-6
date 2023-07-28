@@ -22,18 +22,18 @@ export default function Browse_Categories() {
                     <div className="row py-3 text-white">
                         <Section_Top heading="Browse Categories" subheading="" />
                     </div>
-                    <div className="row">
+                    <div className="row gap-3">
                         <Browse_Categories_Card iconSrc={icon1} Heading="Art"/>
-                        <Browse_Categories_Card iconSrc={icon2} Heading="Collectibles"/>
+                        {/* <Browse_Categories_Card iconSrc={icon2} Heading="Collectibles"/>
                         <Browse_Categories_Card iconSrc={icon3} Heading="Music"/>
-                        <Browse_Categories_Card iconSrc={icon4} Heading="Photography"/>
+                        <Browse_Categories_Card iconSrc={icon4} Heading="Photography"/> */}
                     </div>
-                    <div className="row">
+                    {/* <div className="row">
                         <Browse_Categories_Card iconSrc={icon5} Heading="Video"/>
                         <Browse_Categories_Card iconSrc={icon6} Heading="Utility"/>
                         <Browse_Categories_Card iconSrc={icon7} Heading="Sport"/>
                         <Browse_Categories_Card iconSrc={icon8} Heading="Virtual Worlds"/>
-                    </div>
+                    </div> */}
                 </div>
             </div >
         </>
