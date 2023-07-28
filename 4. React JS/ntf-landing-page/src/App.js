@@ -10,6 +10,7 @@ import Discover_More from './sections/discover_more/Discover_More';
 import Browse_Categories from './sections/browse_categories/Browse_Categories';
 import Magic_Mashrooms from './sections/magic_mashrooms/Magic_Mashrooms';
 import How_it_works from './sections/how_it_works/How_it_works';
+import Subscribe from './sections/subscribe/Subscribe';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Browse_Categories />
       <Magic_Mashrooms />
       <How_it_works />
+      <Subscribe />
     </>
   );
 }

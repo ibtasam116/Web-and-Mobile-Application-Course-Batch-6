@@ -1,0 +1,22 @@
+.subscribe{
+    background-color: #2B2B2B;
+}
+
+.row-color{
+    background-color: #3B3B3B;
+    border-radius: 30px;
+}
+
+.subscribe_buttons{
+    background-color: #fff;
+    max-width: 76%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    /* max-height: 50vh; */
+}
+
+.subscribe_buttons input{
+    border: none;
+    border-radius: 10px;
+}
