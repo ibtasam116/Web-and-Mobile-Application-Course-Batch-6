@@ -4,7 +4,7 @@
 
 .browse_back {
     max-height: 100vh;
-    border-radius: 30px;
+    border-radius: 20px;
     background-color: #3B3B3B;
 }
 
@@ -25,8 +25,18 @@
 .browse-icons-card {
     display: flex;
     justify-content: center;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.browse-icons-card:hover {
+    background: #16161679;
+    /* background: rgba(4, 21, 97, 0.705); */
+    backdrop-filter: blur(4px);
+    transition: 1s;
 }
 
 .browse-icons-card>img {
-    width: 50%;
+    /* width: 50%; */
+    width: 120px;
+    height: 120px;
 }

@@ -8,6 +8,7 @@ import Trending_Collection from './sections/trending_collection/Trending_Collect
 import Top_Creators from './sections/top_creators/Top_Creators';
 import Discover_More from './sections/discover_more/Discover_More';
 import Browse_Categories from './sections/browse_categories/Browse_Categories';
+import Magic_Mashrooms from './sections/magic_mashrooms/Magic_Mashrooms';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Top_Creators />
       <Discover_More />
       <Browse_Categories />
+      <Magic_Mashrooms />
     </>
   );
 }

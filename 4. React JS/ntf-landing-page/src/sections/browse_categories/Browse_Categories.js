@@ -5,14 +5,17 @@ import Section_Top from '../../components/section_tops/Section_Tops'
 
 import Browse_Categories_Card from '../../components/browse_categories_card/Browse_Categories_Card'
 
+import image from "../../assets/images/browse_categories/Image Placeholder1.png"
+
+
 import icon1 from "../../assets/images/browse_categories/PaintBrush1.png"
 import icon2 from "../../assets/images/browse_categories/Swatches2.png"
 import icon3 from "../../assets/images/browse_categories/MusicNotes3.png"
 import icon4 from "../../assets/images/browse_categories/Camera4.png"
-import icon5 from "../../assets/images/browse_categories/Camera4.png"
-import icon6 from "../../assets/images/browse_categories/Camera4.png"
-import icon7 from "../../assets/images/browse_categories/Camera4.png"
-import icon8 from "../../assets/images/browse_categories/Camera4.png"
+import icon5 from "../../assets/images/browse_categories/VideoCamera5.png"
+import icon6 from "../../assets/images/browse_categories/MagicWand6.png"
+import icon7 from "../../assets/images/browse_categories/Basketball7.png"
+import icon8 from "../../assets/images/browse_categories/Planet8.png"
 
 export default function Browse_Categories() {
     return (
@@ -22,18 +25,18 @@ export default function Browse_Categories() {
                     <div className="row py-3 text-white">
                         <Section_Top heading="Browse Categories" subheading="" />
                     </div>
-                    <div className="row gap-3">
-                        <Browse_Categories_Card iconSrc={icon1} Heading="Art"/>
-                        {/* <Browse_Categories_Card iconSrc={icon2} Heading="Collectibles"/>
-                        <Browse_Categories_Card iconSrc={icon3} Heading="Music"/>
-                        <Browse_Categories_Card iconSrc={icon4} Heading="Photography"/> */}
+                    <div className="row">
+                        <Browse_Categories_Card imageUrl={image} iconSrc={icon1} Heading="Art" />
+                        <Browse_Categories_Card iconSrc={icon2} Heading="Collectibles" />
+                        <Browse_Categories_Card iconSrc={icon3} Heading="Music" />
+                        <Browse_Categories_Card iconSrc={icon4} Heading="Photography" />
                     </div>
-                    {/* <div className="row">
-                        <Browse_Categories_Card iconSrc={icon5} Heading="Video"/>
-                        <Browse_Categories_Card iconSrc={icon6} Heading="Utility"/>
-                        <Browse_Categories_Card iconSrc={icon7} Heading="Sport"/>
-                        <Browse_Categories_Card iconSrc={icon8} Heading="Virtual Worlds"/>
-                    </div> */}
+                    <div className="row mt-3">
+                        <Browse_Categories_Card iconSrc={icon5} Heading="Video" />
+                        <Browse_Categories_Card iconSrc={icon6} Heading="Utility" />
+                        <Browse_Categories_Card iconSrc={icon7} Heading="Sport" />
+                        <Browse_Categories_Card iconSrc={icon8} Heading="Virtual Worlds" />
+                    </div>
                 </div>
             </div >
         </>
