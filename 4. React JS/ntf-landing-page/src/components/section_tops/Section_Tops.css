@@ -1,6 +1,7 @@
 
 .section_heading{
     font-size: 30px;
+    text-transform: capitalize;
 }
 
 .section_subheading{

@@ -17,15 +17,15 @@ export default function navigation() {
   return (
     <>
 
-      <div class="nav-header">
-        <nav class="navbar ">
-          <div class="logo"><PiStorefront className='mb-1 me-3 icons' />NFT Marketplace</div>
-          <a href="#" class="toggle-btn">
-            <span class="bar barSmall"></span>
-            <span class="bar"></span>
-            <span class="bar barSmall"></span>
+      <div className="nav-header">
+        <nav className="navbar ">
+          <div className="logo"><PiStorefront className='mb-1 me-3 icons' />NFT Marketplace</div>
+          <a href="#" className="toggle-btn">
+            <span className="bar barSmall"></span>
+            <span className="bar"></span>
+            <span className="bar barSmall"></span>
           </a>
-          <div class="nav-menu">
+          <div className="nav-menu">
             <ul>
               <li><a href="">Marketplace</a></li>
               <li><a href="">Rankings</a></li>

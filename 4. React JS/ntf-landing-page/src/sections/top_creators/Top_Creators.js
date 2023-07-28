@@ -24,7 +24,7 @@ export default function Top_Creators() {
     return (
         <>
             <div className="creator">
-                <div className="container py-3">
+                <div className="container py-3 text-white">
                     <div className="row py-3">
                         <div className="col-sm-12 col-md-6">
                             <Section_Tops heading="Top Creators" subheading="Checkout Top Rated Creators on the NFT Marketplace" />

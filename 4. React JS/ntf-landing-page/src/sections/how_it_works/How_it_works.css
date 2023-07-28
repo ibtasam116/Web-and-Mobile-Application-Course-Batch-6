@@ -1,0 +1,21 @@
+.how-work {
+    background-color: #2B2B2B;
+    max-height: 200vh;
+}
+
+.how-work-card {
+    height: 67vh;
+    background-color: #3B3B3B;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.how-work-card:hover {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    transition: 1s;
+}
+
+.how-work-card,
+img {
+    text-transform: capitalize;
+}
