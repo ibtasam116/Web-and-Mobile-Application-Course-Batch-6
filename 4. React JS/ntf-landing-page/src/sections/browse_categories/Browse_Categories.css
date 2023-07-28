@@ -27,5 +27,6 @@
     justify-content: center;
 }
 
-
-
+.browse-icons-card>img {
+    width: 50%;
+}
