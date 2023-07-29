@@ -5,7 +5,7 @@ export default function section_points(props) {
         <>
             <span>
                 <h5>{props.number}+</h5>
-                <h6>Total Sale</h6>
+                <h6 className='sale'>Total Sale</h6>
             </span>
         </>
     )

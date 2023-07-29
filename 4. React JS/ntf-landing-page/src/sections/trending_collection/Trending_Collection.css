@@ -9,11 +9,29 @@
     justify-content: space-around;
 }
 
+.trending_card_img>img:hover {
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    transition: 0.5s;
+    border-radius: 17px;
+}
+
+.hover-on:hover {
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    transition: 0.5s;
+    border-radius: 17px;
+}
+
 .number_addition {
     min-width: 30%;
     border-radius: 15px;
     background-color: #A259FF;
     justify-content: space-between;
+}
+
+.number_addition:hover {
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    transition: 0.5s;
+    border-radius: 17px;
 }
 
 .number_addition>h5 {

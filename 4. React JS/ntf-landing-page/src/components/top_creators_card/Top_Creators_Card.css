@@ -1,8 +1,9 @@
-.creator_card{
+.creator_card {
     min-width: 100%;
     height: 100%;
     background-color: #3B3B3B;
 }
+
 /* 
 .creator_row{
     display: flex;
@@ -10,7 +11,13 @@
     justify-content: space-between;
 } */
 
-.count{
+.creator_card:hover {
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    transition: 1s;
+    border-radius: 17px;
+}
+
+.count {
     display: block;
     display: flex;
     justify-content: center;
@@ -20,9 +27,10 @@
     background-color: #2B2B2B;
 }
 
-.creator_content h4{
+.creator_content h4 {
     text-transform: capitalize;
 }
-.creator_content .sale{
+
+.creator_content .sale {
     color: #858584;
 }
