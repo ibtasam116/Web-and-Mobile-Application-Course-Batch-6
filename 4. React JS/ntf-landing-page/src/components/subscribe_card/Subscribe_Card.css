@@ -1,4 +1,17 @@
 
+.footerHeadSize{
+    font-size: 27px;
+    margin-top: 10px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.footerSize{
+    font-size: 23px;
+    color: #CCCCCC;
+    text-transform: capitalize;
+}
+
 .subs-heading {
     font-size: 57px;
     text-transform: capitalize;

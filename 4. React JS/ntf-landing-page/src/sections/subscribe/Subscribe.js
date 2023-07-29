@@ -13,7 +13,7 @@ export default function Subscribe() {
                         <img src={img} alt="" className='img-fluid subs-image' />
                     </div>
                     <div className="col-sm-12 col-md-12 col-lg-6 px-md-5 px-lg-0">
-                        <Subscribe_Card />
+                        <Subscribe_Card SubsHeadSize="subs-heading" SubsSize="subs-para" />
                     </div>
                 </div>
             </div>

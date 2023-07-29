@@ -32,8 +32,8 @@ export default function Footer_Header() {
                     <p>Connect a wallet</p>
                 </div>
             </div>
-            <div className="col-sm-12 col-md-12 col-lg-5 border">
-                <Subscribe_Card />
+            <div className="col-sm-12 col-md-12 col-lg-5">
+                <Subscribe_Card footerHeadSize="footerHeadSize" footerSize="footerSize"/>
             </div>
         </div>
     )
