@@ -9,7 +9,7 @@ export default function Footer_Bottom() {
         <>
             <div className='footer-line mt-3'></div>
             <div className='footer-heading'>
-                <p className='mb-0 mt-3'>{copyright}NFT Market. Use this template freely.</p>
+                <p className='mb-0 mt-3 h6'>{copyright} <span className='ms-1'>NFT Market. Use this template freely.</span></p>
             </div>
         </>
     )
