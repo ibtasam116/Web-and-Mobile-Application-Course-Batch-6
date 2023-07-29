@@ -1,4 +1,5 @@
 import React from 'react'
+import "./NTF_Logo.css"
 
 import { PiStorefront } from "react-icons/pi"
 

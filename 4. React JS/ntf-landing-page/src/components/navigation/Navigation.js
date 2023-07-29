@@ -19,7 +19,7 @@ export default function navigation() {
     <>
 
       <div className="nav-header">
-        <nav className="navbar ">
+        <nav className="navbar">
           <NTF_Logo />
           <a href="#" className="toggle-btn">
             <span className="bar barSmall"></span>

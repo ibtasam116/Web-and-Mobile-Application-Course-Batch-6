@@ -5,28 +5,10 @@
 
 .navbar {
     width: 100%;
-    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 3px 60px;
-}
-
-.navbar .logo {
-    font-size: 22px;
-    font-weight: 500;
-    margin: 10px 0px;
-    cursor: pointer;
-}
-
-.navbar .logo:hover {
-    color: #A259FF;
-    transition: 0.5s ease;
-}
-
-.navbar .icons {
-    font-size: 35px;
-    color: #A259FF;
 }
 
 .nav-menu ul {
@@ -83,6 +65,10 @@
         display: flex;
         z-index: 2;
     }
+    
+    .toggle-btn {
+        right: 50px;
+    }
 
     .toggle-btn .bar:hover {
         background-color: #A259FF;
@@ -91,20 +77,8 @@
         transition: 0.5s ease;
     }
 
-
     .navbar {
         padding: 3px 60px;
-    }
-
-    .navbar .logo {
-        /* margin: 5px 0px; */
-        font-size: 20px;
-        font-weight: 500;
-        margin: 10px 0px;
-    }
-
-    .toggle-btn {
-        right: 30px;
     }
 
     .nav-menu ul {

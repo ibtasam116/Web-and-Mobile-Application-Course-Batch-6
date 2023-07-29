@@ -1,0 +1,17 @@
+.footer-card{
+    color: #CCCCCC;
+}
+.footer-card> p{
+    font-size: 20px;
+    line-height: 28px;
+}
+.footer-icon{
+    font-size: 40px;
+    padding: 0px 5px;
+}
+
+.footer-icon:hover{
+    color: #A259FF;
+    cursor: pointer;
+    transition: 0.5s;
+}

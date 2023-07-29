@@ -2,9 +2,11 @@
 .subs-heading {
     font-size: 57px;
     text-transform: capitalize;
+    color: #fff;
 }
 
 .subs-para {
+    color: #CCCCCC;
     text-transform: capitalize;
     font-size: 29px;
 }

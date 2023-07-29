@@ -1,0 +1,28 @@
+.logo {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 10px 0px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.logo:hover {
+    color: #A259FF;
+    transition: 0.5s ease;
+}
+
+.icons {
+    font-size: 35px;
+    color: #A259FF;
+}
+
+@media screen and (max-width: 991px) {
+
+    .logo {
+        /* margin: 5px 0px; */
+        font-size: 20px;
+        font-weight: 500;
+        margin: 18px 0px;
+    }
+
+}

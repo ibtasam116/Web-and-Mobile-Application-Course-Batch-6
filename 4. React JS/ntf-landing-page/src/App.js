@@ -11,6 +11,7 @@ import Browse_Categories from './sections/browse_categories/Browse_Categories';
 import Magic_Mashrooms from './sections/magic_mashrooms/Magic_Mashrooms';
 import How_it_works from './sections/how_it_works/How_it_works';
 import Subscribe from './sections/subscribe/Subscribe';
+import Footer from './sections/footer/Footer';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Magic_Mashrooms />
       <How_it_works />
       <Subscribe />
+      <Footer />
     </>
   );
 }

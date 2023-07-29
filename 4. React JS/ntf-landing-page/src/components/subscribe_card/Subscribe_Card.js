@@ -7,7 +7,6 @@ import { PiEnvelopeSimpleLight } from 'react-icons/pi'
 export default function Subscribe_Card() {
     return (
         <>
-            <div className="col-sm-12 col-md-12 col-lg-6 px-0 px-md-5 px-lg-0">
                 <h3 className='subs-heading'>Join our weekly digest</h3>
                 <p className='subs-para'>Get exclusive promotions & updates straight to your inbox.</p>
                 <div className='subscribe_buttons text-center'>
@@ -19,7 +18,6 @@ export default function Subscribe_Card() {
                         icon={PiEnvelopeSimpleLight}
                         marginEnd="icon-mar-lg" />
                 </div>
-            </div>
         </>
     )
 }
