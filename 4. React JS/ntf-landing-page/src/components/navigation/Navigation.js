@@ -1,9 +1,10 @@
 import React from 'react'
 import './Navigation.css'
 
-import { PiStorefront } from "react-icons/pi"
 import { AiOutlineUser } from 'react-icons/ai'
 import Button from '../button/Button'
+
+import NTF_Logo from "../ntf_logo/NTF_Logo";
 
 export default function navigation() {
   //   const toggleBtn = document.getElementsByClassName("toggle-btn")[0]
@@ -19,7 +20,7 @@ export default function navigation() {
 
       <div className="nav-header">
         <nav className="navbar ">
-          <div className="logo"><PiStorefront className='mb-1 me-3 icons' />NFT Marketplace</div>
+          <NTF_Logo />
           <a href="#" className="toggle-btn">
             <span className="bar barSmall"></span>
             <span className="bar"></span>
