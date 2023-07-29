@@ -2,12 +2,12 @@
 .button {
     background-color: #A259FF;
     border: 2px solid #A259FF;
-    border-radius: 10px;
+    border-radius: 20px;
     color: #fff;
 }
 
 .btn-padding-Sm {
-    padding: 5px 10px;
+    padding: 10px 23px;
 }
 
 .btn-hover:hover{
@@ -23,8 +23,6 @@
     font-size: 18px;
     font-weight: 500;
 }
-
-
 
 .icon-mar-sm{
     margin-right: 5px;

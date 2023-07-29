@@ -11,14 +11,14 @@ export default function Subscribe() {
         <div className="subscribe">
             <div className="container text-white p-5">
                 <div className="row p-5 row-color">
-                    <div className="col-6">
-                        <img src={img} alt="" />
+                    <div className="col-sm-12 col-md-12 col-lg-6 text-center">
+                        <img src={img} alt="" className='img-fluid' />
                     </div>
-                    <div className="col-6">
-                        <h3>Join our weekly digest</h3>
+                    <div className="col-6 px-5">
+                        <h3 className='main-heading'>Join our weekly digest</h3>
                         <p>Get exclusive promotions & updates straight to your inbox.</p>
                         <div className='subscribe_buttons'>
-                            <input type="text" className='' placeholder='Enter your email here' />
+                            <input type="text" className='new-input' placeholder='Enter your email here' />
                             <Button
                                 btnTitle="Sign Up"
                                 size="btn-padding-lg"

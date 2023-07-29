@@ -1,22 +1,42 @@
-.subscribe{
+.subscribe {
     background-color: #2B2B2B;
 }
 
-.row-color{
+.row-color {
     background-color: #3B3B3B;
     border-radius: 30px;
 }
 
-.subscribe_buttons{
+.main-heading {
+    font-size: 50px;
+}
+
+.subscribe_buttons {
     background-color: #fff;
-    max-width: 76%;
+    max-width: 100%;
+
     display: flex;
     justify-content: space-between;
-    border-radius: 10px;
+    border-radius: 20px;
     /* max-height: 50vh; */
 }
 
-.subscribe_buttons input{
+.subscribe_buttons input {
+    width: 58%;
+    box-sizing: border-box;
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
+    outline: none;
 }
+
+.subscribe_buttons input:active {
+    border: none;
+    border-top: green;
+}
+
+input::placeholder {
+    font-weight: 500;
+    color: #2B2B2B;
+    padding: 0px 10px;
+}
+
