@@ -36,7 +36,7 @@ function App() {
           <div className='bg-white lg:col-start-2 lg:col-end-4 md:col-start-2 md:col-end-4 sm:col-start-2 sm:col-end-4 p-6'>
             <div className='bg-purple-700 p-4 text-center shadow-lg'>
               <input onChange={e => setNewItem(e.target.value)} value={newItem} type="text" className='w-[70%] p-2 outline-none' placeholder='Add new task'/>
-              <button onClick={() => addItem()} className='bg-white w-[26%] p-2 ms-3 hover:bg-orange-400 hover:text-white'>Add Task</button>
+              <button onClick={() => addItem()} className='setBtn bg-white w-[26%] p-2 ms-3 hover:bg-orange-400 hover:text-white'>Add Task</button>
             </div>
           </div>
         </div>
@@ -50,8 +50,10 @@ function App() {
                     <>
                       <li key={item.id} className='bg-white w-[70%] text-left py-2 inline-block my-1'>{item.value}
                       </li>
+                      <div className='twoBtn inline'>
                       <button onClick={() => deleteItem(item.id)} className='py-2 px-3 mx-2 bg-white hover:bg-red-700 hover:text-white'>Delete</button>
                       <button onClick={() => deleteItem(item.id)} className='py-2 px-5 bg-white hover:bg-green-700 hover:text-white'>Edit</button>
+                      </div>
                     </>
                   )
                 })}
