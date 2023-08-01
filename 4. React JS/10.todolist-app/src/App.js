@@ -41,7 +41,7 @@ function App() {
           </div>
         </div>
         <div className='grid lg:grid-cols-4 md:grid-cols-4 grid-cols-1 p-3 pt-8'>
-          <div className='bg-white lg:col-start-2 lg:col-end-4 md:col-start-2 md:col-end-4 sm:col-start-2 sm:col-end-4 px-6 pb-6'>
+          <div className='bg-white lg:col-start-2 lg:col-end-4 md:col-start-2 md:col-end-4 sm:col-start-1 sm:col-end-4 px-6 pb-6'>
             <h3 className='text-center font-serif text-[30px] hover:underline transi'>TODOS</h3>
             <div className='bg-purple-700 p-4 text-center shadow-lg'>
               <ul>
