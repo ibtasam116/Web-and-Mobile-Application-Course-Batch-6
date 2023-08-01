@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: #F7F7F7;
+    /* height: 80vh; */
+}
+
+.welcome > h1{
+    font-weight: bold;
+    font-size: 70px;
+    color: black;
+}
+
+
+.card-items{
+    width: 15%;
+    margin: auto;
+}
+
+.fresh{
+    width: 100%;
+}
+
+.grapes{
+    width: 50%;
+}
+
+.contact-right-p{
+    padding-left: 9%;
+}
+
+.social-links{
+    width: 15%;
+    cursor: pointer;
+}
+
+.footer{
+    background-color: #F7F7F7;
+    /* height: 10vh; */
+}
+

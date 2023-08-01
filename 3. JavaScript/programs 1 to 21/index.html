@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./style/style.css">
+
+    <title>Programs 1 to 21</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="nav-back shadow-byMe">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Programs 1 - 21</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <a class="navbar-brand" href="https://github.com/ibtasam116" target="_blank">Muhammad
+                            IbTaSaM</a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <div class="container">
+
+            <!-- Row # 1 -->
+            <div class="row my-3">
+
+                <!-- !====================== 1 ======================! -->
+                <!-- Write a js program to find maximum between two numbers. -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card w-100 mb-4 mb-md-0" style="min-height: 261.38px;">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">Write a js program to find maximum between two
+                                numbers.</h6>
+                            <input id="input1" class="form-control form-control-sm" type="text"
+                                placeholder="Enter first number" aria-label=".form-control-sm example">
+                            <input id="input2" class="form-control form-control-sm my-4" type="text"
+                                placeholder="Enter second number" aria-label=".form-control-sm example">
+                            <div class="card-button">
+                                <button type="button" onclick="maxMin()" class="btn btn-secondary w-75">Check
+                                    Output</button>
+                            </div>
+                            <div id="maxOutput" class="text-center text-danger fw-bold mt-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- !====================== 2 ======================! -->
+                <!-- Write a js program to find maximum between three numbers. -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card w-100 mb-4 mb-md-0" style="min-height: 261.38px;">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">Write a js program to find maximum between three
+                                numbers.</h6>
+                            <input id="input3" class="form-control form-control-sm" type="text"
+                                placeholder="Enter first number" aria-label=".form-control-sm example">
+                            <input id="input4" class="form-control form-control-sm my-2" type="text"
+                                placeholder="Enter second number" aria-label=".form-control-sm example">
+                            <input id="input5" class="form-control form-control-sm my-2" type="text"
+                                placeholder="Enter third number" aria-label=".form-control-sm example">
+                            <div class="card-button">
+                                <button type="button" onclick="maxMinBtw3()" class="btn btn-secondary w-75">Check
+                                    Output</button>
+                            </div>
+                            <div id="maxOutputbtw3" class="text-center text-danger fw-bold mt-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- !====================== 3 ======================! -->
+                <!-- Write a js program to check whether a number is negative, positive or zero. -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card w-100 mb-4 mb-md-0" style="min-height: 261.38px;">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">Write a js program to check whether a number is
+                                negative, positive or zero.</h6>
+                            <input id="input6" class="form-control form-control-sm my-4" type="text"
+                                placeholder="Enter a number" aria-label=".form-control-sm example">
+                            <div class="card-button">
+                                <button type="button" onclick="numPosNeZe()" class="btn btn-secondary w-75">Check
+                                    Output</button>
+                            </div>
+                            <div id="numPosNeZe" class="text-center text-danger fw-bold mt-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row # 2 -->
+            <div class="row mb-3">
+
+                <!-- !====================== 4 ======================! -->
+                <!-- Write a js program to check whether a number is divisible by 5 and 11 or not. -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card w-100 mb-4 mb-md-0" style="min-height: 261.38px;">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">Write a js program to check whether a number is
+                                divisible by 5 and 11 or not.</h6>
+                            <input id="input7" class="form-control form-control-sm my-4" type="text"
+                                placeholder="Enter a number" aria-label=".form-control-sm example">
+                            <div class="card-button">
+                                <button type="button" onclick="numDivisi5And11()" class="btn btn-secondary w-75">Check
+                                    Output</button>
+                            </div>
+                            <div id="numDivisi5And11" class="text-center text-danger fw-bold mt-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- !====================== 5 ======================! -->
+                <!-- Write a js program to check whether a number is even or odd. -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card w-100 mb-4 mb-md-0" style="min-height: 261.38px;">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">Write a js program to check whether a number is
+                                even or odd.</h6>
+                            <input id="input8" class="form-control form-control-sm my-4" type="text"
+                                placeholder="Enter a number" aria-label=".form-control-sm example">
+                            <div class="card-button">
+                                <button type="button" onclick="evenOdd()" class="btn btn-secondary w-75">Check
+                                    Output</button>
+                            </div>
+                            <div id="evenOddOutput" class="text-center text-danger fw-bold mt-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- !====================== 6 ======================! -->
+                <!-- Write a js program to check whether a year is leap year or not. -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card w-100 mb-4 mb-md-0" style="min-height: 261.38px;">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">Write a js program to check whether a year is leap
+                                year or not.</h6>
+                            <input id="input9" class="form-control form-control-sm my-4" type="text"
+                                placeholder="Enter year" aria-label=".form-control-sm example">
+                            <div class="card-button">
+                                <button type="button" onclick="leapYear()" class="btn btn-secondary w-75">Check
+                                    Output</button>
+                            </div>
+                            <div id="leapYearOutput" class="text-center text-danger fw-bold mt-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row # 3 -->
+            <div class="row mb-3">
+
+                <!-- !====================== 7 ======================! -->
+                <!-- Write a js program to check whether a character is alphabet or not. -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card w-100 mb-4 mb-md-0" style="min-height: 261.38px;">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">Write a js program to check whether a character is
+                                alphabet or not.</h6>
+                            <input id="input10" class="form-control form-control-sm my-4" type="text"
+                                placeholder="Enter character" aria-label=".form-control-sm example">
+                            <div class="card-button">
+                                <button type="button" onclick="checkAlphaOrNot()" class="btn btn-secondary w-75">Check
+                                    Output</button>
+                            </div>
+                            <div id="checkAlphaOrNot" class="text-center text-danger fw-bold mt-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- !====================== 8 ======================! -->
+                <!-- Write a js program to input any alphabet and check whether it is vowel or consonant. -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card w-100 mb-4 mb-md-0" style="min-height: 261.38px;">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">Write a js program to input any alphabet and check
+                                whether it is vowel or consonant.</h6>
+                            <input id="input11" class="form-control form-control-sm my-4" type="text"
+                                placeholder="Enter alphabet" aria-label=".form-control-sm example">
+                            <div class="card-button">
+                                <button type="button" onclick="vowelConsonant()" class="btn btn-secondary w-75">Check
+                                    Output</button>
+                            </div>
+                            <div id="vowelConsonant" class="text-center text-danger fw-bold mt-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- !====================== 9 ======================! -->
+                <!-- Write a js program to input any character and check whether it is alphabet, digit or special character. -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card w-100 mb-4 mb-md-0" style="min-height: 261.38px;">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">Write a js program to input any character and
+                                check whether it is alphabet, digit or special character.</h6>
+                            <input id="input12" class="form-control form-control-sm my-4" type="text"
+                                placeholder="Enter character" aria-label=".form-control-sm example">
+                            <div class="card-button">
+                                <button type="button" onclick="alphaDigitSpecial()" class="btn btn-secondary w-75">Check
+                                    Output</button>
+                            </div>
+                            <div id="alphaDigitSpecial" class="text-center text-danger fw-bold mt-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row # 4 -->
+            <div class="row mb-3">
+
+                <!-- !====================== 10 ======================! -->
+                <!-- Write a js program to check whether a character is uppercase or lowercase alphabet. -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card w-100 mb-4 mb-md-0" style="min-height: 261.38px;">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">Write a js program to check whether a character is
+                                uppercase or lowercase alphabet.</h6>
+                            <input id="input13" class="form-control form-control-sm my-4" type="text"
+                                placeholder="Enter character" aria-label=".form-control-sm example">
+                            <div class="card-button">
+                                <button type="button" onclick="uppercaseLowercase()"
+                                    class="btn btn-secondary w-75">Check
+                                    Output</button>
+                            </div>
+                            <div id="uppercaseLowercase" class="text-center text-danger fw-bold mt-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- !====================== 11 ======================! -->
+                <!-- Write a js program to input week number and print week day. -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card w-100 mb-4 mb-md-0" style="min-height: 261.38px;">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">Write a js program to input week number and print
+                                week day.</h6>
+                            <h6 class="card-subtitle mb-2 text-center text-muted text-decoration-underline">Week number
+                                between 1 to 7</h6>
+                            <input id="input14" class="form-control form-control-sm my-4" type="text"
+                                placeholder="Enter week number" aria-label=".form-control-sm example">
+                            <div class="card-button">
+                                <button type="button" onclick="printWeek()" class="btn btn-secondary w-75">Check
+                                    Output</button>
+                            </div>
+                            <div id="printWeek" class="text-center text-danger fw-bold mt-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- !====================== 12 ======================! -->
+                <!-- Write a js program to input month number and print number of days in that month. -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card w-100 mb-4 mb-md-0" style="min-height: 261.38px;">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">Write a js program to input month number and print
+                                number of days in that month.</h6>
+                            <h6 class="card-subtitle mb-2 text-center text-muted text-decoration-underline">Month number
+                                between 1 to 12</h6>
+                            <input id="input15" class="form-control form-control-sm my-4" type="text"
+                                placeholder="Enter month number" aria-label=".form-control-sm example">
+                            <div class="card-button">
+                                <button type="button" onclick="printMonth()" class="btn btn-secondary w-75">Check
+                                    Output</button>
+                            </div>
+                            <div id="printMonth" class="text-center text-danger fw-bold mt-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row # 5 -->
+            <div class="row mb-3">
+
+                <!-- !====================== 13 ======================! -->
+                <!-- Write a js program to count total number of notes in given amount. -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card w-100 mb-4 mb-md-0" style="min-height: 261.38px;">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">Write a js program to count total number of notes
+                                in given amount.</h6>
+                            <h6 class="card-subtitle mb-2 text-center text-danger">ERROR IN THIS PROGRAM</h6>
+                            <h6 class="card-subtitle mb-2 text-center text-danger">THIS PROGRAM NOT WORK PROPERLY</h6>
+                            <input id="input16" class="form-control form-control-sm my-4" type="text"
+                                placeholder="Enter amount" aria-label=".form-control-sm example">
+                            <div class="card-button">
+                                <button type="button" onclick="countNotes()" class="btn btn-secondary w-75">Check
+                                    Output</button>
+                            </div>
+                            <div id="countNotes" class="text-center text-danger fw-bold mt-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- !====================== 14 ======================! -->
+                <!-- Write a js program to input angles of a triangle and check whether triangle is valid or not. -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card w-100 mb-4 mb-md-0" style="min-height: 261.38px;">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-1 text-muted">Write a js program to input angles of a triangle
+                                and check whether triangle is valid or not.</h6>
+                            <input id="input17" class="form-control form-control-sm mb-1" type="text"
+                                placeholder="Enter first angles of triangle" aria-label=".form-control-sm example">
+                            <input id="input18" class="form-control form-control-sm my-1" type="text"
+                                placeholder="Enter second angles of triangle" aria-label=".form-control-sm example">
+                            <input id="input19" class="form-control form-control-sm mb-1" type="text"
+                                placeholder="Enter third angles of triangle" aria-label=".form-control-sm example">
+                            <div class="card-button">
+                                <button type="button" onclick="checkTriangleOrNot()"
+                                    class="btn btn-secondary w-75">Check
+                                    Output</button>
+                            </div>
+                            <div id="checkTriangleOrNot" class="text-center text-danger fw-bold mt-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- !====================== 15 ======================! -->
+                <!-- Write a js program to input all sides of a triangle and check whether triangle is valid or not. -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card w-100 mb-4 mb-md-0" style="min-height: 261.38px;">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-1 text-muted">Write a js program to input all sides of a
+                                triangle and check whether triangle is valid or not.</h6>
+                            <input id="input20" class="form-control form-control-sm mb-1" type="text"
+                                placeholder="Enter first side of triangle" aria-label=".form-control-sm example">
+                            <input id="input21" class="form-control form-control-sm my-1" type="text"
+                                placeholder="Enter second side of triangle" aria-label=".form-control-sm example">
+                            <input id="input22" class="form-control form-control-sm mb-1" type="text"
+                                placeholder="Enter third side of triangle" aria-label=".form-control-sm example">
+                            <div class="card-button">
+                                <button type="button" onclick="checkTriangleOrNotBySides()"
+                                    class="btn btn-secondary w-75">Check
+                                    Output</button>
+                            </div>
+                            <div id="checkTriangleOrNotBySides" class="text-center text-danger fw-bold mt-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row # 6 -->
+            <div class="row mb-3">
+                <!-- !====================== 16 ======================! -->
+                <!-- Write a js program to check whether the triangle is equilateral, isosceles or scalene triangle. -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card w-100 mb-4 mb-md-0" style="min-height: 261.38px;">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-1 text-muted">Write a js program to check whether the triangle
+                                is equilateral, isosceles or scalene triangle.</h6>
+                            <input id="input23" class="form-control form-control-sm mb-1" type="text"
+                                placeholder="Enter first side of triangle" aria-label=".form-control-sm example">
+                            <input id="input24" class="form-control form-control-sm my-1" type="text"
+                                placeholder="Enter second side of triangle" aria-label=".form-control-sm example">
+                            <input id="input25" class="form-control form-control-sm mb-1" type="text"
+                                placeholder="Enter third side of triangle" aria-label=".form-control-sm example">
+                            <div class="card-button">
+                                <button type="button" onclick="triEquiIsosScal()" class="btn btn-secondary w-75">Check
+                                    Output</button>
+                            </div>
+                            <div id="triEquiIsosScal" class="text-center text-danger fw-bold mt-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- !====================== 17 ======================! -->
+                <!-- Write a js program to find all roots of a quadratic equation. -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card w-100 mb-4 mb-md-0" style="min-height: 261.38px;">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-1 text-muted">Write a js program to find all roots of a
+                                quadratic equation.</h6>
+                            <input id="input26" class="form-control form-control-sm mb-1" type="text"
+                                placeholder="Enter coefficient of x^2" aria-label=".form-control-sm example">
+                            <input id="input27" class="form-control form-control-sm my-1" type="text"
+                                placeholder="Enter coefficient of x" aria-label=".form-control-sm example">
+                            <input id="input28" class="form-control form-control-sm mb-1" type="text"
+                                placeholder="Enter constant term" aria-label=".form-control-sm example">
+                            <div class="card-button">
+                                <button type="button" onclick="quadraticEquation()" class="btn btn-secondary w-75">Check
+                                    Output</button>
+                            </div>
+                            <div id="quadraticEquation" class="text-center text-danger fw-bold mt-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- !====================== 18 ======================! -->
+                <!-- Write a js program to calculate profit or loss. -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card w-100 mb-4 mb-md-0" style="min-height: 261.38px;">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-4 text-muted">Write a js program to calculate profit or loss.
+                            </h6>
+                            <input id="input29" class="form-control form-control-sm mb-3" type="text"
+                                placeholder="Enter cost price" aria-label=".form-control-sm example">
+                            <input id="input30" class="form-control form-control-sm my-3" type="text"
+                                placeholder="Enter selling price" aria-label=".form-control-sm example">
+                            <div class="card-button">
+                                <button type="button" onclick="profitLoss()" class="btn btn-secondary w-75">Check
+                                    Output</button>
+                            </div>
+                            <div id="profitLoss" class="text-center text-danger fw-bold mt-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row # 7 -->
+            <div class="row mb-3">
+                <!-- !====================== 19 ======================! -->
+                <!-- Write a js program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer. Calculate percentage and grade according to following: -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card w-100 mb-4 mb-md-0" style="min-height: 500px;">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">Write a js program to input marks of five subjects
+                                Physics, Chemistry, Biology, Mathematics and Computer. Calculate percentage and grade
+                                according to following:
+                                <ul>
+                                    <li>Percentage >= 90% : Grade A</li>
+                                    <li>Percentage >= 80% : Grade B</li>
+                                    <li>Percentage >= 70% : Grade C</li>
+                                    <li>Percentage >= 60% : Grade D</li>
+                                    <li>Percentage >= 40% : Grade E</li>
+                                    <li>Percentage < &nbsp;&nbsp; 40% : Grade F</li>
+                                </ul>
+                            </h6>
+                            <input id="physics" class="form-control form-control-sm mb-1" type="text"
+                                placeholder="Enter marks obtained in Physics" aria-label=".form-control-sm example">
+                            <input id="chemistry" class="form-control form-control-sm my-1" type="text"
+                                placeholder="Enter marks obtained in Chemistry" aria-label=".form-control-sm example">
+                            <input id="biology" class="form-control form-control-sm my-1" type="text"
+                                placeholder="Enter marks obtained in Biology" aria-label=".form-control-sm example">
+                            <input id="mathematics" class="form-control form-control-sm my-1" type="text"
+                                placeholder="Enter marks obtained in Mathematics" aria-label=".form-control-sm example">
+                            <input id="computer" class="form-control form-control-sm my-1" type="text"
+                                placeholder="Enter marks obtained in Computer" aria-label=".form-control-sm example">
+                            <div class="card-button">
+                                <button type="button" onclick="perGraFiveSubjects()"
+                                    class="btn btn-secondary w-75">Check
+                                    Output</button>
+                            </div>
+                            <div id="perGraFiveSubjects" class="text-center text-danger fw-bold mt-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- !====================== 20 ======================! -->
+                <!-- Write a js program to input basic salary of an employee and calculate its Gross salary according to following: -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card w-100 mb-4 mb-md-0" style="min-height: 500px;">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-5 text-muted">Write a js program to input basic salary of an
+                                employee and calculate its Gross salary according to following:
+                                <ul class="mt-3">
+                                    <li>Basic Salary <= 10000 <br> HRA=20%, DA=80%</li>
+                                    <li class="my-2">Basic Salary <= 20000 <br> HRA=25%, DA=90%</li>
+                                    <li>Basic Salary > 20000 <br> HRA = 30%, DA = 95%</li>
+                                </ul>
+                            </h6>
+                            <input id="basicSalary" class="form-control form-control-sm mb-5" type="text"
+                                placeholder="Enter basic salary of an employee" aria-label=".form-control-sm example">
+                            <div class="card-button">
+                                <button type="button" onclick="calGrossSalary()" class="btn btn-secondary w-75">Check
+                                    Output</button>
+                            </div>
+                            <div id="calGrossSalary" class="text-center text-danger fw-bold mt-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- !====================== 21 ======================! -->
+                <!-- Write a js program to input electricity unit charges and calculate total electricity bill according to the given condition: -->
+                <div class="col-sm-12 col-md-4">
+                    <div class="card w-100 mb-4 mb-md-0" style="min-height: 500px;">
+                        <div class="card-body">
+                            <h6 class="card-subtitle text-muted">Write a js program to input electricity unit
+                                charges and calculate total electricity bill according to the given condition:
+                                <ul class="mt-3">
+                                    <li>For first 50 units Rs. 0.50/unit</li>
+                                    <li class="my-2">For next 100 units Rs. 0.75/unit</li>
+                                    <li>For next 100 units Rs. 1.20/unit</li>
+                                    <li>For unit above 250 Rs. 1.50/unit</li>
+                                </ul>
+                            </h6>
+                            <h6 class="card-subtitle mb-4 text-muted">An additional surcharge of 20% is added to the
+                                bill
+                            </h6>
+                            <input id="unitCharges" class="form-control form-control-sm mb-5" type="text"
+                                placeholder="Enter electricity unit charges" aria-label=".form-control-sm example">
+                            <div class="card-button">
+                                <button type="button" onclick="electricityBill()" class="btn btn-secondary w-75">Check
+                                    Output</button>
+                            </div>
+                            <div id="electricityBill" class="text-center text-danger fw-bold mt-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="Footer nav-back shadow-byMe">
+        <div class="py-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-white text-center">
+                        <p class="mb-0">&copy; <span id="year"></span>. All Rights Reserved. | Assignment By <a
+                                class="fw-bold text-decoration-none text-white" href="https://github.com/ibtasam116"
+                                target="_blank">Muhammad IbTaSaM</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Footer Year Script -->
+    <script>
+        let now = new Date();
+        let year = now.getFullYear();
+        document.getElementById('year').innerHTML = year;
+    </script>
+
+    <script src="./js/script.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

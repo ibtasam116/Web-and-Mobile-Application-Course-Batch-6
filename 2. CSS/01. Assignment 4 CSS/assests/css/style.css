@@ -1,0 +1,335 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background: #E5E5E5; */
+}
+
+
+/* ================================== Header ==================================  */
+.first-bar {
+    height: 60px;
+    line-height: 60px;
+    background: #fff;
+
+}
+
+.nordic {
+    margin-left: 130px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.nordic:hover {
+    color: blueviolet;
+    cursor: pointer;
+}
+
+.first-bar {
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.16);
+}
+
+.first-bar>.col>ul {
+    float: right;
+    margin-right: 130px;
+}
+
+.first-bar>.col>ul>li {
+    list-style: none;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+.first-bar>.col>ul> :first-child {
+    /* color: aqua;  */
+    border-bottom: 2px black solid;
+}
+
+.first-bar>.col>ul>li:hover {
+    color: blueviolet;
+    cursor: pointer;
+}
+
+
+
+/* ================================== Main ==================================  */
+/* Few Words */
+.fowWordsText {
+    font-size: 55px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 60px;
+    font-weight: bold;
+}
+
+/* Ghost */
+.ghostText {
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 35px;
+    font-weight: 400;
+}
+
+/* Image 2 */
+.image2 {
+    /* height: 200px; */
+    width: 100%;
+
+}
+
+/* Next Section */
+.line {
+    border-top: 2px black solid;
+    width: 100%;
+}
+
+.profile1 {
+    height: 60px;
+    line-height: 27px;
+}
+
+.image3 {
+    border-radius: 50%;
+}
+
+.profile1Text {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.profile1Time {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+.icon1 {
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    padding: 5px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.para1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17.5px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: justify;
+}
+
+.para1>p {
+    padding: 0px 3px;
+}
+
+.nexton {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.para2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17.5px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: justify;
+}
+
+.para2>p {
+    padding: 0px 3px;
+}
+
+.caption1 {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    padding: 0px 90px;
+}
+
+.para3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17.5px;
+    font-weight: 400;
+    line-height: 28px;
+    /* text-align: justify; */
+}
+
+.para3>p {
+    padding: 0px 3px;
+}
+
+.listheading {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    padding-left: 3px;
+}
+
+
+
+.pointList>.col>ul>li {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 34px;
+    list-style-type: square;
+    padding: 5px 0px;
+}
+
+
+.sharelink {
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+}
+
+.sharelink>span {
+    font-size: 15px;
+    padding-left: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.sharelink>i {
+    /* font-size: 20px; */
+    cursor: pointer;
+}
+
+.tags>.col>p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+    color: #0C0C0C;
+    padding: 0px 3px;
+}
+
+.line1 {
+    border: 1px dashed black;
+    width: 100%;
+}
+
+.profile2span1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.profile2span2 {
+    font-size: 15px;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+.eyesimage>.col-12>img{
+    width: 5%;
+    position: absolute;
+    top: 544.3%;
+}
+
+.longLine {
+    /* height: 20px; */
+    border: 1px solid #000000;
+}
+
+
+.what {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 53px;
+}
+
+.cardText>.col>p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 120%;
+    /* or 26px */
+    padding: 20px 20px 10px 20px;
+}
+
+.darkline {
+    height: 12px;
+    margin-top: 70px;
+}
+
+.signup {
+    padding-top: 50px;
+}
+
+.signup>span {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 28px;
+}
+
+.updates>p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px 40px;
+}
+
+.signupbtn {
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.mailenter {
+    margin-bottom: 70px;
+}
+
+.footer {
+    margin-top: 80px;
+    height: 400px;
+    background-color: black;
+    color: white;
+}
+
+.footerlinks {
+    font-weight: 1000;
+    font-size: 10px;
+    line-height: 28px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.footnordic{
+    margin-top: 30px;
+}
+
+.nordicpara{
+    padding: 0px 20px;
+    padding-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footsocial>a{
+    color: white;
+}
+
+.footyear{
+    
+}

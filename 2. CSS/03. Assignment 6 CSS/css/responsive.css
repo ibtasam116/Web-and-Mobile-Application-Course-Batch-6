@@ -1,0 +1,112 @@
+
+@media screen and (max-width: 1200px) {
+    .foodwagon {
+        font-size: 20px;
+    }
+
+    .location {
+        font-size: 10px;
+    }
+
+    .search {
+        font-size: 10px;
+    }
+
+    #header {
+        max-height: 85vh;
+        
+    
+    }
+    
+    .yourAddress {
+        width: 58%;
+    }
+    
+
+}
+
+@media screen and (max-width: 992px) {
+    .foodwagon {
+        font-size: 15px;
+    }
+
+    .location {
+        font-size: 8px;
+    }
+
+    .search {
+        font-size: 8px;
+    }
+    
+    .yourAddress {
+        width: 45%;
+    }
+
+    .find {
+        padding: 5px 20px;
+        border-radius: 5px;
+        margin-left: 10px;
+        font-size: 10px;
+    }
+     
+    .starving {
+        margin-top: 8%;
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .foodwagon {
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    .reso  {
+        font-size: 8px;
+        display: none;
+    }
+    
+    .search {
+        text-align: center;
+        font-size: 8px;
+    }
+
+    #header {
+        max-height: 50vh;    
+    }
+
+    .imageBase {
+        display: none;
+    }
+    
+    .starving {
+        margin-top: 3%;
+        font-size: 50px;
+    }
+    .white2 {
+        margin-bottom: 50px;
+    }
+    
+
+}
+
+@media screen and (max-width: 576px) {
+    .foodwagon {
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    .reso  {
+        font-size: 8px;
+        display: none;
+    }
+    
+    .search {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+}
+

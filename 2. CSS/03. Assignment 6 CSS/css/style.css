@@ -1,0 +1,402 @@
+#top {
+    background: #FFFFFF;
+    /* Object shadow 1 */
+    box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29);
+}
+
+.foodwagon {
+    font-size: 25px;
+}
+
+.logo {
+    color: #F58D00;
+}
+
+.food {
+    color: #F17228;
+}
+
+.wagon {
+    color: #FFB30E;
+}
+
+.location {
+    font-size: 15px;
+}
+
+.location>i {
+    color: #F58D00;
+}
+
+.search {
+    font-size: 15px;
+}
+
+.search>i {
+    color: #F58D00;
+}
+
+.login>i {
+    color: #F58D00;
+}
+
+.login {
+    border: none;
+    background: #FFFFFF;
+    /* Shadow/1 */
+    box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29);
+    border-radius: 8px;
+}
+
+/* End ============ Top Bar ============ */
+
+#header {
+    /* width: 1200px; */
+    background: url("/images/Group\ 1\ 1.png");
+    max-height: 70vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* or contain, depending on your needs */
+
+}
+
+
+.starving {
+    margin-top: 13%;
+    font-size: 58px;
+    text-shadow: 0px 14px 15px rgba(255, 174, 0, 0.01), 0px 27px 82px rgba(255, 174, 0, 0.28);
+}
+
+.fewClicks {
+    font-weight: 400;
+    font-size: 15px;
+    color: #504F4F;
+}
+
+.white1 {
+    width: 90%;
+    height: 10vh;
+    background: #FFFFFF;
+    border-radius: 10px 10px 0% 0%;
+    border-bottom: 1px #F5F5F5 solid;
+    padding-top: 20px;
+}
+
+.delivery {
+    background: rgba(241, 114, 40, 0.1);
+    border-radius: 8px;
+    color: #F17228;
+}
+
+.pickup {
+    color: #757575;
+}
+
+.white2 {
+    width: 90%;
+    height: 10vh;
+    background: #FFFFFF;
+    border-radius: 0px 0px 10px 10px;
+    padding-top: 12px;
+}
+
+.typeAddress {
+    /* width: 100%; */
+    background: #F5F5F5;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #FF7474;
+    padding: 6px 10px 6px 10px;
+}
+
+.yourAddress {
+    border: none;
+    color: #9E9E9E;
+    font-size: 15px;
+    background: #F5F5F5;
+    width: 66%;
+    margin-left: 5px;
+}
+
+.find {
+    background: linear-gradient(95.71deg, #FF7A7A -39.64%, #F75900 135.31%);
+    border: none;
+    padding: 10px 27px;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.imageBase {
+    margin-top: 26%;
+    width: 80%;
+}
+
+/* End ============ Header ============ */
+
+.menuImages {
+    border-radius: 10px;
+}
+
+.menuTime {
+    background: rgba(241, 114, 40, 0.2);
+    border-radius: 8px;
+    color: #F17228;
+}
+
+.off-to {
+    background: #FFB30E;
+    border-radius: 0px 32px 0px 0px;
+    position: relative;
+    z-index: 10;
+    width: 140px;
+    height: 83px;
+    left: 0px;
+    top: 219px;
+}
+
+
+/* End ============ Header Menus ============ */
+
+.work {
+    background: linear-gradient(180deg, rgba(255, 206, 103, 0.22) -42.47%, rgba(253, 237, 202, 0) 100%);
+}
+
+.doesWork {
+    color: #F17228;
+}
+
+.workIcon {
+    font-size: 100px;
+    color: #FFCD1E;
+}
+
+.iconDetail {
+    font-size: 13px;
+    color: #9E9E9E;
+}
+
+/* End ============ Header Work ============ */
+
+
+.restaurantsImages {
+    border-radius: 10px;
+
+}
+
+.tomorrow {
+    background: rgba(241, 114, 40, 0.2);
+    border-radius: 10px;
+    color: #F17228;
+}
+
+.now {
+    background: rgba(121, 185, 60, 0.2);
+    border-radius: 10px;
+    color: #79B93C;
+}
+
+.restColor {
+    color: #FFB30E;
+}
+
+.pxxx {
+    width: 100%;
+    margin: auto;
+}
+
+.view {
+    border: none;
+    background: linear-gradient(97.86deg, #FFBA26 -8.95%, #FF9A0E 109.24%);
+    /* Shadow/1 */
+    box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29);
+    border-radius: 10px;
+    color: white;
+    font-size: 12px;
+}
+
+/* Start ============ Popular  Items ============ */
+.loc-burger {
+    color: #FFB30E;
+}
+
+.order-now {
+    border: none;
+    background: #F17228;
+    /* Shadow/2 */
+    box-shadow: 0px 5px 10px rgba(253, 114, 92, 0.22), 0px 20px 40px rgba(250, 99, 35, 0.24);
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+.next-buto {
+    background: #FFB20E;
+    border: 1px solid #FAAA01;
+    /* Button shadow ! */
+
+    box-shadow: 0px 5px 8px rgba(222, 151, 0, 0.24), 0px 14px 32px rgba(255, 178, 14, 0.29);
+    border-radius: 92px;
+}
+
+
+
+/* Start ============ Search Food ============ */
+
+.search-food {
+    background: #FEFAF1;
+}
+
+
+.view-all {
+    color: #FFB30E;
+    cursor: pointer;
+}
+
+.search-lf {
+    background: #FFB30E;
+    border: 1px solid #FAAA01;
+    /* Button shadow ! */
+    box-shadow: 0px 5px 8px rgba(222, 151, 0, 0.24), 0px 14px 32px rgba(255, 178, 14, 0.29);
+    border-radius: 100px;
+    color: white;
+    cursor: pointer;
+}
+
+.search-images {
+    border-radius: 100px;
+}
+
+/* Start ============ Install ============ */
+.install {
+    background: #FEEFD0;
+}
+
+
+/* Start ============ Proceed Order ============ */
+
+.deal-shadow {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 10px;
+}
+
+.best-deal {
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.best-deal-color {
+    color: #353535;
+}
+
+.best-deal-color1 {
+    color: #FFB800;
+}
+
+.complete {
+    text-align: justify;
+    color: rgba(97, 97, 97, 0.69);
+    font-size: 13px;
+}
+
+.deal1-img {
+    max-width: 100%;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.buton-proceed-order {
+    margin-top: 30px;
+    border: none;
+    color: white;
+    min-width: 80%;
+    background: linear-gradient(92.84deg, #FFB800 -47.72%, #FF8A00 136.81%);
+    box-shadow: 0px 5px 8px rgba(222, 151, 0, 0.24), 0px 14px 32px rgba(255, 178, 14, 0.29);
+    border-radius: 8px;
+}
+
+.deal2-img {
+    max-width: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+/* Start ============ Proceed Order ============ */
+
+.proceed-order {
+    background-image: url("/images/orderBack.png");
+    max-height: 40vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.best-deal>h5 {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.buton-proceed {
+    width: 15%;
+    border: none;
+    background: linear-gradient(93.41deg, #F17228 -5.63%, #F15E28 100.8%);
+    /* Button shadow ! */
+    box-shadow: 0px 5px 8px rgba(222, 151, 0, 0.24), 0px 14px 32px rgba(255, 178, 14, 0.29);
+    border-radius: 8px;
+    padding: 10px 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+
+/* Start ============ Footer ============ */
+.footer {
+    background-color: black;
+    color: #F5F5F5;
+}
+
+.row-border {
+    border-bottom: 1px white solid;
+    max-width: 93%;
+    margin: auto;
+}
+
+.cities>ul>li {
+    list-style-type: none;
+}
+
+.follow {
+    text-transform: uppercase;
+}
+
+.foot_icon {
+    font-size: 20px;
+}
+
+.type-email {
+    /* width: 100%; */
+    background: #424242;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #ADADAD;
+    padding: 13px 10px;
+}
+
+.your-email {
+    border: none;
+    color: #9E9E9E;
+    font-size: 15px;
+    background: #424242;
+    max-width: 66%;
+    margin-left: 5px;
+}
+
+.subscribe {
+    border: none;
+    background: linear-gradient(92.84deg, #FFB800 -47.72%, #FF8A00 136.81%);
+    /* Button shadow ! */
+    box-shadow: 0px 5px 8px rgba(222, 151, 0, 0.24), 0px 14px 32px rgba(255, 178, 14, 0.29);
+    border-radius: 8px;
+    padding: 18px 27px;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 12px;
+}
