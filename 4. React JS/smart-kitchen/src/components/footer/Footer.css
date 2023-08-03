@@ -1,0 +1,8 @@
+
+footer {
+    height: 40px;
+}
+
+footer p, footer a {
+    line-height: 40px;
+}
