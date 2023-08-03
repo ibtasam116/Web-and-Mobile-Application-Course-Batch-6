@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.order-button {
+  padding: 8px 100px 8px 100px;
+  font-size: 20px;
+}
+
+.box {
+  min-height: 250px;
+  transition: 0.5s;
+}
+
+.box:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 0;
+}
+
+.card {
+  transition: 0.5s;
+}
+
+.card:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

@@ -1,0 +1,11 @@
+header#navbar {
+    z-index: 999;
+}
+
+.top-0 {
+    top: 0 !important;
+}
+
+.position-sticky {
+    position: sticky !important;
+}
