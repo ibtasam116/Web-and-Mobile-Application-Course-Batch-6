@@ -1,9 +1,12 @@
 import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../node_modules/bootstrap/dist/js/bootstrap.min.js'
+import Alert from './components/alert/Alert';
 
 function App() {
   return (
     <>
-      <h1>Hello World</h1>
+      <Alert heading="HURRAY!" title=" You should check our new " link="happy menu"/>
     </>
   );
 }
