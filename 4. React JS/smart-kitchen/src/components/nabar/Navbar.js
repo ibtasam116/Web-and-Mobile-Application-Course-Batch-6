@@ -1,12 +1,13 @@
 import React from 'react'
 import "./Navbar.css"
+import { Link } from 'react-router-dom'
 export default function Navbar() {
     return (
         <>
             <header id="navbar" className="position-sticky top-0">
                 <nav className="navbar navbar-expand-lg navbar-dark bg-dark Pos">
                     <div className="container">
-                        <a className="navbar-brand" href="index.html">Smart Kitchen</a>
+                        <Link to="/" className="navbar-brand" href="index.html">Smart Kitchen</Link>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                             aria-label="Toggle navigation">
@@ -15,13 +16,13 @@ export default function Navbar() {
                         <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
-                                    <a className="nav-link active" aria-current="page" href="index.html">Home</a>
+                                    <Link to="/" className="nav-link active" aria-current="page" href="index.html">Home</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="menu.html">Menu</a>
+                                    <Link to="/Menu" className="nav-link" href="menu.html">Menu</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="contact.html">Contact</a>
+                                    <Link to="/Contact" className="nav-link" href="contact.html">Contact</Link>
                                 </li>
                             </ul>
                             <form className="d-flex">
