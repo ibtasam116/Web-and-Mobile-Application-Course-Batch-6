@@ -4,6 +4,7 @@ import Happy_Menu_In_Menu from '../../sections/happy_menu_in_menu/Happy_Menu_In_
 import Order_Button from '../../components/order_button/Order_Button'
 import Our_Deals from '../../sections/our_Deals/Our_Deals'
 import Our_Deals_Card from '../../components/our_deals_card/Our_Deals_Card'
+import Menu_Deals from '../../sections/menu_deals/Menu_Deals'
 
 export default function Menu() {
     return (
@@ -11,9 +12,7 @@ export default function Menu() {
             <Header />
             <Happy_Menu_In_Menu />
             <Order_Button />
-            <Our_Deals>
-                <Our_Deals_Card></Our_Deals_Card>
-            </Our_Deals>
+            <Menu_Deals />
         </>
     )
 }

@@ -8,7 +8,7 @@ export default function Footer() {
 
     return (
         <>
-            <footer>
+            <footer className="footer-Home-Menu">
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-12 col-md-4">
