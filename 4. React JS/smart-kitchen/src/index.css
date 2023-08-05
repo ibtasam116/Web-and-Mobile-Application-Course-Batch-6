@@ -16,11 +16,6 @@ main {
   flex: 1 0 auto;
 }
 
-.order-button {
-  padding: 8px 100px 8px 100px;
-  font-size: 20px;
-}
-
 .box {
   min-height: 250px;
   transition: 0.5s;

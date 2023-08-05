@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Cards_Header(props) {
+export default function Sections_Header(props) {
     return (
         <>
             <div className="row mb-4">

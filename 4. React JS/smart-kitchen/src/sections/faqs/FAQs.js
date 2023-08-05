@@ -1,6 +1,6 @@
 import React from 'react'
 import "./FAQs.css"
-import Cards_Header from "../../components/cards_header/Cards_Header"
+import Sections_Header from '../../components/sections_header/Sections_Header'
 
 
 export default function FAQs() {
@@ -8,7 +8,8 @@ export default function FAQs() {
         <>
             <div id="faqs" className="py-5">
                 <div className="container ">
-                    <Cards_Header color="text-white"
+                    <Sections_Header
+                        color="text-white"
                         heading="FAQs"
                         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Sint fugiat quaerat asperiores consectetur officia nemo pariatur, aliquam quos, 
