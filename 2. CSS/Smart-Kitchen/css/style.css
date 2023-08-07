@@ -29,7 +29,8 @@ footer {
     height: 40px;
 }
 
-footer p, footer a {
+footer p,
+footer a {
     line-height: 40px;
 }
 
@@ -38,7 +39,14 @@ footer p, footer a {
     font-size: 20px;
 }
 
-.box{
+@media screen and (max-width: 324px) {
+    .order-button {
+        padding: 8px 40px 8px 40px;
+        font-size: 20px;
+    }
+}
+
+.box {
     min-height: 250px;
     transition: 0.5s;
 }
@@ -48,7 +56,7 @@ footer p, footer a {
     border: 0;
 }
 
-.card{
+.card {
     transition: 0.5s;
 }
 

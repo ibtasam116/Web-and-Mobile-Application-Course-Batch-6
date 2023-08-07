@@ -34,28 +34,6 @@ export default function Menu_Deals() {
                             title="Burger Deal "
                             description="Lorem ipsum dolor sit amet consectetur adipisicing elit." />
 
-                        {/* <div class="col-sm-12 col-md-4">
-                            <div class="card w-100 mb-4 mb-md-0">
-                                <img src="./images/deals/7.jpg" class="card-img-top" alt="Deal 7">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Delicious Large Pizza Deal <span
-                                            class="badge bg-success">New</span></h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                        <a href="contact.html" class="btn btn-success">Order Now</a>
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-4">
-                            <div class="card w-100 mb-4 mb-md-0">
-                                <img src="./images/deals/8.jpeg" class="card-img-top" alt="Deal 8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Weekend Special Deal <span class="badge bg-success">New</span>
-                                        </h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                        <a href="contact.html" class="btn btn-success">Order Now</a>
-                                    </div>
-                            </div>
-                        </div> */}
                     </div>
                 </div>
             </div>

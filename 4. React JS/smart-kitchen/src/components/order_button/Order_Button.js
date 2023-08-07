@@ -11,7 +11,6 @@ export default function Order_Button() {
                     <div className="row text-center mb-5">
                         <div className="col">
                             <Button title="Order Now" btnColor="btn-success" class_Name="order-button" />
-                            {/* <button type="button" className="btn btn-success order-button">Order Now</button> */}
                         </div>
                     </div>
                 </div>

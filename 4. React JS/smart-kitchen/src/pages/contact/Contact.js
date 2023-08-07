@@ -14,7 +14,7 @@ export default function Contact() {
             <Header />
             <Contact_Us_Section />
             <Contact_Us_Location />
-            <Footer />
+            <Footer footbgColor="bg-dark" textColor="text-white"/>
         </>
     )
 }
