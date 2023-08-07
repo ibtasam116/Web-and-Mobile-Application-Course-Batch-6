@@ -1,12 +1,12 @@
 import React from 'react'
-import Happy_Menu_Card from '../../components/happy_menu_card/Happy_Menu_Card'
+import Home_Happy_Menu_Card from '../../components/home_happy_menu_card/Home_Happy_Menu_Card'
 
 import deals4 from "../../assets/images/deals/4.jpg"
 import deals5 from "../../assets/images/deals/5.jpg"
 import deals6 from "../../assets/images/deals/6.jpg"
 import Sections_Header from '../../components/sections_header/Sections_Header'
 
-export default function Happy_Menu() {
+export default function Home_Happy_Menu() {
     return (
         <>
             <div id="menu" className="py-5">
@@ -18,9 +18,9 @@ export default function Happy_Menu() {
                     dolore culpa aperiam voluptate quis, recusandae." />
 
                     <div className="row">
-                        <Happy_Menu_Card imgSrc={deals4} title="Rango Tango" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos omnis." />
-                        <Happy_Menu_Card imgSrc={deals5} title="Burgizza Grill" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos omnis." />
-                        <Happy_Menu_Card imgSrc={deals6} title="Crunchy Zinger Burger" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos omnis." />
+                        <Home_Happy_Menu_Card imgSrc={deals4} title="Rango Tango" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos omnis." />
+                        <Home_Happy_Menu_Card imgSrc={deals5} title="Burgizza Grill" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos omnis." />
+                        <Home_Happy_Menu_Card imgSrc={deals6} title="Crunchy Zinger Burger" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos omnis." />
                     </div>
                 </div>
             </div>

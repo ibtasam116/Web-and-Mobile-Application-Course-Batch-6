@@ -2,7 +2,7 @@ import React from 'react'
 import Badge from '../badge/Badge'
 import Button from '../button/Button'
 
-export default function Our_Deals_Card(props) {
+export default function Home_Our_Deals_Card(props) {
     return (
         <>
             <div className="col-sm-12 col-md-4">

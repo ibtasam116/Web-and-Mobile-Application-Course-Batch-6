@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Navbar.css"
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 export default function Navbar() {
     return (
         <>
@@ -16,13 +16,13 @@ export default function Navbar() {
                         <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
-                                    <Link to="/" className="nav-link active" aria-current="page" href="index.html">Home</Link>
+                                    <NavLink to="/" className="nav-link active-link" aria-current="page" href="index.html">Home</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/Menu" className="nav-link" href="menu.html">Menu</Link>
+                                    <NavLink to="/Menu" className="nav-link active-link" href="menu.html">Menu</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/Contact" className="nav-link" href="contact.html">Contact</Link>
+                                    <NavLink to="/Contact" className="nav-link active-link" href="contact.html">Contact</NavLink>
                                 </li>
                             </ul>
                             <form className="d-flex">

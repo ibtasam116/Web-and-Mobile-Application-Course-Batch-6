@@ -1,9 +1,9 @@
 import React from 'react'
 import Alert from "../../components/alert/Alert"
-import Navbar from '../../components/nabar/Navbar'
+import Navbar from '../../components/navbar/Navbar'
 import Header from '../../sections/header/Header'
-import Happy_Menu from '../../sections/happy_menu/Happy_Menu'
-import Our_Deals from '../../sections/our_Deals/Our_Deals'
+import Home_Happy_Menu from '../../sections/home_happy_menu/Home_Happy_Menu'
+import Our_Deals from '../../sections/home_our_Deals/Home_Our_Deals'
 import FAQs from '../../sections/faqs/FAQs'
 import Footer from '../../components/footer/Footer'
 
@@ -13,7 +13,7 @@ export default function Home() {
             <Alert heading="HURRAY!" title=" You should check our new " link="happy menu" />
             <Navbar />
             <Header />
-            <Happy_Menu />
+            <Home_Happy_Menu />
             <Our_Deals />
             <FAQs />
             <Footer />

@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from '../button/Button'
 
-export default function Happy_Menu_Card(props) {
+export default function Home_Happy_Menu_Card(props) {
     return (
         <>
             <div className="col-sm-12 col-md-4 ">
@@ -10,7 +10,7 @@ export default function Happy_Menu_Card(props) {
                     <div className="card-body">
                         <h5 className="card-title">{props.title}</h5>
                         <p className="card-text">{props.description}</p>
-                        <Button btnColor="btn-success" title="Order Now"/>
+                        <Button btnColor="btn-success" title="Order Now" />
                     </div>
                 </div>
             </div>
