@@ -7,7 +7,7 @@
 }
 
 .nordic {
-    /* margin-left: 130px; */
+    margin-left: 30px;
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
     text-transform: uppercase;
@@ -48,30 +48,35 @@ ul> :first-child {
     .nordic {
         font-size: 18px;
     }
+
+    ul {
+        display: none;
+    }
+
+    .menu-icon {
+        display: inline;
+        position: absolute;
+        left: 90%;
+        top: 37%;
+    }
 }
 
-    @media screen and (max-width: 425px) {
-        ul {
-            display: none;
-        }
-
-        .nordic {
-            font-size: 15px;
-        }
-
-
-        .menu-icon {
-            display: inline;
-            position: absolute;
-            left: 90%;
-            top: 37%;
-        }
+@media screen and (max-width: 425px) {
+    ul {
+        display: none;
     }
 
-    @media screen and (max-width: 280px) {
-        .nordic {
-            font-size: 15px;
-            letter-spacing: 2px;
-        }
-
+    .nordic {
+        margin-left: 2px;
     }
+
+}
+
+@media screen and (max-width: 280px) {
+    .nordic {
+        margin-left: 2px;
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+
+}
