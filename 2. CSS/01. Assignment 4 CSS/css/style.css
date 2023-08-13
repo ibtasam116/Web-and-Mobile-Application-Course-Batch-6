@@ -13,36 +13,8 @@ body {
 
 
 
-.tags>.col>p {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    /* identical to box height */
-    letter-spacing: 0.03em;
-    color: #0C0C0C;
-    padding: 0px 3px;
-}
 
-.line1 {
-    border: 1px dashed black;
-    width: 100%;
-}
 
-.profile2span1 {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 13px;
-    letter-spacing: 1px;
-}
-
-.profile2span2 {
-    font-size: 15px;
-    font-weight: 400;
-    font-size: 13px;
-    text-align: justify;
-    letter-spacing: 1px;
-}
 
 .eyesimage>.col-12>img{
     width: 5%;
