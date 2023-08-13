@@ -1,0 +1,19 @@
+.what {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 53px;
+}
+
+.caption-down {
+    font-weight: 600;
+    padding: 10px 0px;
+}
+
+
+@media screen and (max-width: 425px) {
+    .what {
+        font-size: 30px;
+    }
+}
