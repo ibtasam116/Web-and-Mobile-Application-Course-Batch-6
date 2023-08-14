@@ -5,12 +5,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap demo</title>
+
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/ae0435f7ac.js" crossorigin="anonymous"></script>
-  <!-- Custom CSS -->
+
+  <!-- Navbar CsS -->
+  <link rel="stylesheet" href="./css/navbar.css">
+
+  <!-- Style CSS -->
   <link rel="stylesheet" href="./css/style.css">
 
 </head>
@@ -18,8 +24,8 @@
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container">
-      <img src="./assests/images/logo.png" alt="">
-      <a class="navbar-brand ms-2 fw-bold" href="#">TROPIKO</a>
+      <img src="./assests/images/logo.png" alt="logo">
+      <a class="navbar-brand ms-0 ms-md-3 logo-text" href="#">TROPIKO</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -27,7 +33,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
         <form class="d-flex" role="search">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ">
             <li class="nav-item">
               <a class="nav-link active me-4" aria-current="page" href="#">Home</a>
             </li>
@@ -41,10 +47,15 @@
               <a class="nav-link active me-4" href="#">Contact Us</a>
             </li>
             <li class="nav-item">
-              <i class="fa-solid fa-magnifying-glass nav-link mt-1 me-4"></i>
+              <i class="fa-solid fa-magnifying-glass nav-link mt-1 me-4 d-none d-lg-block"></i>
+            </li>
+            <li class="nav-item">
+              <input type="text" class="d-block d-lg-none mb-3 search-bar" placeholder="Search">
+            </li>
+            <li>
+              <button class="py-2 px-3 nav-button">Get a quote</button>
             </li>
           </ul>
-          <button class="px-2 bg-danger border-danger text-white py-1">SHOPE NOW</button>
         </form>
       </div>
     </div>
@@ -56,7 +67,8 @@
       <div class="row">
         <div class="col-xl-6 col-lg-6 col-sm-12 mt-5 welcome text-lg-start text-center">
           <h1>Welcome to our Fruits Shop</h1>
-          <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, quidem quis non excepturi tenetur, similique
+          <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, quidem quis non excepturi
+            tenetur, similique
             esse eligendi corrupti dicta deleniti eveniet architecto rem pariatur. Temporibus eveniet porro dolores
             perspiciatis odio.</p>
           <button class="px-4 bg-danger border-danger text-white py-1">SHOPE NOW</button>
@@ -69,8 +81,7 @@
     </div>
   </div>
 
-  <main class="main">
-    <!-- Services -->
+  <!-- <main class="main">
     <div class="services">
       <div class="container">
         <div class="row mt-5">
@@ -120,10 +131,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <!-- Fresh Fruits -->
-    <div class="fresh-fruits">
+  <!-- Fresh Fruits -->
+  <!-- <div class="fresh-fruits">
       <div class="container">
         <div class="row mt-5">
           <div class="col-12 text-center">
@@ -138,7 +149,7 @@
               tenetur, similique
               esse eligendi corrupti dicta deleniti eveniet architecto rem pariatur. Temporibus eveniet porro dolores
               perspiciatis odio.</p>
-                <button class="px-4 bg-black border-black text-white py-1">Buy Now</button>
+            <button class="px-4 bg-black border-black text-white py-1">Buy Now</button>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-12 pt-5">
             <div class="col-6 text-center"><img src="./assests/images/orange.png" class="fresh" alt=""></div>
@@ -171,10 +182,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <!-- Testimonial -->
-    <div class="testimonial">
+  <!-- Testimonial -->
+  <!-- <div class="testimonial">
       <div class="container">
         <div class="row">
           <div class="col-12 col-sm-12 text-center">
@@ -190,10 +201,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <!-- Contact -->
-    <div class="contact">
+  <!-- Contact -->
+  <!-- <div class="contact">
       <div class="container-fluid">
         <div class="row my-5">
           <div class="col-xl-6 col-lg-6 col-sm-12 contact-right-p">
@@ -266,7 +277,7 @@
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
