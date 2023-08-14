@@ -1,0 +1,55 @@
+.footer {
+    background-color: black;
+    color: white;
+}
+
+.footerlinks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerlinks li {
+    font-size: 13px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.footerlinks li:hover {
+    color: blueviolet;
+    transition: 0.5s;
+}
+
+.footer-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.footer-title:hover {
+    color: blueviolet;
+    transition: 0.5s;
+}
+
+.nordicPara {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footerSocialIcons a {
+    color: white;
+}
+
+.footerSocialIcons a:hover {
+    color: blueviolet;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 323px) {
+    .footer-title {
+        font-size: 30px;
+    }
+}

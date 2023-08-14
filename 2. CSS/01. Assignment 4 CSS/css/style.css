@@ -2,55 +2,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background: #E5E5E5; */
 }
 
 .image2 {
     width: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-.footer {
-    margin-top: 80px;
-    height: 400px;
-    background-color: black;
-    color: white;
-}
-
-.footerlinks {
-    font-weight: 1000;
-    font-size: 10px;
-    line-height: 28px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-
-.footnordic{
-    margin-top: 30px;
-}
-
-.nordicpara{
-    padding: 0px 20px;
-    padding-top: 20px;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.footsocial>a{
-    color: white;
-}
-
-/* .footyear{
-    
-} */
