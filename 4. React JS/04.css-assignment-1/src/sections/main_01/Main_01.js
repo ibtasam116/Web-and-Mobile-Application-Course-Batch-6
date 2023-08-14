@@ -1,8 +1,8 @@
 import React from "react";
 
-import img2 from '../../../assets/images/image2.png'
+import img2 from '../../assets/images/image2.png'
 
-import './Main01.css'
+import './Main_01.css'
 
 export default function Main01() {
     return (

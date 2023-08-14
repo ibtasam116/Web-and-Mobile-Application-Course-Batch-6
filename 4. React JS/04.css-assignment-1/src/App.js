@@ -4,19 +4,13 @@ import 'bootstrap/dist/js/bootstrap.bundle';
 
 import Navbar from './components/header/navbar/Navbar';
 
-import Main01 from './components/Main/main01/Main01';
+import Main01 from './sections/main_01/Main_01';
 
-import Main02 from './components/Main/main_02_03/Main_02_03';
+import Main_02_03 from './sections/main_02_03/Main_02_03';
 
-import Footer from './components/Footer/Footer';
+import Cards from './sections/cards/Cards';
 
-
-
-import Eyes from './components/Main/Eyes/Eyes';
-
-import Main3 from './components/Main/Main3/Main3';
-
-import Main4 from './components/Main/Main4/Main4';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -24,19 +18,12 @@ function App() {
       <Navbar />
 
       <Main01 />
-      
-      <Main02 />
-      
-      {/* 
 
+      <Main_02_03 />
 
-      <Eyes />
+      <Cards />
 
-      <Main3 />
-
-      <Main4 />
-
-      <Footer /> */}
+      <Footer />
     </>
   );
 }

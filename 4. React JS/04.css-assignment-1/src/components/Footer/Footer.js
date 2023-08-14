@@ -2,53 +2,50 @@ import React from "react";
 
 import './Footer.css'
 
-// import footerImg from '../images/NORDIC ROSE.png'
-
-// let now = new Date()
-// let year = now.getFullYear()
-// document.getElementById("year").innerText = year
-
 export default function Footer() {
+
+    let now = new Date();
+    let year = now.getFullYear();
+
     return (
-        <footer className="footer">
-            <div className="row footerlinks text-center">
-                <div className="col-2 fw-bold">Digital product design</div>
-                <div className="col">Remote work</div>
-                <div className="col fw-bold">UX design</div>
-                <div className="col-2">Distributed teams</div>
-                <div className="col fw-bold">Creativity</div>
-                <div className="col">Strategy</div>
-                <div className="col fw-bold">Suspense</div>
-                <div className="col">Growth</div>
-            </div>
-            <div className="row text-center mt-5">
-                <div className="col-12 footnordic">
-                    <img src={footerImg} alt="" srcset="" />
-                </div>
-                <div className="col-12 w-75 m-auto">
-                    <div className="col-12 w-50 m-auto">
-                        <p className="mb-0 nordicpara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu velit
-                            tempus erat egestas
-                            efficitur.
-                            In hac habitasse platea dictumst. Fusce a nunc eget ligula suscipit finibus. </p>
-                    </div>
-                </div>
-                <div className="col-12 w-75 m-auto mt-4">
-                    <div className="col-12 w-50 m-auto footsocial">
-                        <a href="">Twitter</a>
-                        <a href="" className="px-4">LinkedIn</a>
-                        <a href="">RSS</a>
-                    </div>
-                </div>
-                <div className="col-12 w-75 m-auto mt-4">
-                    <div className="col-12 w-50 m-auto footyear">
-                        <p className="mb-0 mt-4">&copy; 2021-<span id="year"></span>. Nordic Rose Co. <br /> All rights reserved.
-                        </p>
-                    </div>
-                </div>
 
-            </div>
-
-        </footer>
+        <>
+            <footer className="footer mt-5">
+                <div className="container-fluid">
+                    <div className="row">
+                        <ul className="footerlinks text-center">
+                            <li className="fw-bold d-none d-sm-block d-lg-block">Digital product design</li>
+                            <li className="d-none d-md-none d-lg-block">Remote work</li>
+                            <li className="fw-bold">UX design</li>
+                            <li className="d-none d-sm-none d-md-block">Distributed teams</li>
+                            <li className="fw-bold">Creativity</li>
+                            <li className="d-none d-sm-none d-md-block">Strategy</li>
+                            <li className="fw-bold d-none d-md-none d-lg-block">Suspense</li>
+                            <li className="d-none d-sm-block d-lg-block">Growth</li>
+                        </ul>
+                    </div>
+                    <div className="row text-center mt-5">
+                        <div className="col-12 col-md-8 col-lg-4 offset-md-2 offset-lg-4">
+                            <div className="footer-title">nordic rose</div>
+                            <p className="nordicPara my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu
+                                velit
+                                tempus erat egestas
+                                efficitur.
+                                In hac habitasse platea dictumst. Fusce a nunc eget ligula suscipit finibus. </p>
+                            <div className="footerSocialIcons">
+                                <a href="">Twitter</a>
+                                <a href="" className="px-4">LinkedIn</a>
+                                <a href="">RSS</a>
+                            </div>
+                        </div>
+                        <div className="col-12 mt-4">
+                            <p className="mb-2">&copy; 2021-<span>{year}</span>. Nordic Rose Co. <br /> All rights
+                                reserved.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </>
     )
 }

@@ -1,0 +1,98 @@
+.what {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 53px;
+}
+
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 1s;
+}
+
+.caption-down {
+    font-weight: 600;
+    padding: 10px 0px;
+}
+
+.card-border {
+    border-top: 10px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.card-title h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    color: black;
+}
+
+.card-description p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 0px 110px;
+}
+
+.card-input input {
+    width: 60%;
+    height: 8vh;
+    outline: none;
+}
+
+.card-input input:hover {
+    outline: 2px blueviolet solid;
+    border-radius: 2px;
+    border: none;
+}
+
+.card-input button {
+    width: 20%;
+    height: 8vh;
+    background-color: black;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.card-input button:hover {
+    background-color: blueviolet;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 991px) {
+    .card-title h1 {
+        font-size: 30px;
+    }
+
+    .card-description p {
+        font-size: 14px;
+        padding: 0px 80px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .what {
+        font-size: 30px;
+    }
+
+    .card-title h1 {
+        font-size: 26px;
+    }
+
+    .card-description p {
+        font-size: 14px;
+        padding: 0px 50px;
+    }
+
+    .card-input button {
+        width: 30%;
+        height: 8vh;
+
+    }
+}

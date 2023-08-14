@@ -22,6 +22,7 @@
 .nordic:hover {
     color: blueviolet;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .nav-lis ul {
@@ -38,6 +39,7 @@
 .nav-lis ul li:hover {
     color: blueviolet;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .nav-lis ul :first-child {

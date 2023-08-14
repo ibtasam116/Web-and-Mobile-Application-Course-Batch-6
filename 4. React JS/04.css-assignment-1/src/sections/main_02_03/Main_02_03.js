@@ -2,11 +2,11 @@ import React from "react";
 
 import './Main_02_03.css'
 
-import img3 from '../../../assets/images/image3.png'
+import img3 from '../../assets/images/image3.png'
 
-import rectangle from '../../../assets/images/Rectangle8.png'
+import rectangle from '../../assets/images/Rectangle8.png'
 
-import imgEyes from '../../../assets/images/eyes.png'
+import imgEyes from '../../assets/images/eyes.png'
 
 import { FaTwitter, FaFacebook, FaWhatsapp } from 'react-icons/fa';
 
