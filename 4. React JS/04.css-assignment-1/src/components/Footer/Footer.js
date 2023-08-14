@@ -2,7 +2,7 @@ import React from "react";
 
 import './Footer.css'
 
-import footerImg from '../images/NORDIC ROSE.png'
+// import footerImg from '../images/NORDIC ROSE.png'
 
 // let now = new Date()
 // let year = now.getFullYear()

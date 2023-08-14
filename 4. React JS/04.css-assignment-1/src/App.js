@@ -2,13 +2,15 @@ import './App.scss';
 
 import 'bootstrap/dist/js/bootstrap.bundle';
 
-import Header from './components/Header';
+import Navbar from './components/header/navbar/Navbar';
+
+import Main01 from './components/Main/main01/Main01';
+
+import Main02 from './components/Main/main_02_03/Main_02_03';
 
 import Footer from './components/Footer/Footer';
 
-import Main1 from './components/Main/Main1/Main1';
 
-import Main2 from './components/Main/Main2/Main2';
 
 import Eyes from './components/Main/Eyes/Eyes';
 
@@ -19,19 +21,22 @@ import Main4 from './components/Main/Main4/Main4';
 function App() {
   return (
     <>
-      <Header />
+      <Navbar />
 
-      <Main1 />
+      <Main01 />
+      
+      <Main02 />
+      
+      {/* 
 
-      <Main2 />
 
       <Eyes />
 
       <Main3 />
-      
+
       <Main4 />
 
-      <Footer />
+      <Footer /> */}
     </>
   );
 }

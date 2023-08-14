@@ -2,12 +2,12 @@ import React from "react";
 
 import './Main3.css';
 
-import rectangle1 from '../../images/Rectangle4.png'
-import rectangle2 from '../../images/Rectangle11.png'
-import rectangle3 from '../../images/Rectangle10.png'
-import rectangle4 from '../../images/Rectangle37.png'
-import rectangle5 from '../../images/Rectangle39.png'
-import rectangle6 from '../../images/Rectangle38.png'
+// import rectangle1 from '../../images/Rectangle4.png'
+// import rectangle2 from '../../images/Rectangle11.png'
+// import rectangle3 from '../../images/Rectangle10.png'
+// import rectangle4 from '../../images/Rectangle37.png'
+// import rectangle5 from '../../images/Rectangle39.png'
+// import rectangle6 from '../../images/Rectangle38.png'
 
 export default function Main3() {
     return (
