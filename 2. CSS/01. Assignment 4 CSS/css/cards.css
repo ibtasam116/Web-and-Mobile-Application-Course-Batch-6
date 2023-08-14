@@ -43,7 +43,8 @@
     height: 8vh;
     outline: none;
 }
-.card-input input:hover{
+
+.card-input input:hover {
     outline: 2px blueviolet solid;
     border-radius: 2px;
     border: none;
@@ -64,18 +65,39 @@
     transition: 0.5s;
 }
 
-.signupbtn {
-    background-color: black;
-    color: white;
-    text-transform: uppercase;
-    cursor: pointer;
+
+
+
+
+
+@media screen and (max-width: 991px) {
+    .card-title h1 {
+        font-size: 30px;
+    }
+
+    .card-description p {
+        font-size: 14px;
+        padding: 0px 80px;
+    }
 }
-
-
-
 
 @media screen and (max-width: 425px) {
     .what {
         font-size: 30px;
+    }
+
+    .card-title h1 {
+        font-size: 26px;
+    }
+
+    .card-description p {
+        font-size: 14px;
+        padding: 0px 50px;
+    }
+
+    .card-input button {
+        width: 30%;
+        height: 8vh;
+      
     }
 }
