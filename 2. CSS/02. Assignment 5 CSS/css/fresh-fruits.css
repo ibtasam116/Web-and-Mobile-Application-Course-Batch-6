@@ -1,0 +1,7 @@
+.fruits-title:hover {
+    color: orangered;
+    transition: 0.5s;
+}
+.fresh{
+    width: 80%;
+}
