@@ -1,0 +1,32 @@
+.services-title:hover {
+    color: orangered;
+    transition: 0.5s;
+}
+
+.services-card {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.services-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: 0.5s;
+}
+
+.services-card-img {
+    width: 20%;
+    margin: auto;
+}
+
+.services-card-title {
+    color: orangered;
+    display: inline;
+}
+
+.services-card-description {
+    color: black;
+}
+
+.services-card-title:hover {
+    border-bottom: 3px solid orangered;
+    transition: 0.5s;
+}
