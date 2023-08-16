@@ -13,8 +13,12 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/ae0435f7ac.js" crossorigin="anonymous"></script>
 
+    <!-- Navbar CSS -->
+    <link rel="stylesheet" href="css/navbar.css">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 
 </head>
@@ -22,32 +26,54 @@
 <body>
 
     <!-- Top Bar -->
-    <div id="top">
+    <div id="navbar">
         <div class="container">
-            <div class="row py-3">
-                <div class="col-sm-12 col-md-3 text-center">
-                    <div class="foodwagon fw-bold">
-                        <i class="fa-solid fa-burger logo"></i>
-                        <span class="food">food</span><span class="wagon">waGon</span>
+            <div class="row py-2 d-flex align-items-center">
+                <div class="col-12 col-md-3">
+                    <div class="nav-logo">
+                        <a href=""><i class="fa-solid fa-burger"></i></a>
+                        <a href=""><span class="food">food</span><span class="wagon">waGon</span></a>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 mt-md-2 reso text-center pt-">
-                    <div class="location text-wrap">
-                        <span class="fw-bold">Deliver to: </span>&nbsp;
-                        <i class="fa-solid fa-location-dot"></i>
-                        <span> Current Location</span>
+                <div class="col-12 col-md-6">
+                    <div class="text-center">
+                        <span class="fw-bold">Deliver to:</span>
+                        <a href=""><i class="fa-solid fa-location-dot px-2 location-icon"></i></a>
+                        <span>Current Location</span>
                         <span class="fw-bold">Mohammadpur Bus Stand, Dhaka</span>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-3 text-center">
-                    <div class="search fw-bold">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <span>Search Food</span>
-                        <button class="login py-2 px-3 ms-3 mt-md-1">
-                            <i class="fa-solid fa-user"></i>
-                            <span class="fw-bold ms-2">Login</span>
+                <div class="col-12 col-md-3">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <div class="search" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                            <span class="fw-bold px-2 search-title">Search Food</span>
+                        </div>
+                        <button class="nav-btn py-2 px-3 ms-3">
+                            <i class="fa-solid fa-user pe-2"></i>
+                            <span class="fw-bold">Login</span>
                         </button>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
                 </div>
             </div>
         </div>

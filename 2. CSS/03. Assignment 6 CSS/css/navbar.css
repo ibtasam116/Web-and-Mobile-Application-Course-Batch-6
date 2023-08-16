@@ -1,0 +1,57 @@
+.nav-logo i {
+    font-size: 30px;
+    color: #FFB30E;
+}
+
+.food {
+    font-size: 25px;
+    font-weight: bold;
+    color: #F17228;
+}
+
+.wagon {
+    font-weight: bold;
+    font-size: 25px;
+    color: #FFB30E;
+}
+
+.location-icon {
+    color: #F58D00;
+}
+
+.search {
+    cursor: pointer;
+}
+
+.search:hover{
+    color: #F58D00;
+    transition: 0.5s;
+}
+.search-icon {
+    color: #F58D00;
+    font-weight: bold;
+}
+
+.nav-btn {
+    outline: none;
+    border: none;
+    color: #F58D00;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.nav-btn:hover {
+    box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29);
+    transition: 0.5s;
+}
+
+@media screen and (max-width:1199px) {
+    
+
+    .search-title{
+      
+        font-size: 12px;
+    }
+
+
+}

@@ -1,10 +1,15 @@
+a{
+    text-decoration: none;
+    color: white;
+}
+
 #top {
     background: #FFFFFF;
     /* Object shadow 1 */
     box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29);
 }
 
-.foodwagon {
+/* .foodwagon {
     font-size: 25px;
 }
 
@@ -18,9 +23,9 @@
 
 .wagon {
     color: #FFB30E;
-}
+} */
 
-.location {
+/* .location {
     font-size: 15px;
 }
 
@@ -43,10 +48,10 @@
 .login {
     border: none;
     background: #FFFFFF;
-    /* Shadow/1 */
+    Shadow/1
     box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29);
     border-radius: 8px;
-}
+} */
 
 /* End ============ Top Bar ============ */
 

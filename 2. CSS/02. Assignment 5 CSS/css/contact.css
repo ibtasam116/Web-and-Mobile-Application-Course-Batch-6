@@ -4,6 +4,11 @@
     font-weight: bold;
 }
 
+.contact-title:hover{
+    color: orangered;
+    transition: 0.5s;
+}
+
 .form-inputs {
     width: 100%;
     outline: none;
