@@ -25,6 +25,12 @@
   <!-- Fresh Fruits CsS -->
   <link rel="stylesheet" href="./css/fresh-fruits.css">
 
+  <!-- Testimonial CsS -->
+  <link rel="stylesheet" href="./css/testimonial.css">
+
+  <!-- Contact CsS -->
+  <link rel="stylesheet" href="./css/contact.css">
+
   <!-- Style CSS -->
   <link rel="stylesheet" href="./css/style.css">
 
@@ -53,7 +59,7 @@
               <a class="nav-link active me-4" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active me-4" href="#">Contact Us</a>
+              <a class="nav-link active me-4" href="#contact">Contact Us</a>
             </li>
             <li class="nav-item">
               <i class="fa-solid fa-magnifying-glass nav-link mt-1 me-4 d-none d-lg-block"></i>
@@ -222,56 +228,65 @@
     </div>
 
     <!-- Testimonial -->
-    <!-- <div class="testimonial">
+    <div class="testimonial">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-sm-12 text-center">
-            <h1 class="fw-bold">Testimonial</h1>
-            <p class="mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-            <img src="./assests/images/client.png" class="clien pt-5 img-fluid" alt="">
+          <div class="col-12 col-md-10 offset-md-1 text-center">
+            <h1 class="fw-bold testimonial-title">Testimonial</h1>
+            <p class="mb-0">Lorem ipsum dolor sit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam,
+              sapiente doloribus facere quaerat,</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center my-5">
+            <img src="./assests/images/client.png" class="img-fluid" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center">
             <h4>Johnhex</h4>
             <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam debitis amet consectetur.
               Porro illo
               molestiae fugit aliquam cumque quod, quam dolore dicta ullam minus odit distinctio aperiam quis, iste
               necessitatibus.</p>
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- Contact -->
-    <!-- <div class="contact">
-      <div class="container-fluid">
-        <div class="row my-5">
-          <div class="col-xl-6 col-lg-6 col-sm-12 contact-right-p">
-            <h1>Contact Us</h1>
-            <div class="form-floating mb-3">
-              <input type="name" class="form-control" id="floatingInput" placeholder="name@example.com">
-              <label for="floatingInput">Name</label>
-            </div>
-            <div class="form-floating mb-3">
-              <input type="phone" class="form-control" id="floatingPassword" placeholder="Password">
-              <label for="floatingPassword">Phone Number</label>
-            </div>
-            <div class="form-floating mb-3">
-              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-              <label for="floatingPassword">Email</label>
-            </div>
-            <div class="form-floating">
-              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                style="height: 100px"></textarea>
-              <label for="floatingTextarea2">Comments</label>
-            </div>
-            <button class="px-4 bg-danger border-danger text-white py-1 mt-4">SEND</button>
-          </div>
-          <div class="col-xl-6 col-lg-6 col-sm-12 text-end">
-            <img src="./assests/images/orange-dish.png" class="img-fluid" alt="">
+            <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- Contact -->
+    <div class="contact mt-5" id="contact">
+      <div class="container-fluid">
+        <div class="row my-5 d-flex align-items-center">
+          <div class="col-12 col-md-6">
+            <form action="">
+              <h1 class="contact-title mb-5 text-center text-md-start">Contact Us</h1>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-inputs" placeholder="Name" required>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-inputs mt-3" placeholder="Phone Number" required>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-inputs mt-3" placeholder="Email" required>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-inputs mt-5" placeholder="Message" required>
+              </div>
+              <button class="px-5 py-2 mt-5 contact-btn contact-btn-color" type="submit">Send</button>
+            </form>
+            <!-- <button class="px-4 bg-danger border-danger text-white py-1 mt-4">SEND</button> -->
+          </div>
+          <div class="col-12 col-md-6 text-end mb-3">
+            <img src="./assests/images/orange-dish.png" class="img-fluid mt-4 mt-md-0" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 
     <div class="container">
       <div class="row">
         <div class="col-lg-3 col-sm-12 col-md-6">

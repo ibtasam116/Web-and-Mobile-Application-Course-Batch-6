@@ -1,0 +1,5 @@
+.testimonial-title:hover {
+    color: orangered;
+    transition: 0.5s;
+}
+

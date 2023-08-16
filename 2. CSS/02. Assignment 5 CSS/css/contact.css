@@ -1,0 +1,30 @@
+.contact-title {
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.form-inputs {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.contact-btn {
+    color: white;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+}
+
+.contact-btn-color {
+    background-color: orangered;
+    align-items: center;
+}
+
+.contact-btn-color:hover {
+    background-color: black;
+    transition: 0.5s;
+}
