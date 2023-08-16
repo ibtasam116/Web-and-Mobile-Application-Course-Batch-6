@@ -44,6 +44,6 @@
 }
 
 .services-read-more-btn-color:hover {
-    background-color: rgb(65, 61, 61);
+    background-color: orangered;
     transition: 0.5s;
 }

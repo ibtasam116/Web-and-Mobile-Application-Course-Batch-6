@@ -2,6 +2,29 @@
     color: orangered;
     transition: 0.5s;
 }
-.fresh{
+
+.fruits-card-title:hover {
+    color: orangered;
+    transition: 0.5s;
+}
+
+.fruits-img {
     width: 80%;
+}
+
+.fruits-btn {
+    color: white;
+    font-weight: 600;
+    outline: none;
+    border: none;
+}
+
+.fruit-buy-now-btn-color {
+    background-color: black;
+    align-items: center;
+}
+
+.fruit-buy-now-btn-color:hover {
+    background-color: orangered;
+    transition: 0.5s;
 }
