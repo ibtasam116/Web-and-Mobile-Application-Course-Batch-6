@@ -31,6 +31,9 @@
   <!-- Contact CsS -->
   <link rel="stylesheet" href="./css/contact.css">
 
+  <!-- Footer CsS -->
+  <link rel="stylesheet" href="./css/footer.css">
+
   <!-- Style CSS -->
   <link rel="stylesheet" href="./css/style.css">
 
@@ -62,11 +65,12 @@
               <a class="nav-link active me-4" href="#contact">Contact Us</a>
             </li>
             <li class="nav-item">
-              <i class="fa-solid fa-magnifying-glass nav-link mt-1 me-4 d-none d-lg-block"></i>
+              <i class="fa-solid fa-magnifying-glass nav-link mt-1 mb-3 mb-lg-0 me-4 d-block d-lg-block" data-bs-toggle="modal"
+                data-bs-target="#exampleModal"></i>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <input type="text" class="d-block d-lg-none mb-3 search-bar" placeholder="Search">
-            </li>
+            </li> -->
             <li>
               <button class="py-2 px-3 nav-button">Get a quote</button>
             </li>
@@ -90,8 +94,10 @@
               perspiciatis odio.</p>
           </div>
           <div class="pt-0 pt-lg-5">
-            <button class="px-2 px-sm-4 py-2 header-btn header-shope-btn-color">SHOPE NOW</button>
-            <button class="px-2 px-sm-4 py-2 header-btn header-contact-btn-color">CONTACT US</button>
+            <button class="px-2 px-sm-4 py-2 header-btn header-shope-btn-color"><a href="#fresh-fruits"
+                class="text-decoration-none text-white">SHOPE NOW</a></button>
+            <button class="px-2 px-sm-4 py-2 header-btn header-contact-btn-color"><a href="#contact"
+                class="text-decoration-none text-white">CONTACT US</a></button>
           </div>
         </div>
         <div class="col-12 col-lg-6 pb-4 d-flex justify-content-center align-items-center pt-4 pt-lg-0">
@@ -185,7 +191,7 @@
             </div>
           </div>
           <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
-            <div class="mt-4 mt-md-0">
+            <div class="mt-5 mt-md-0">
               <img src="./assests/images/orange.png" class="fruits-img ms-4 ms-md-0" alt="">
             </div>
           </div>
@@ -258,7 +264,7 @@
     <!-- Contact -->
     <div class="contact mt-5" id="contact">
       <div class="container-fluid">
-        <div class="row my-5 d-flex align-items-center">
+        <div class="row mt-5 mb-0 mb-md-5  d-flex align-items-center">
           <div class="col-12 col-md-6">
             <form action="">
               <h1 class="contact-title mb-5 text-center text-md-start">Contact Us</h1>
@@ -274,67 +280,104 @@
               <div class="form-floating">
                 <input type="text" class="form-inputs mt-5" placeholder="Message" required>
               </div>
-              <button class="px-5 py-2 mt-5 contact-btn contact-btn-color" type="submit">Send</button>
+              <div class="text-center text-md-start">
+                <button class="px-5 py-2 mt-5 contact-btn contact-btn-color" type="submit">Send</button>
+              </div>
             </form>
             <!-- <button class="px-4 bg-danger border-danger text-white py-1 mt-4">SEND</button> -->
           </div>
-          <div class="col-12 col-md-6 text-end mb-3">
-            <img src="./assests/images/orange-dish.png" class="img-fluid mt-4 mt-md-0" alt="">
+          <div class="col-12 col-md-6 text-center text-md-end">
+            <div class="img-width">
+              <img src="./assests/images/orange-dish.png" class="img-direction img-fluid mt-4 mt-md-0" alt="">
+            </div>
           </div>
         </div>
       </div>
     </div>
 
 
-    <!-- 
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-sm-12 col-md-6">
-          <h4>Fruits</h4>
-          <p class="mb-0 w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quisquam ab temporibus
-            harum quis libero
-            sunt error officia.</p>
+
+    <div class="container-fluid">
+      <div class="row d-flex align-items-center">
+        <div class="col-12 col-sm-6 col-lg-3 text-start text-sm-center text-md-start">
+          <h4 class="footer-header-title">Fruits</h4>
+          <div class="footer-header-width">
+            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quisquam ab temporibus
+              harum quis libero
+              sunt error officia.</p>
+          </div>
         </div>
-        <div class="col-lg-3 col-sm-12 col-md-6">
-          <h4>Services</h4>
-          <p class="mb-0 w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quisquam ab temporibus
-            harum quis libero
-            sunt error officia.</p>
+        <div class="col-12 col-sm-6 col-lg-3 text-start text-sm-center text-md-start mt-4 mt-sm-0">
+          <h4 class="footer-header-title">Services</h4>
+          <div class="footer-header-width">
+            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quisquam ab temporibus
+              harum quis libero
+              sunt error officia.</p>
+          </div>
         </div>
-        <div class="col-lg-3 col-sm-12 col-md-6">
-          <h4>List</h4>
-          <p class="mb-0 w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quisquam ab temporibus
-            harum quis libero
-            sunt error officia.</p>
+        <div
+          class="col-12 col-sm-6 col-lg-3 d-block d-sm-none d-md-block text-start text-sm-center text-md-start mt-4 mt-md-0">
+          <h4 class="footer-header-title">List</h4>
+          <div class="footer-header-width">
+            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quisquam ab temporibus
+              harum quis libero
+              sunt error officia.</p>
+          </div>
         </div>
-        <div class="col-lg-3 col-sm-12 col-md-6">
-          <h4 class="mb-3">Follow Us</h4>
-          <img src="./assests/images/fb.png" class="social-links img-fluid" alt="">
-          <img src="./assests/images/twitter.png" class="social-links img-fluid" alt="">
-          <img src="./assests/images/linkedin.png" class="social-links img-fluid" alt="">
-          <img src="./assests/images/instagram.png" class="social-links img-fluid" alt="">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3 mt-4 mt-sm-5 mt-md-0  text-center text-md-start">
+          <h4 class="mb-3 footer-header-title">Follow Us</h4>
+          <div class="footer-header-img text-center">
+            <img src="./assests/images/fb.png" class="img-fluid" alt="">
+            <img src="./assests/images/twitter.png" class="img-fluid" alt="">
+            <img src="./assests/images/linkedin.png" class="img-fluid" alt="">
+            <img src="./assests/images/instagram.png" class="img-fluid" alt="">
+          </div>
           <h5 class="mt-4">Subscribe Now</h5>
-          <input type="text"><br>
-          <button class="px-4 bg-danger border-danger text-white py-1 mt-4">Subscribe</button>
+          <input type="text" class="footer-header-text"><br>
+          <button class="px-4 py-2 mt-3 footer-header-btn footer-header-btn-color" type="submit">Subscribe</button>
         </div>
       </div>
     </div>
   </main>
 
-  <footer class="footer mt-5">
+
+  <footer class="footer mt-5 bg-body-tertiary">
     <div class="container-fluid">
       <div class="row text-center">
         <div class="col">
-          <p class="mb-0 py-3 fw-bold">Copyright &copy; 2022 All Rights Reserved By Dev Umair</p>
+          <p class="mb-0 py-3 fw-bold">Copyright &copy; 2022 <span class="d-block d-sm-inline"></span> All Rights
+            Reserved By Dev Umair</span></p>
         </div>
       </div>
     </div>
-  </footer> -->
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Search Box</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="p-3 ">
+          <input class="form-control form-control-sm" type="text" placeholder="Write any query."
+            aria-label=".form-control-sm example">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <div class="text-center">
+            <button class="px-4 py-2 mt-3 footer-header-btn footer-header-btn-color rounded"
+              type="submit">Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

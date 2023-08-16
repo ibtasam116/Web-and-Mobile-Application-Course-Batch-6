@@ -28,3 +28,14 @@
     background-color: black;
     transition: 0.5s;
 }
+
+.img-direction {
+    max-width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .img-direction {
+        transform: rotate(-90deg);
+        margin-top: -15% !important;
+    }
+}
