@@ -55,17 +55,6 @@ a{
 
 /* End ============ Top Bar ============ */
 
-#header {
-    /* width: 1200px; */
-    background: url("/images/Group\ 1\ 1.png");
-    max-height: 70vh;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* or contain, depending on your needs */
-
-}
-
 
 .starving {
     margin-top: 13%;

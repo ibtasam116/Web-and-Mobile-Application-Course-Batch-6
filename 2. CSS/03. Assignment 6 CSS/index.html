@@ -16,6 +16,9 @@
     <!-- Navbar CSS -->
     <link rel="stylesheet" href="css/navbar.css">
 
+    <!-- Header CSS -->
+    <link rel="stylesheet" href="css/header.css">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -28,7 +31,7 @@
     <!-- Navbar Bar -->
     <div id="navbar">
         <div class="container">
-            <div class="row py-2 d-flex align-items-center">
+            <div class="row py-1 py-sm-2 d-flex align-items-center">
                 <div class="col-12 col-md-3 py-1 py-sm-0 text-center text-md-start">
                     <div class="nav-logo">
                         <a href=""><i class="fa-solid fa-burger"></i></a>
@@ -60,8 +63,8 @@
             </div>
         </div>
     </div>
-    <!-- Modal -->
 
+    <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -80,40 +83,47 @@
             </div>
         </div>
     </div>
+
     <!-- Header -->
-    <!-- <header id="header">
+    <header id="header">
         <div class="container">
             <div class="row">
-                <div class="col-md-7">
-                    <h1 class="starving text-white fw-bold">Are you starving?</h1>
-                    <h6 class="fewClicks py-3">Within a few clicks, find meals that are accessible near you</h6>
-                    <div class="white1 px-4">
-                        <span class="delivery py-2 px-3">
-                            <i class="fa-solid fa-motorcycle pe-1"></i>
-                            <span>Delivery</span>
-                        </span>
-                        <span class="pickup py-2 px-4 ms-1">
-                            <i class="fa-solid fa-bag-shopping pe-1"></i>
-                            <span>Pickup</span>
-                        </span>
-                    </div>
-                    <div class="white2 px-4">
-                        <span class="typeAddress">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <input class="yourAddress" type="text" name="" id="" placeholder="Enter Your Address">
-                        </span>
-                        <Button class="find text-white"><i class="fa-solid fa-magnifying-glass"></i>
-                            Find Food</Button>
+                <div class="col-12 col-md-8 my-3 my-md-2 my-lg-5">
+                    <h1 class="header-title">Are you starving?</h1>
+                    <h6 class="header-description py-2 mb-3">Within a few clicks, find meals that are accessible near you</h6>
+                    <div class="header-card p-3 rounded">
+                        <div class="mb-4">
+                            <button class="header-deliver-btn py-1 px-3 rounded">
+                                <i class="fa-solid fa-motorcycle"></i>
+                                <span>Delivery</span>
+                            </button>
+                            <button class="header-pickup-btn py-1 px-3 rounded ms-2">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                <span>Pickup</span>
+                            </button>
+                        </div>
+                        <div class="d-sm-flex">
+                            <div class="header-icon-input rounded py-1">
+                                <i class="fa-solid fa-location-dot header-icon px-2"></i>
+                                <input class="header-input" type="text" name="" id="" placeholder="Enter Your Address">
+                            </div>
+                            <div class="ms-3">
+                                <Button class="py-2 px-4 rounded header-find-btn mt-3 mt-sm-0">
+                                    <i class="fa-solid fa-magnifying-glass me-1"></i>
+                                    <span>Find Food</span>
+                                </Button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-5 col-sm-12">
-                    <div>
-                        <img src="./images/Image Base.png" class="imageBase img-fluid" alt="Image Base">
+                <div class="col-12 col-md-4 d-flex justify-content-center align-items-end">
+                    <div class="">
+                        <img src="./images/Image Base.png" class="img-fluid" alt="Image Base">
                     </div>
                 </div>
             </div>
         </div>
-    </header> -->
+    </header>
 
     <!-- Header Menus -->
     <!-- <div class="container py-5">

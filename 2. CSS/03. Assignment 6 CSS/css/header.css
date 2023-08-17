@@ -1,0 +1,124 @@
+#header {
+    background: url("/images/Group\ 1\ 1.png");
+    max-height: 200vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0px 0px 0px;
+}
+
+
+.header-title {
+    color: white;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.header-description {
+    color: #504F4F;
+    font-size: 15px;
+}
+
+.header-card {
+    background-color: white;
+    width: 80%;
+}
+
+.header-deliver-btn {
+    border: none;
+    background: rgba(241, 114, 40, 0.1);
+    color: #F17228;
+}
+
+.header-deliver-btn:hover {
+    /* box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29); */
+    box-shadow: rgba(240, 112, 8, 0.4) 0px 0px 0px 2px, rgba(233, 109, 8, 0.65) 0px 4px 6px 3px, rgba(238, 118, 5, 0.08) 0px 1px 0px inset;
+    transition: 0.5s;
+}
+
+.header-pickup-btn {
+    color: #757575;
+    background-color: white;
+    border: none;
+}
+
+.header-pickup-btn:hover {
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px 3px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    transition: 0.5s;
+}
+
+.header-icon-input {
+    background-color: #F5F5F5;
+    width: 74%;
+}
+
+.header-icon {
+    color: #F17228;
+}
+
+.header-input {
+    background-color: #F5F5F5;
+    width: 80%;
+    outline: none;
+    border: none;
+}
+
+.header-find-btn {
+    background-color: #F17228;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.header-find-btn:hover {
+    background-color: #d85508;
+    box-shadow: rgba(240, 112, 8, 0.4) 0px 0px 0px 2px, rgba(233, 109, 8, 0.65) 0px 4px 6px 3px, rgba(238, 118, 5, 0.08) 0px 1px 0px inset;
+    transition: 0.5s;
+}
+
+
+@media screen and (min-width: 992px) and (max-width:1199px) {
+    #header {
+        padding: 0px 0px 0px 0px;
+    }
+
+    .header-icon-input {
+        width: 70%;
+    }
+}
+
+
+@media screen and (min-width:575px) and (max-width:992px) {
+    #header {
+        padding: 0px 0px 0px 0px;
+    }
+
+    .header-title {
+        font-size: 50px;
+    }
+
+    .header-icon-input {
+        width: 60%;
+    }
+
+    .header-description {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .header-title {
+        font-size: 30px;
+    }
+    .header-card {
+        width: 100%;
+    }
+
+    .header-icon-input {
+        width: 100%;
+    }
+
+   
+}
