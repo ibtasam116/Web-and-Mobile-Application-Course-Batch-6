@@ -19,17 +19,33 @@
     color: #F58D00;
 }
 
+.location-title {
+    display: inline;
+}
+
 .search {
     cursor: pointer;
 }
 
-.search:hover{
+.search-title {
+    display: inline;
+}
+
+
+.search:hover {
     color: #F58D00;
     transition: 0.5s;
 }
+
 .search-icon {
     color: #F58D00;
     font-weight: bold;
+}
+
+.down-icon {
+    color: #F58D00;
+    font-weight: bold;
+    font-size: 22px;
 }
 
 .nav-btn {
@@ -45,13 +61,49 @@
     transition: 0.5s;
 }
 
-@media screen and (max-width:1199px) {
-    
-
-    .search-title{
-      
-        font-size: 12px;
+@media screen and (min-width:768px) and (max-width:1199px) {
+    .location-title {
+        display: block;
     }
 
+    .search-title {
+        display: none !important;
+    }
 
+}
+
+@media screen and (max-width:991px) {
+    .nav-logo i {
+        font-size: 25px;
+    }
+
+    .food {
+        font-size: 20px;
+    }
+
+    .wagon {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:513px) {
+    .nav-logo i {
+        font-size: 30px;
+    }
+
+    .food {
+        font-size: 25px;
+    }
+
+    .wagon {
+        font-size: 25px;
+    }
+
+    .location {
+        font-size: 13px;
+    }
+
+    .location-title {
+        display: block;
+    }
 }
