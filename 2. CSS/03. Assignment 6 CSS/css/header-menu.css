@@ -2,9 +2,17 @@
     border: none !important;
 }
 
-.header-card-img:hover {
+.header-menu-card-img {
+    overflow: hidden;
+}
+
+.card-img {
+    transition: all ease 1s;
+}
+
+.card-img:hover {
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    transition: 0.5s;
+    scale: 1.2;
 }
 
 .header-card-discount {
@@ -19,11 +27,12 @@
     font-size: 40px;
 }
 
-.header-card-discount-per{
+.header-card-discount-per {
     font-size: 20px;
     margin-top: -10px;
 }
-.header-card-discount-off{
+
+.header-card-discount-off {
     font-size: 13px;
     margin-top: -10px;
 }
@@ -39,4 +48,43 @@
     cursor: default;
     box-shadow: rgba(240, 112, 8, 0.4) 0px 0px 0px 2px, rgba(233, 109, 8, 0.65) 0px 4px 6px 3px, rgba(238, 118, 5, 0.08) 0px 1px 0px inset;
     transition: 0.5s;
+}
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+    .header-card-discount {
+        top: 48%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    .header-card-discount {
+        top: 42%;
+    }
+
+    .header-card-discount-num h5 {
+        font-size: 25px;
+        margin-top: 4px;
+    }
+
+    .header-card-discount-per {
+        font-size: 13px;
+        margin-top: -7px;
+    }
+
+    .header-card-discount-off {
+        font-size: 8px;
+        margin-top: -4px;
+    }
+}
+
+@media screen and (min-width:575px) and (max-width:767px) {
+    .header-card-discount {
+        top: 52%;
+    }
+    
+}
+@media screen and (max-width:574px) {
+    .header-card-discount {
+    }
+
 }

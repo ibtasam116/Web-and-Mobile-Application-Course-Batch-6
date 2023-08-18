@@ -25,6 +25,7 @@
 
 .search {
     cursor: pointer;
+    transition: all ease 0.5s;
 }
 
 .search-title {
@@ -34,7 +35,6 @@
 
 .search:hover {
     color: #F58D00;
-    transition: 0.5s;
 }
 
 .search-icon {
@@ -54,11 +54,11 @@
     color: #F58D00;
     background-color: white;
     border-radius: 10px;
+    transition: all ease 0.5s;
 }
 
 .nav-btn:hover {
     box-shadow: rgba(240, 112, 8, 0.4) 0px 0px 0px 2px, rgba(233, 109, 8, 0.65) 0px 4px 6px 3px, rgba(238, 118, 5, 0.08) 0px 1px 0px inset;
-    transition: 0.5s;
 }
 
 @media screen and (min-width:768px) and (max-width:1199px) {

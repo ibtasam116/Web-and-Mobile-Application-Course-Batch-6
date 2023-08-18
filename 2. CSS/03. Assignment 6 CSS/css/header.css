@@ -28,23 +28,23 @@
     border: none;
     background: rgba(241, 114, 40, 0.1);
     color: #F17228;
+    transition: all ease 0.5s;
 }
 
 .header-deliver-btn:hover {
     /* box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29); */
     box-shadow: rgba(240, 112, 8, 0.4) 0px 0px 0px 2px, rgba(233, 109, 8, 0.65) 0px 4px 6px 3px, rgba(238, 118, 5, 0.08) 0px 1px 0px inset;
-    transition: 0.5s;
 }
 
 .header-pickup-btn {
     color: #757575;
     background-color: white;
     border: none;
+    transition: all ease 0.5s;
 }
 
 .header-pickup-btn:hover {
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px 3px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-    transition: 0.5s;
 }
 
 .header-icon-input {
@@ -70,12 +70,12 @@
     color: white;
     font-size: 10px;
     font-weight: bold;
+    transition: all ease 0.5s;
 }
 
 .header-find-btn:hover {
     background-color: #d85508;
     box-shadow: rgba(240, 112, 8, 0.4) 0px 0px 0px 2px, rgba(233, 109, 8, 0.65) 0px 4px 6px 3px, rgba(238, 118, 5, 0.08) 0px 1px 0px inset;
-    transition: 0.5s;
 }
 
 .header-side-img {
