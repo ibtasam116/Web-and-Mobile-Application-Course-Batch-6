@@ -1,10 +1,69 @@
-.popular-items-title{
+.popular-items-title {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
     transition: all ease 0.5s;
 }
 
-.popular-items-title:hover{
+.popular-items-title:hover {
     color: #F17228;
+}
+
+.popular-items-img-div {
+    overflow: hidden;
+    transition: all ease 0.5s;
+}
+
+.popular-items-img-div:hover {
+    box-shadow: rgba(241, 114, 40, 0.589) 0px 10px 30px;
+}
+
+.popular-items-img {
+    transition: all ease 1s;
+}
+
+.popular-items-img:hover {
+    scale: 1.5;
+}
+
+.popular-items-icon {
+    color: #FFB30E;
+}
+
+.popular-items-btn {
+    background-color: rgba(241, 114, 40, 1);
+    width: 100%;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    box-shadow: 0px 20px 40px 0px rgba(250, 99, 35, 0.24), 0px 5px 10px 0px rgba(253, 114, 92, 0.22);
+}
+
+.popular-items-pre-btn{
+    background-color: #FFB30E;
+    border: none;
+    outline: none;
+}
+
+@media screen and (min-width:576px) and (max-width:991px) {
+    .popular-items-card-title{
+        font-size: 11px;
+    }
+    
+    .popular-items-icon {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width:306px) {
+    .popular-items-card-title{
+        font-size: 11px;
+    }
+    
+    .popular-items-icon {
+        font-size: 11px;
+    }
+    
 }
