@@ -41,29 +41,53 @@
     box-shadow: 0px 20px 40px 0px rgba(250, 99, 35, 0.24), 0px 5px 10px 0px rgba(253, 114, 92, 0.22);
 }
 
-.popular-items-pre-btn{
+.popular-items-pn-btn {
     background-color: #FFB30E;
+    color: white;
     border: none;
     outline: none;
+    font-size: 30px;
+    padding: 8px 20px;
+    transition: all ease 0.5s;
+}
+
+.popular-items-pn-btn:hover {
+    box-shadow: rgba(238, 120, 10, 0.856) 0px 10px 20px;
+}
+
+.popular-items-next-btn {
+    margin-top: 45%;
+}
+
+.popular-items-pre-btn {
+    margin-top: 45%;
+    margin-left: 70%;
+}
+
+
+@media screen and (max-width:767px) {
+    .popular-items-pre {
+        display: none;
+    }
 }
 
 @media screen and (min-width:576px) and (max-width:991px) {
-    .popular-items-card-title{
+    .popular-items-card-title {
         font-size: 11px;
     }
-    
+
     .popular-items-icon {
         font-size: 11px;
     }
 }
 
 @media screen and (max-width:306px) {
-    .popular-items-card-title{
+    .popular-items-card-title {
         font-size: 11px;
     }
-    
+
     .popular-items-icon {
         font-size: 11px;
     }
-    
+
 }
