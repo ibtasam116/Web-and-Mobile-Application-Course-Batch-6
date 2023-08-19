@@ -1,0 +1,127 @@
+<div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <h3 class="pb-4 fw-bold text-center pt-5">Popular items</h3>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="row row-cols-5 g-2">
+                        <div class="col">
+                            <img src="./images/Popular Items/Image1.png" class="card-img-top menuImages" alt="...">
+                            <h6 class="fw-bold pt-2">Greys Vage</h6>
+                            <div class="loc-burger">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Burger Arena</span>
+                            </div>
+                            <span class="fw-bold">$3.88</span>
+                            <button class="w-100 mt-2 order-now py-3 fw-bold text-white">Order Now</button>
+                        </div>
+                        <div class="col">
+                            <img src="./images/Popular Items/Image2.png" class="card-img-top menuImages" alt="...">
+                            <h6 class="fw-bold pt-2">Toffe’s Cake</h6>
+                            <div class="loc-burger">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Top Sticks</span>
+                            </div>
+                            <span class="fw-bold">$4.00</span>
+                            <button class="w-100 mt-2 order-now py-3 fw-bold text-white">Order Now</button>
+                        </div>
+                        <div class="col">
+                            <img src="./images/Popular Items/Image3.png" class="card-img-top menuImages" alt="...">
+                            <h6 class="fw-bold pt-2">Dancake</h6>
+                            <div class="loc-burger">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Dancake</span>
+                            </div>
+                            <span class="fw-bold">$1.99</span>
+                            <button class="w-100 mt-2 order-now py-3 fw-bold text-white">Order Now</button>
+                        </div>
+                        <div class="col">
+                            <img src="./images/Popular Items/Image4.png" class="card-img-top menuImages" alt="...">
+                            <h6 class="fw-bold pt-2">Crispy Sandwitch</h6>
+                            <div class="loc-burger">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Fastfood Dine</span>
+                            </div>
+                            <span class="fw-bold">$3.00</span>
+                            <button class="w-100 mt-2 order-now py-3 fw-bold text-white">Order Now</button>
+                        </div>
+                        <div class="col">
+                            <img src="./images/Popular Items/Image5.png" class="card-img-top menuImages" alt="...">
+                            <h6 class="fw-bold pt-2">Thai Soup</h6>
+                            <div class="loc-burger">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Foody man</span>
+                            </div>
+                            <span class="fw-bold">$2.79</span>
+                            <button class="w-100 mt-2 order-now py-3 fw-bold text-white">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row row-cols-5 g-2">
+                        <div class="col">
+                            <img src="./images/Popular Items/Image1.png" class="card-img-top menuImages" alt="...">
+                            <h6 class="fw-bold pt-2">Greys Vage</h6>
+                            <div class="loc-burger">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Burger Arena</span>
+                            </div>
+                            <span class="fw-bold">$3.88</span>
+                            <button class="w-100 mt-2 order-now py-3 fw-bold text-white">Order Now</button>
+                        </div>
+                        <div class="col">
+                            <img src="./images/Popular Items/Image2.png" class="card-img-top menuImages" alt="...">
+                            <h6 class="fw-bold pt-2">Toffe’s Cake</h6>
+                            <div class="loc-burger">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Top Sticks</span>
+                            </div>
+                            <span class="fw-bold">$4.00</span>
+                            <button class="w-100 mt-2 order-now py-3 fw-bold text-white">Order Now</button>
+                        </div>
+                        <div class="col">
+                            <img src="./images/Popular Items/Image3.png" class="card-img-top menuImages" alt="...">
+                            <h6 class="fw-bold pt-2">Dancake</h6>
+                            <div class="loc-burger">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Dancake</span>
+                            </div>
+                            <span class="fw-bold">$1.99</span>
+                            <button class="w-100 mt-2 order-now py-3 fw-bold text-white">Order Now</button>
+                        </div>
+                        <div class="col">
+                            <img src="./images/Popular Items/Image4.png" class="card-img-top menuImages" alt="...">
+                            <h6 class="fw-bold pt-2">Crispy Sandwitch</h6>
+                            <div class="loc-burger">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Fastfood Dine</span>
+                            </div>
+                            <span class="fw-bold">$3.00</span>
+                            <button class="w-100 mt-2 order-now py-3 fw-bold text-white">Order Now</button>
+                        </div>
+                        <div class="col">
+                            <img src="./images/Popular Items/Image5.png" class="card-img-top menuImages" alt="...">
+                            <h6 class="fw-bold pt-2">Thai Soup</h6>
+                            <div class="loc-burger">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Foody man</span>
+                            </div>
+                            <span class="fw-bold">$2.79</span>
+                            <button class="w-100 mt-2 order-now py-3 fw-bold text-white">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>

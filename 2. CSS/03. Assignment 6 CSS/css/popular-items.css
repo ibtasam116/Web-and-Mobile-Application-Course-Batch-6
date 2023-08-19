@@ -1,0 +1,10 @@
+.popular-items-title{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    transition: all ease 0.5s;
+}
+
+.popular-items-title:hover{
+    color: #F17228;
+}
