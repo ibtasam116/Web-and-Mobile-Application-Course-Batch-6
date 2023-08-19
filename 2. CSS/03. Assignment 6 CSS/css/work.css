@@ -1,0 +1,38 @@
+#work {
+    background: linear-gradient(180deg, rgba(255, 206, 103, 0.22) -42.47%, rgba(253, 237, 202, 0) 100%);
+}
+
+.work-title {
+    color: #F17228;
+}
+
+.work-icon {
+    font-size: 100px;
+    color: #FFCD1E;
+    filter: drop-shadow(0px 20px 40px rgba(255, 174, 0, 0.29)) drop-shadow(0px 5px 10px rgba(255, 174, 0, 0.26));
+}
+
+.work-icon:hover {
+    /* display: inline-block;
+    margin: 0 0.5rem; */
+
+    animation: pulse;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s;
+    /* don't forget to set a duration! */
+}
+
+.work-icon-title{
+    font-size: 15px;
+    font-weight: bold;
+    transition: all ease 0.5s;
+}
+
+.work-icon-title:hover{
+    color: #F17228;
+}
+
+.work-icon-detail {
+    font-size: 15px;
+    color: #9E9E9E;
+}
