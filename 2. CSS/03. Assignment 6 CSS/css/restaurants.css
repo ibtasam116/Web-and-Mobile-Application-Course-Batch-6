@@ -1,0 +1,57 @@
+.restaurants-main-img-div {
+    overflow: hidden;
+    transition: all ease 0.5s;
+}
+
+.restaurants-main-img-div:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.restaurants-main-img {
+    transition: all ease 1s;
+
+}
+
+
+.restaurants-main-img:hover {
+    scale: 1.5;
+}
+
+.featured-restaurants-sm-img {
+    transition: all ease 0.5s;
+    border-radius: 10px;
+}
+
+.featured-restaurants-sm-img:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.restaurants-star-num {
+    color: #FFB30E;
+}
+
+.restaurants-tomorrow-btn {
+    background-color: rgba(241, 114, 40, 0.20);
+    font-weight: bold;
+    color: #F17228;
+    font-size: 15px;
+}
+
+.restaurants-tomorrow-btn:hover {
+    cursor: default;
+    box-shadow: rgba(240, 112, 8, 0.4) 0px 0px 0px 2px, rgba(233, 109, 8, 0.65) 0px 4px 6px 3px, rgba(238, 118, 5, 0.08) 0px 1px 0px inset;
+    transition: 0.5s;
+}
+
+.restaurants-now-btn{
+    background: rgba(121, 185, 60, 0.20);
+    font-weight: bold;
+    color: rgba(121, 185, 60, 1);
+    font-size: 15px;
+}
+.restaurants-now-btn:hover{
+    cursor: default;
+    box-shadow: rgba(3, 145, 51, 0.671) 0px 0px 0px 2px, rgba(3, 116, 40, 0.705) 0px 4px 6px 3px, rgba(238, 118, 5, 0.08) 0px 1px 0px inset;
+    transition: 0.5s;
+}
