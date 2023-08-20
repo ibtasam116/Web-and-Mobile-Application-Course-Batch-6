@@ -34,6 +34,12 @@
     <!-- Restaurants CSS -->
     <link rel="stylesheet" href="css/restaurants.css">
 
+    <!-- Search Food CSS -->
+    <link rel="stylesheet" href="css/search-food.css">
+
+    <!-- Deal Food CSS -->
+    <link rel="stylesheet" href="css/deal.css">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -100,7 +106,7 @@
     </div>
 
     <!-- Header -->
-    <!-- <header id="header">
+    <header id="header">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-8 my-3 my-md-2 my-lg-5">
@@ -139,10 +145,10 @@
                 </div>
             </div>
         </div>
-    </header> -->
+    </header>
 
     <!-- Header Menus -->
-    <!-- <div class="container">
+    <div class="container">
         <div class="row my-5 text-center text-sm-start animate__animated animate__flipInX">
             <div class="col-12 col-sm-6 col-md-3">
                 <div class="card header-menu-card">
@@ -241,10 +247,10 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <!-- Header Work -->
-    <!-- <div id="work">
+    <div id="work">
         <div class="container text-center py-5">
             <h3 class="work-title pb-4">How does it work</h3>
             <div class="row">
@@ -275,10 +281,10 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <!-- Popular  Items -->
-    <!-- <div id="Popular-Items">
+    <div id="Popular-Items">
         <div class="container-fluid pb-5">
             <h3 class="popular-items-title py-5">Popular items</h3>
             <div class="row">
@@ -349,10 +355,10 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <!-- Restaurants -->
-    <!-- <div class="restaurants">
+    <div class="restaurants">
         <div class="container py-5">
             <h3 class="pb-4 fw-bold text-center">Featured Restaurants</h3>
 
@@ -588,52 +594,61 @@
                 <button class="restaurants-view-btn py-2 px-4 fw-bold rounded">
                     <span>View All</span>
                     <i class="fa-solid fa-greater-than ms-2"></i>
+                </button>
             </div>
-            </button>
         </div>
-    </div> -->
+    </div>
 
     <!-- Search Food -->
     <div class="search-food">
-        <div class="container pt-5 pb-4">
-            <div class="row row-cols-2 g-2 pb-5">
-                <div class="col">
-                    <h3 class="fw-bold">Search by Food</h3>
+        <div class="container py-5">
+            <div class="row pb-5 mt-3 d-flex align-items-center">
+                <div class="col-12 col-sm-6 text-center text-sm-start mb-3 mb-sm-0">
+                    <h3 class="fw-bold search-food-title">Search by Food</h3>
                 </div>
-                <div class="col text-end">
-                    <span class="view-all me-2">View All</span>
-                    <i class="fa-solid fa-greater-than view-all"></i>
-                    <span class="px-4 py-3 mx-3 search-lf">
+                <div class="col-12 col-sm-6 text-center text-sm-end">
+                    <button class="search-food-view-btn d-none d-sm-inline">View All
+                        <i class="fa-solid fa-greater-than ms-2"></i>
+                    </button>
+                    <button class="search-food-btn search-food-less-btn rounded-circle">
                         <i class="fa-solid fa-less-than"></i>
-                    </span>
-                    <span class="px-4 py-3 search-lf">
+                    </button>
+                    <button class="search-food-view-btn d-inline d-sm-none">View All
+                    </button>
+                    <button class="search-food-btn search-food-greater-btn rounded-circle">
                         <i class="fa-solid fa-greater-than"></i>
-                    </span>
+                    </button>
                 </div>
             </div>
-            <div class="row row-cols-6  g-4 text-center">
-                <div class="col">
-                    <img src="./images/Rearch Food/Image1.png" class="card-img-top search-images" alt="...">
+            <div class="row text-center">
+                <div class="col-12 col-sm-4 col-md-2">
+                    <img src="./images/Rearch Food/Image1.png" class="search-food-img img-fluid rounded-circle"
+                        alt="...">
                     <h6 class="pt-3 fw-bold">Pizza</h6>
                 </div>
-                <div class="col">
-                    <img src="./images/Rearch Food/Image2.png" class="card-img-top search-images" alt="...">
+                <div class="col-12 col-sm-4 col-md-2 mt-4 mt-sm-0">
+                    <img src="./images/Rearch Food/Image2.png" class="search-food-img img-fluid rounded-circle"
+                        alt="...">
                     <h6 class="pt-3 fw-bold">Burger</h6>
                 </div>
-                <div class="col">
-                    <img src="./images/Rearch Food/Image3.png" class="card-img-top search-images" alt="...">
+                <div class="col-12 col-sm-4 col-md-2 mt-4 mt-sm-0">
+                    <img src="./images/Rearch Food/Image3.png" class="search-food-img img-fluid rounded-circle"
+                        alt="...">
                     <h6 class="pt-3 fw-bold">Noodles</h6>
                 </div>
-                <div class="col">
-                    <img src="./images/Rearch Food/Image4.png" class="card-img-top search-images" alt="...">
+                <div class="col-12 col-sm-4 col-md-2 mt-4 mt-md-0">
+                    <img src="./images/Rearch Food/Image4.png" class="search-food-img img-fluid rounded-circle"
+                        alt="...">
                     <h6 class="pt-3 fw-bold">Sub-sandiwch</h6>
                 </div>
-                <div class="col">
-                    <img src="./images/Rearch Food/Image5.png" class="card-img-top search-images" alt="...">
+                <div class="col-12 col-sm-4 col-md-2 mt-4 mt-md-0">
+                    <img src="./images/Rearch Food/Image5.png" class="search-food-img img-fluid rounded-circle"
+                        alt="...">
                     <h6 class="pt-3 fw-bold">Chowmein</h6>
                 </div>
-                <div class="col">
-                    <img src="./images/Rearch Food/Image6.png" class="card-img-top search-images" alt="...">
+                <div class="col-12 col-sm-4 col-md-2 mt-4 mt-md-0">
+                    <img src="./images/Rearch Food/Image6.png" class="search-food-img img-fluid rounded-circle"
+                        alt="...">
                     <h6 class="pt-3 fw-bold">Steak</h6>
                 </div>
             </div>
@@ -641,38 +656,93 @@
     </div>
 
     <!-- Install App -->
-    <!-- <div class="container-fluid">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-12 install">
                 <img src="./images/Features.png" class="img-fluid" alt="">
                 <img src="./images/App Download.png" class="img-fluid" alt="">
             </div>
         </div>
-    </div>> -->
+    </div>
+
+
     <!-- Deals -->
-    <!-- <div class="deals py-5">
+    <div class="deals py-5">
         <div class="container">
-            <div class="deal-shadow my-5">
-                <div class="row">
-                    <div class="col-12 col-md-4 ps-4">
-                        <div class="mx-5 mt-5">
-                            <p class="mb-0 pt-5 fw-bold best-deal best-deal-color">Best deals <span
-                                    class="best-deal-color1">Crispy Sandwiches</span></p>
-                            <p class="mb-0 complete pt-3">Enjoy the large size of sandwiches. Complete
+            <div class="row deal-card-shadow">
+                <div class="col-12 col-sm-5 col-md-4 px-3 px-sm-5  d-flex justify-content-center flex-column">
+                    <div>
+                        <div class="mb-2 mb-md-5">
+                            <p class="deal-card-title">Best deals <span class="deal-card-color2">Crispy
+                                    Sandwiches</span></p>
+                            <p class="mb-0 mb-4 deal-card-description">Enjoy the large size of sandwiches. Complete
                                 perfect slice of sandwiches.</p>
                         </div>
-                        <div class="text-center mt-5">
-                            <button class="buton-proceed-order py-3 px-1 fw-bold">
+                        <div>
+                            <button class="deal-btn py-2 py-sm-1 py-md-2 rounded text-center">
                                 <span>Proceed to order</span>
-                                <i class="fa-solid fa-greater-than"></i>
+                                <i class="fa-solid fa-greater-than ms-2"></i>
+                            </button>
                         </div>
                     </div>
-                    <div class="col-12 col-md-8">
-                        <img src="./images/Deals/Image1.png" class="deal1-img" alt="">
+                </div>
+                <div class="col-12 col-sm-7 col-md-8 mt-4 mt-sm-0">
+                    <div class="deal-img-div text-end ms-0 ms-sm-3">
+                        <img src="./images/Deals/Image1.png" class="deal-img img-fluid" alt="">
                     </div>
                 </div>
             </div>
-            <div class="deal-shadow my-5">
+
+            <div class="row my-5 deal-card-shadow deal-card-display">
+                <div class="col-12 col-sm-7 col-md-8 mt-4 mt-sm-0">
+                    <div class="deal-img-div">
+                        <img src="./images/Deals/Image2.png" class="deal-img img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-5 col-md-4 px-3 px-sm-5 d-flex justify-content-center flex-column">
+                    <div>
+                        <div class="mb-2 mb-md-5">
+                            <p class="deal-card-title deal-card-title-md">Celebrate  parties
+                                with <span class="deal-card-color2">Fried Chicken</span></p>
+                            <p class="mb-0 mb-4 deal-card-description deal-card-description-md">Get the best fried chicken smeared with a lip smacking lemon chili flavor. Check out 
+                                best deals for fried chicken.</p>
+                        </div>
+                        <div>
+                            <button class="deal-btn py-2 py-sm-1 py-md-2 rounded text-center">
+                                <span>Proceed to order</span>
+                                <i class="fa-solid fa-greater-than ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row deal-card-shadow mt-4 mt-sm-0">
+                <div class="col-12 col-sm-5 col-md-4 px-3 px-sm-5  d-flex justify-content-center flex-column">
+                    <div class="sha">
+                        <div class="mb-2 mb-md-5">
+                            <p class="deal-card-title">Wanna eat hot 
+                                & spicy <span class="deal-card-color2">Pizza?</span></p>
+                            <p class="mb-0 mb-4 deal-card-description">Pair up with a friend and enjoy the 
+                                hot and crispy pizza pops. Try it 
+                                with the best deals.</p>
+                        </div>
+                        <div>
+                            <button class="deal-btn py-2 py-sm-1 py-md-2 rounded text-center">
+                                <span>Proceed to order</span>
+                                <i class="fa-solid fa-greater-than ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-7 col-md-8 mt-4 mt-sm-0">
+                    <div class="deal-img-div text-end ms-0 ms-sm-3">
+                        <img src="./images/Deals/Image3.png" class="deal-img img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="deal-shadow my-5">
                 <div class="row">
                     <div class="col-12 col-md-8">
                         <img src="./images/Deals/Image2.png" class="deal2-img" alt="">
@@ -714,9 +784,10 @@
                         <img src="./images/Deals/Image1.png" class="deal1-img" alt="">
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
-    </div> -->
+    </div>
+
     <!-- Proceed Order -->
     <!-- <div class="proceed-order">
         <div class="container py-5">

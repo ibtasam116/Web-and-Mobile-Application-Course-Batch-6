@@ -1,0 +1,60 @@
+.search-food {
+    background: #FEFAF1;
+}
+
+.search-food-title {
+    display: inline;
+    font-size: 30px;
+    transition: all ease 0.5s;
+}
+
+.search-food-title:hover {
+    color: #FFB30E;
+}
+
+.search-food-view-btn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #FFB30E;
+}
+
+.search-food-view-btn:hover {
+    display: inline-block;
+    margin: 0 0.5rem;
+
+    animation: animate__flipInX;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    /* don't forget to set a duration! */
+}
+
+.search-food-btn {
+    border: none;
+    outline: none;
+    background: #FFB30E;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px 5px;
+    transition: all ease 0.5s;
+}
+
+.search-food-btn:hover {
+    box-shadow: rgba(238, 120, 10, 0.856) 0px 10px 20px;
+}
+
+.search-food-less-btn {
+    padding: 14px 20px;
+}
+
+.search-food-greater-btn {
+    padding: 15px 22px;
+}
+
+.search-food-img{
+    transition: all ease 0.5s;
+}
+.search-food-img:hover{
+    box-shadow: rgba(238, 120, 10, 0.856) 0px 10px 20px;
+}
