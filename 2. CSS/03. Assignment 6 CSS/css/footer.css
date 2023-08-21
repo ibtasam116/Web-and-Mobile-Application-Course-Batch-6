@@ -1,0 +1,21 @@
+.footer {
+    background-color: black;
+    color: #F5F5F5;
+}
+
+.footer-title{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.footer-card ul li{
+    list-style: none;
+    margin-left: -30px;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.footer-line{
+    border: 1px solid white;
+}
