@@ -8,6 +8,11 @@
     font-weight: bold;
 }
 
+.footer-card-display{
+    display: flex;
+    justify-content: end;
+}
+
 .footer-card ul li{
     list-style: none;
     margin-left: -30px;
