@@ -53,12 +53,6 @@ a{
 
 /* Start ============ Proceed Order ============ */
 
-.proceed-order {
-    background-image: url("/images/orderBack.png");
-    max-height: 40vh;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
 
 .best-deal>h5 {
     font-size: 30px;

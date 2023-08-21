@@ -1,0 +1,94 @@
+.proceed-order {
+    background-image: url("/images/orderBack.png");
+    height: 100vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.proceed-order-container{
+    padding: 40px 0px;
+   }
+
+.proceed-order-title{
+    color: #fff;
+    font-size: 45px;
+    font-weight: 900;
+}
+
+
+.proceed-order-btn{
+    border: none;
+    outline: none;
+    background: linear-gradient(93.41deg, #F17228 -5.63%, #F15E28 100.8%);
+    box-shadow: 0px 5px 8px rgba(222, 151, 0, 0.24), 0px 14px 32px rgba(255, 178, 14, 0.29);
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 13px 15px;
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+   .proceed-order-container{
+    padding: 40px 0px;
+   }
+
+    .proceed-order-title{
+        font-size: 35px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+   .proceed-order-container{
+    padding: 20px 0px;
+   }
+
+    .proceed-order-title{
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width:575px) and (max-width:767px) {
+   .proceed-order-container{
+    padding: 15px 0px;
+   }
+
+    .proceed-order-title{
+        font-size: 18px;
+    }
+
+    .proceed-order-btn{
+        padding: 8px 15px;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width:575px){
+    .proceed-order-container{
+     padding: 6px 0px;
+    }
+    
+     .proceed-order-title{
+         font-size: 15px;
+     }
+    
+     .proceed-order-btn{
+         padding: 5px 10px;
+         font-size: 8px;
+     }
+
+}
+
+@media screen and (max-width:374px){
+    .proceed-order-container{
+     padding: 4px 0px;
+    }
+    
+     .proceed-order-title{
+         font-size: 8px;
+     }
+    
+     .proceed-order-btn{
+         padding: 4px 10px;
+         font-size: 6px;
+     }
+
+}
