@@ -1,6 +1,6 @@
 .proceed-order {
     background-image: url("/images/orderBack.png");
-    height: 100vh;
+    max-height: 100vh;
     background-size: 100%;
     background-repeat: no-repeat;
 }
