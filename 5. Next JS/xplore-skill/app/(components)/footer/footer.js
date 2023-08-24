@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function Footer() {
@@ -7,7 +8,7 @@ export default function Footer() {
                 <hr />
                 <h4>About Us</h4>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse minima incidunt odio nam facilis, eligendi
-                    Itaque fugiat cupiditate consectetur. Aliquid ab deserunt exercitationem, illum molestiae dolorem.
+                    <br />Itaque fugiat cupiditate consectetur. Aliquid ab deserunt exercitationem, illum molestiae dolorem.
                 </p>
 
                 <div className="icons">
@@ -16,8 +17,8 @@ export default function Footer() {
                     <i className="fab fa-twitter"></i>
                     <i className="fab fa-linkedin"></i>
                 </div>
-                <p>Made with <i className="fas fa-heart"></i> by <a href="index.html">Sagar Developer</a></p>
-                <p>Copyright © 2021 <a href="index.html">Xplore Skill</a>. All Rights Reserved</p>
+                <p>Made with <i className="fas fa-heart"></i> by <Link href="/">Sagar Developer</Link></p>
+                <p>Copyright © 2021 <Link href="/">Xplore Skill</Link>. All Rights Reserved</p>
             </section>
         </>
     )
