@@ -12,7 +12,7 @@ export default function Home_student_card(props) {
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
+                    <i class={`fa ${props.star_Class}`}></i>
                 </div>
             </div>
         </>

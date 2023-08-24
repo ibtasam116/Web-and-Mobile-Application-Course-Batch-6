@@ -19,6 +19,9 @@ import img6 from "../public/img/food.png";
 import Home_student_card from './(components)/home_student_card/home_student_card';
 import studentImg from "../public/img/user.png"
 
+import Button from './(components)/button/button';
+import Home_verticalLine from './(components)/home_verticalLine/home_verticalLine';
+
 export default function Home() {
   return (
     <>
@@ -26,10 +29,7 @@ export default function Home() {
 
       <section className="course">
 
-        <div className="PageBlock">
-          <div className="verticalLine"></div>
-          <div className="Clear"></div>
-        </div>
+        <Home_verticalLine />
 
         <h1>EXPLORE OUR 60+ <br /> MAJOR PROGRAMS</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
@@ -52,10 +52,7 @@ export default function Home() {
 
       <section className="campus">
 
-        <div className="PageBlock">
-          <div className="verticalLine"></div>
-          <div className="Clear"></div>
-        </div>
+        <Home_verticalLine />
 
         <Section_header sectionTitle="TAKE OUR VIRTUAL TOUR" sectionDescription="Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
 
@@ -70,10 +67,7 @@ export default function Home() {
 
       <section className="facilities">
 
-        <div className="PageBlock">
-          <div className="verticalLine"></div>
-          <div className="Clear"></div>
-        </div>
+        <Home_verticalLine />
 
         <Section_header sectionTitle="Our Facilities" sectionDescription="Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
 
@@ -85,42 +79,26 @@ export default function Home() {
 
       </section>
 
-      <section class="testimonials">
-        <div class="PageBlock">
-          <div class="verticalLine"></div>
-          <div class="Clear"></div>
-        </div>
+      <section className="testimonials">
+
+        <Home_verticalLine />
 
         <Section_header sectionTitle="What Our Student Says" sectionDescription="Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
 
-        <h1></h1>
-        <p></p>
-
-        <div class="row">
+        <div className="row">
           <Home_student_card studentImgSrc={studentImg} studentDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi maiores in nostrum rerum voluptatem
                         praesentium veritatis alias omnis voluptate nisi aperiam, voluptatum quibusdam itaque a
-                        deserunt. In quia repellat maxime." studentName="Student Name" />
-                        
+                        deserunt. In quia repellat maxime." studentName="Student Name" star_className="fa-star" />
+
           <Home_student_card studentImgSrc={studentImg} studentDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi maiores in nostrum rerum voluptatem
                         praesentium veritatis alias omnis voluptate nisi aperiam, voluptatum quibusdam itaque a
-                        deserunt. In quia repellat maxime." studentName="Student Name" />
-
-
-          {/* <div class="testimonials-col">
-            <img src="img/user.png" alt="oo.." />
-            <div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi maiores in nostrum rerum voluptatem
-                praesentium veritatis alias omnis voluptate nisi aperiam, voluptatum quibusdam itaque a
-                deserunt. In quia repellat maxime.</p>
-              <h3>Student Name</h3>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-half-alt"></i>
-            </div>
-          </div> */}
+                        deserunt. In quia repellat maxime." studentName="Student Name" star_className="fa-star-half-alt" />
         </div>
+      </section>
+
+      <section className="cta">
+        <h1>GET READY FOR A BRIGHT FUTURE</h1>
+        <Button btnTitle="CONTACT US" />
       </section>
 
     </>

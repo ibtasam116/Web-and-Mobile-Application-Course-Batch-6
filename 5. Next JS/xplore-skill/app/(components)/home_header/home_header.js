@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Button from '../button/button';
 
 export default function Home_header() {
   return (
@@ -27,7 +28,8 @@ export default function Home_header() {
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit consequuntur corrupti sapiente aut porro
             <br /> esse blanditiis in quae perspiciatis quo.
           </p>
-          <a href="#" class="hero_btn">Visit Us To Know More</a>
+          <Button btnTitle="Visit Us To Know More" />
+          {/* <a href="#" class="hero_btn">Visit Us To Know More</a> */}
         </div>
       </section>
     </>
