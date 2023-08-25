@@ -2,6 +2,17 @@ import Link from 'next/link';
 import Button from '../button/button';
 
 export default function Home_header() {
+
+  // var navLinks = document.getElementById("navLinks");
+
+  function showMenu() {
+    navLinks.style.right = "0";
+  }
+
+  function hideMenu() {
+    navLinks.style.right = "-200px";
+  }
+
   return (
     <>
       <section class="header">
@@ -12,7 +23,7 @@ export default function Home_header() {
           <div class="nav-links" id="navLinks">
             <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
-              <li><Link href="/home">Home</Link></li>
+              <li><Link href="/">Home</Link></li>
               <li><Link href="/courses">Course</Link></li>
               <li><Link href="/blog">Blog</Link></li>
               <li><Link href="/about">About</Link></li>

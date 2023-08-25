@@ -25,7 +25,9 @@ import Home_verticalLine from './(components)/home_verticalLine/home_verticalLin
 export default function Home() {
   return (
     <>
-      <Home_header />
+      <Home_header >
+        
+      </Home_header>
 
       <section className="course">
 
