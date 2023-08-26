@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.header{
+    /* height: 100vh; */
+    /* background-color: #122E99; */
+    /* background-color: 129deg, #122E99 0%, #2370C8 96.56%; */
+}
