@@ -8,18 +8,18 @@ export default function Navbar() {
 
 
                     <div>
-                        <h3><a href="#" className="uppercase text-3xl font-bold hover:text-sky-500 transition-all delay-100">Logo.</a></h3>
+                        <h3><a href="/" className="uppercase text-3xl font-bold hover:text-sky-500 transition-all delay-100">Logo.</a></h3>
                     </div>
 
                     <div className=" w-[100%] lg:w-[60%] px-[50px] hidden md:block">
                         <ul className="uppercase flex justify-between text-xs lg:text-sm">
                             <li><Link href="/" className="hover:text-sky-500 hover:underline transition-all delay-100 hover:font-bold">Home</Link></li>
                             <li><Link href="/about" className="hover:text-sky-500 hover:underline transition-all delay-100 hover:font-bold">About</Link></li>
-                            <li><Link href="" className="hover:text-sky-500 hover:underline transition-all delay-100 hover:font-bold">Pages</Link></li>
-                            <li><Link href="" className="hover:text-sky-500 hover:underline transition-all delay-100 hover:font-bold">Services</Link></li>
-                            <li><Link href="" className="hover:text-sky-500 hover:underline transition-all delay-100 hover:font-bold">Portfolio</Link></li>
-                            <li><Link href="" className="hover:text-sky-500 hover:underline transition-all delay-100 hover:font-bold">Blog</Link></li>
-                            <li><Link href="" className="hover:text-sky-500 hover:underline transition-all delay-100 hover:font-bold">Contact</Link></li>
+                            <li><Link href="/pages" className="hover:text-sky-500 hover:underline transition-all delay-100 hover:font-bold">Pages</Link></li>
+                            <li><Link href="/services" className="hover:text-sky-500 hover:underline transition-all delay-100 hover:font-bold">Services</Link></li>
+                            <li><Link href="/portfolio" className="hover:text-sky-500 hover:underline transition-all delay-100 hover:font-bold">Portfolio</Link></li>
+                            <li><Link href="/blog" className="hover:text-sky-500 hover:underline transition-all delay-100 hover:font-bold">Blog</Link></li>
+                            <li><Link href="/contact" className="hover:text-sky-500 hover:underline transition-all delay-100 hover:font-bold">Contact</Link></li>
                         </ul>
                     </div>
 
