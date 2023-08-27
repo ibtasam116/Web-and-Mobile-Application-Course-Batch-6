@@ -1,10 +1,11 @@
-import Button from "../(components)/button/button";
+import Digital_services from "./home_sections/digital_services/digital_services";
 import Home_header from "./home_sections/home_header/home_header";
 
 export default function Home() {
     return (
         <>
             <Home_header />
+            <Digital_services />
         </>
     )
 }
