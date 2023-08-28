@@ -7,7 +7,7 @@ import Digital_services_card from "../../(components)/digital_services_card/digi
 export default function Digital_services() {
   return (
     <>
-      <section className='h-[100vh] pt-[5%]'>
+      <section className='pt-[10%] pb-[3%] md:pb-[15%]'>
 
         <div className='flex justify-center'>
           <h3 className='text-xl text-[#2370C8] uppercase'>Our Serices</h3>
@@ -23,7 +23,7 @@ export default function Digital_services() {
           </div>
         </div>
 
-        <div className="container mx-auto px-[5%] sm:px-[10%] mt-16">
+        <div className="container mx-auto px-[5%] sm:px-[10%] mt-10 md:mt-16">
           <div className="grid md:grid-cols-3 gap-5">
 
             <Digital_services_card
