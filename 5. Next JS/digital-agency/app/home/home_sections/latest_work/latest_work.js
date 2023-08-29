@@ -25,10 +25,6 @@ export default function Latest_work() {
                         <Circle_btn bgColor="bg-[#898989]" btnIcon={FaGreaterThan} />
                         <Circle_btn bgColor="bg-[#2370C8]" btnIcon={FaLessThan} />
                     </div>
-                    <br />
-                    <br />
-                    <br />
-                    <br />
                 </div>
             </section>
         </>

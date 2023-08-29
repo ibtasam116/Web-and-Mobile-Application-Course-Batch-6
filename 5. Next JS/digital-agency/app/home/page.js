@@ -3,6 +3,7 @@ import Home_about from "./home_sections/home_about/home_about";
 import Home_header from "./home_sections/home_header/home_header";
 import Home_ideas from "./home_sections/home_ideas/home_ideas";
 import Latest_work from "./home_sections/latest_work/latest_work";
+import Professionals from "./home_sections/professionals/professionals";
 
 export default function Home() {
     return (
@@ -12,6 +13,7 @@ export default function Home() {
             <Home_about />
             <Home_ideas />
             <Latest_work />
+            <Professionals />
         </>
     )
 }
