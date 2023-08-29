@@ -3,7 +3,7 @@ import React from 'react'
 export default function Home_ideas_card(props) {
     return (
         <>
-            <div className='card flex flex-col items-center py-5'>
+            <div className='card flex flex-col items-center py-5 hover:shadow-md transition-all'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="81" height="79" viewBox="0 0 81 79" fill="none">
                     <circle cx="39.5" cy="39.5" r="39.5" fill="#D6EDFF" />
                     <circle cx="11" cy="5" r="2.6" stroke="#4A8EDD" stroke-width="0.8" />

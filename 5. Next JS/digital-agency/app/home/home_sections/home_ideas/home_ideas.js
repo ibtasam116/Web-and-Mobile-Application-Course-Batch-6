@@ -6,7 +6,7 @@ export default function Home_ideas() {
         <>
             <section className='py-8 sm:mb-32 bg-[#F2F9FF]'>
                 <div className='container mx-auto px-[5%] md:px-[10%]'>
-                    <div className='grid sm:grid-cols-3 text-center border-2 border-[#FFF]'>
+                    <div className='grid sm:grid-cols-3 text-center border-4 border-[#FFF]'>
                         
                         <Home_ideas_card
                             title="Smart planing"
