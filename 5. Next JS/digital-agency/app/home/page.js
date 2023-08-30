@@ -1,3 +1,4 @@
+import Clients from "./(components)/clients/clients";
 import Digital_services from "./home_sections/digital_services/digital_services";
 import Home_about from "./home_sections/home_about/home_about";
 import Home_header from "./home_sections/home_header/home_header";
@@ -16,6 +17,7 @@ export default function Home() {
             <Latest_work />
             <Professionals />
             <Plans />
+            <Clients/>
         </>
     )
 }
