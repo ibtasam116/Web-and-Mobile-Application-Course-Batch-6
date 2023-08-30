@@ -1,5 +1,5 @@
 import React from 'react'
-import Plans_card from '../../(components)/plans_card/plans_card'
+import Plans_card from '../../(components)/plan_card/plans_card'
 
 export default function Plans() {
     return (
