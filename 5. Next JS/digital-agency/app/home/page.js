@@ -12,7 +12,7 @@ export default function Home() {
     return (
         <>
             <Home_header />
-            {/* <Digital_services /> */}
+            <Digital_services />
             {/* <Home_about /> */}
             {/* <Home_ideas /> */}
             {/* <Latest_work /> */}

@@ -2,7 +2,7 @@
 export default function Circle_btn(props) {
     return (
         <>
-            <button className={`${props.bgColor} p-4 rounded-3xl mx-2 hover:text-white transition-all`}><props.btnIcon /></button>
+            <button className={`${props.style} p-3 rounded-full hover:text-white transition-all`}><props.btnIcon /></button>
         </>
     )
 }
