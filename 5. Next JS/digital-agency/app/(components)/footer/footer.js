@@ -4,7 +4,7 @@ import Footer_card from './(components)/footer_card/footer_card'
 export default function Footer() {
     return (
         <>
-            <section className='max-h-[100%] bg-[#F2F9FF]'>
+            <section className='max-h-[100%] bg-[#F2F9FF] border-b-2 border-[#7AB8FF]'>
                 <div className='container mx-auto px-[5%] md:px-[10%] py-7 sm:py-14'>
                     <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-5'>
                         <div className='md:col-span-2'>
@@ -57,7 +57,7 @@ export default function Footer() {
             </section>
             <footer className='bg-[#F2F9FF]'>
                 <p className='py-3 text-center font-xs text-[#4b4b4b80]'>
-                    &copy; Copyright 2020 <span className='text-[#2370c880]'>Brandoxide.</span> All rights reserved.
+                    &copy; Copyright 2020 <span className='text-[#2370c880]'>Brandoxide.</span> <span className='block sm:inline'>All rights reserved.</span>
                 </p>
             </footer>
         </>
