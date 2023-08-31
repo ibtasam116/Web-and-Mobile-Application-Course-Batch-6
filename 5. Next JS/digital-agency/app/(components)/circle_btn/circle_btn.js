@@ -1,4 +1,3 @@
-import { FaGreaterThan } from "react-icons/fa"
 
 export default function Circle_btn(props) {
     return (

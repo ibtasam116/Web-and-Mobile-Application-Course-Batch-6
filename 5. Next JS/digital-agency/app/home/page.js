@@ -6,6 +6,7 @@ import Home_ideas from "./home_sections/home_ideas/home_ideas";
 import Latest_work from "./home_sections/latest_work/latest_work";
 import Plans from "./home_sections/plans/plans";
 import Professionals from "./home_sections/professionals/professionals";
+import Blog from "./home_sections/blog/blog";
 
 export default function Home() {
     return (
@@ -17,7 +18,8 @@ export default function Home() {
             <Latest_work />
             <Professionals />
             <Plans />
-            <Clients/>
+            <Clients />
+            <Blog />
         </>
     )
 }
