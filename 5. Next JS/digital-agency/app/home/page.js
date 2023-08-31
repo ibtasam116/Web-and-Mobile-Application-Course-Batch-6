@@ -13,7 +13,7 @@ export default function Home() {
         <>
             <Home_header />
             <Digital_services />
-            {/* <Home_about /> */}
+            <Home_about />
             {/* <Home_ideas /> */}
             {/* <Latest_work /> */}
             {/* <Professionals /> */}

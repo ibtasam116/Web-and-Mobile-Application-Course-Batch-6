@@ -1,16 +1,17 @@
 import Button from '@/app/(components)/button/button'
-import React from 'react'
+import Image from 'next/image'
+
+import img from '@/public/imgs/about-us.jpg'
 
 export default function Home_about() {
     return (
         <>
-            <section className=' pb-[15%] flex items-center'>
+            <section className='pb-[15%] flex items-center'>
                 <div className='container mx-auto px-[5%] md:px-[10%]'>
                     <div className='grid lg:grid-cols-2 gap-10'>
 
-                        <h3 className='text-[#2370C8] text-center inline md:hidden'>ABOUT US</h3>
-                        
-                        <div className='card py-[35%] bg-[#E7E7E7]'>
+                        <div className='hidden md:block'>
+                            <Image src={img} className='rounded-3xl' width={500} height={500}/>
                         </div>
 
                         <div className='card lg:py-5'>
@@ -25,6 +26,10 @@ export default function Home_about() {
                                 in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
                                 sint occaecat cupidatat non proident,</p>
                             <Button btnTitle="Read More" />
+                        </div>
+
+                        <div className='block md:hidden'>
+                            <Image src={img} className='rounded-3xl' width={500} height={500}/>
                         </div>
                     </div>
                 </div>
