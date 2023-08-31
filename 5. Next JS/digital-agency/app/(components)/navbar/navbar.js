@@ -14,9 +14,9 @@ export default function Navbar() {
                             <h3>
                                 <Link href="/" className="uppercase text-xl sm:text-3xl font-bold hover:text-sky-500 transition-all delay-100">Logo.</Link>
                             </h3>
-                            <span className="absolute right-5 top-4 inline lg:hidden hover:text-sky-500">
+                            <span className="absolute right-5 top-4 sm:top-3 inline lg:hidden hover:text-sky-500">
                                 <a href="">
-                                <AiOutlineMenu className="text-xl sm:mt-1 sm:me-14"/>
+                                    <AiOutlineMenu className="text-xl sm:text-3xl sm:me-14" />
                                 </a>
                             </span>
                         </div>
@@ -43,7 +43,9 @@ export default function Navbar() {
                                 </div>
                             </form>
                         </div>
+
                     </div>
+                    
                 </div>
             </nav>
         </>

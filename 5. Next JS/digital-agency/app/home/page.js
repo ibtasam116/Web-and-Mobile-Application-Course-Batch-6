@@ -11,7 +11,7 @@ import Blog from "./home_sections/blog/blog";
 export default function Home() {
     return (
         <>
-            {/* <Home_header /> */}
+            <Home_header />
             {/* <Digital_services /> */}
             {/* <Home_about /> */}
             {/* <Home_ideas /> */}
