@@ -16,7 +16,7 @@ export default function Home() {
             <Home_about />
             <Home_ideas />
             <Latest_work />
-            {/* <Professionals /> */}
+            <Professionals />
             {/* <Plans /> */}
             {/* <Clients /> */}
             {/* <Blog /> */}

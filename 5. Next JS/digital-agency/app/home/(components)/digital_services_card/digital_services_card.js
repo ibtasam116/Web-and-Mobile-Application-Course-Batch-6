@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Digital_services_card(props) {
     return (
         <>
-            <div className="flex flex-col items-center justify-center w-[90%] sm:w-[60%] md:w-full mx-auto py-9 text-center border border-[#2370C8] hover:border-none  hover:bg-[#E5F3FE] transition-all">
+            <div className="flex flex-col items-center justify-center w-[90%] sm:w-[60%] md:w-full mx-auto py-9 text-center border border-[#2370C8] hover:border-[#E5F3FE] hover:bg-[#E5F3FE] transition-all">
 
                 <Image src={props.imgSrc} width={100} height={100} className="rounded-full" />
                 <h1 className="font-bold text-sm py-3">{props.title}</h1>

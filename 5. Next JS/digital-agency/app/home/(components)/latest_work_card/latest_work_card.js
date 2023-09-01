@@ -6,7 +6,7 @@ export default function Latest_work_card(props) {
         <>
             <div className='flex justify-center'>
                 <div className=''>
-                    <Image src={props.imgSrc} className='hover:-translate-y-1 hover:scale-105 duration-500' width={500} height={500} />
+                    <Image src={props.imgSrc} className='hover:-translate-y-1 hover:scale-90 duration-500' width={500} height={500} />
 
                 </div>
             </div>
