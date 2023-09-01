@@ -14,7 +14,7 @@ export default function Digital_services() {
         <div className="container mx-auto px-[5%] md:px-[10%]">
 
           <div className='text-center'>
-            <h3 className='text-lg text-[#2370C8] uppercase'>Our Serices</h3>
+            <h3 className='text-lg text-[#2370C8] uppercase hover:underline underline-offset-4 transition-all inline cursor-default'>Our Serices</h3>
           </div>
 
           <div className='grid sm:grid-cols-12 py-3 md:py-4'>
@@ -26,8 +26,8 @@ export default function Digital_services() {
             <div className="col-span-12 md:col-span-3">
 
               <div className=" flex justify-center md:justify-end pt-3 md:pt-0">
-                <Circle_btn style="bg-[#E0E0E0]" btnIcon={FaGreaterThan} />
-                <Circle_btn style="bg-[#2370C8] ms-4" btnIcon={FaLessThan} />
+                <Circle_btn style="bg-[#E0E0E0] animate-pulse" btnIcon={FaGreaterThan} />
+                <Circle_btn style="bg-[#2370C8] ms-4 animate-pulse" btnIcon={FaLessThan} />
               </div>
 
             </div>

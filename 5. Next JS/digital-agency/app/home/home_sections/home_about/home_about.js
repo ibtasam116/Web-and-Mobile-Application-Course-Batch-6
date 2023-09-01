@@ -6,31 +6,52 @@ import img from '@/public/imgs/about-us.jpg'
 export default function Home_about() {
     return (
         <>
-            <section className='pb-[15%] flex items-center'>
+            <section className='pb-9 md:py-32'>
                 <div className='container mx-auto px-[5%] md:px-[10%]'>
+
                     <div className='grid lg:grid-cols-2 gap-10'>
 
                         <div className='hidden md:block'>
-                            <Image src={img} className='rounded-3xl' width={500} height={500}/>
+                            <div className='flex justify-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-700'>
+                                <Image src={img} className='rounded-2xl' width={500} height={500} />
+                            </div>
                         </div>
 
-                        <div className='card lg:py-5'>
-                            <h3 className='text-[#2370C8] hidden md:inline'>ABOUT US</h3>
-                            <p className='text-[#262A4E] font-bold text-2xl sm:text-4xl md:text-[38px] py-4'>We design, build brands
-                                & digital projects.</p>
-                            <p className='text-xs sm:text-md'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                Duis aute irure dolor in reprehenderit
-                                <br /><br />
-                                in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                sint occaecat cupidatat non proident,</p>
-                            <Button btnTitle="Read More" />
+                        <div className='w-full sm:w-[75%] lg:w-full mx-auto'>
+
+                            <div className='xl:p-5'>
+
+                                <div className='flex justify-center md:justify-start'>
+                                    <h3 className='text-[#2370C8] text-lg uppercase sm:text-start hover:underline underline-offset-4 inline transition-all cursor-default'>ABOUT US</h3>
+                                </div>
+
+                                <div>
+                                    <p className='text-[#262A4E] font-bold text-xl py-5 sm:text-3xl md:text-4xl md:py-5 lg:text-2xl lg:py-2 xl:text-4xl xl:py-5'>We design, build brands
+                                        <br /> & digital projects.</p>
+                                    <p className='text-xs sm:text-md'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit
+                                        <span className='block py-3'>
+                                            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                                            sint occaecat cupidatat non proident,
+                                        </span>
+                                    </p>
+                                </div>
+
+                                <div className='text-center md:text-start'>
+                                    <Button btnTitle="Read More" style="bg-[#2370C8] hover:bg-sky-700 text-md text-white hover:translate-x-2 hover:scale-100 duration-500" />
+                                </div>
+                            </div>
+
                         </div>
 
                         <div className='block md:hidden'>
-                            <Image src={img} className='rounded-3xl' width={500} height={500}/>
+                            <div className='flex justify-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-500'>
+                                <Image src={img} className='rounded-2xl' width={500} height={500} />
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </section>

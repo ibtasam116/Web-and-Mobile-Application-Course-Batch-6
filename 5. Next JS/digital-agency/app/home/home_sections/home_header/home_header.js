@@ -16,7 +16,7 @@ export default function Home_header() {
                     </div>
 
                     <Link href="/pages">
-                        <Button btnTitle="Learn More" style="bg-[#2370C8] hover:bg-sky-700 my-5 text-md text-white" />
+                        <Button btnTitle="Learn More" style="bg-[#2370C8] hover:bg-sky-700 my-5 text-md text-white hover:translate-x-2 hover:scale-100 duration-500" />
                     </Link>
 
                 </div>
