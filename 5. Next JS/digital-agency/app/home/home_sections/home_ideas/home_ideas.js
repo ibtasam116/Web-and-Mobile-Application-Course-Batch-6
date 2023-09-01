@@ -2,7 +2,7 @@ import Home_ideas_card from '../../(components)/home_ideas_card/home_ideas_card'
 
 import smart from '@/public/imgs/home-ideas/smart-planing.jpg'
 import partner from '@/public/imgs/home-ideas/partnership.jpeg'
-import idea from '@/public/imgs/home-ideas/super-ideas.jpg'
+import idea from '@/public/imgs/home-ideas/super-ideas.png'
 
 export default function Home_ideas() {
     return (
@@ -11,7 +11,7 @@ export default function Home_ideas() {
 
                 <div className='container mx-auto px-[5%] md:px-[10%]'>
 
-                    <div className='grid sm:grid-cols-3 text-center border-4 border-[#FFF]'>
+                    <div className='grid sm:grid-cols-3 gap-3 py-3 px-1 text-center border-4 border-[#FFF]'>
 
                         <Home_ideas_card
                             imgSrc={smart}

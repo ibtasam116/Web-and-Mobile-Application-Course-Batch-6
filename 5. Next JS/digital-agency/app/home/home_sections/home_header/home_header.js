@@ -8,7 +8,7 @@ export default function Home_header() {
                 <div className="container mx-auto px-[5%] md:px-[10%]">
 
                     <div>
-                        <h1 className="text-4xl sm:text-[65px] font-bold sm:leading-[70px]">Creative <br /> digital Agency</h1>
+                        <h1 className="text-4xl sm:text-[65px] font-bold sm:leading-[70px] animate-pulse">Creative <br /> digital Agency</h1>
                     </div>
 
                     <div>

@@ -15,7 +15,7 @@ export default function Home() {
             <Digital_services />
             <Home_about />
             <Home_ideas />
-            {/* <Latest_work /> */}
+            <Latest_work />
             {/* <Professionals /> */}
             {/* <Plans /> */}
             {/* <Clients /> */}

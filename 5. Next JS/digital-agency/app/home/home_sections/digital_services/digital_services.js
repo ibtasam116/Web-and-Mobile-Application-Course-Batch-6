@@ -26,8 +26,8 @@ export default function Digital_services() {
             <div className="col-span-12 md:col-span-3">
 
               <div className=" flex justify-center md:justify-end pt-3 md:pt-0">
-                <Circle_btn style="bg-[#E0E0E0] animate-pulse" btnIcon={FaGreaterThan} />
-                <Circle_btn style="bg-[#2370C8] ms-4 animate-pulse" btnIcon={FaLessThan} />
+                <Circle_btn style="bg-[#E0E0E0] p-3 hover:-translate-x-2 hover:scale-100 duration-500 animate-pulse" btnIcon={FaLessThan} />
+                <Circle_btn style="bg-[#2370C8] p-3 hover:translate-x-2 hover:scale-100 duration-500 ms-4 animate-pulse" btnIcon={FaGreaterThan} />
               </div>
 
             </div>
