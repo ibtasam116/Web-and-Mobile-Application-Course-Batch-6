@@ -5,7 +5,7 @@ export default function Plans() {
     return (
         <>
             <section>
-                <div className='container mx-auto px-[5%] md:px-[10%] my-5 sm:my-0'>
+                <div className='container mx-auto px-[5%] md:px-[10%]'>
                     <div className='grid grid-cols-2 md:grid-cols-4'>
                         <div className='col-span-3'>
                             <h3 className='text-[#2370C8] text-md'>OUR PRICING</h3>

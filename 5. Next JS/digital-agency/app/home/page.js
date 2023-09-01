@@ -17,7 +17,7 @@ export default function Home() {
             <Home_ideas />
             <Latest_work />
             <Professionals />
-            {/* <Plans /> */}
+            <Plans />
             {/* <Clients /> */}
             {/* <Blog /> */}
         </>
