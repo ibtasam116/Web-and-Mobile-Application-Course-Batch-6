@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { FaSearch } from "react-icons/fa";
-import { AiOutlineMenu } from "react-icons/Ai";
+// import { AiOutlineMenu } from "react-icons/Ai";
 
 export default function Navbar() {
     return (
@@ -14,11 +14,11 @@ export default function Navbar() {
                             <h3>
                                 <Link href="/" className="uppercase text-xl sm:text-3xl font-bold hover:text-sky-500 transition-all delay-100">Logo.</Link>
                             </h3>
-                            <span className="absolute right-5 top-4 sm:top-3 inline lg:hidden hover:text-sky-500">
+                            {/* <span className="absolute right-5 top-4 sm:top-3 inline lg:hidden hover:text-sky-500">
                                 <a href="">
                                     <AiOutlineMenu className="text-xl sm:text-3xl sm:me-14" />
                                 </a>
-                            </span>
+                            </span> */}
                         </div>
 
                         <div className="col-span-9 hidden lg:block">
