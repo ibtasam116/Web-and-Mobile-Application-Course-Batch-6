@@ -18,8 +18,8 @@ export default function Home() {
             <Latest_work />
             <Professionals />
             <Plans />
-            {/* <Clients /> */}
-            {/* <Blog /> */}
+            <Clients />
+            <Blog />
         </>
     )
 }

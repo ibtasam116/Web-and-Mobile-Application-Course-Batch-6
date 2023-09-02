@@ -2,6 +2,7 @@ import Button from '@/app/(components)/button/button'
 import Image from 'next/image'
 
 import img from '@/public/imgs/about-us.jpg'
+import Link from 'next/link'
 
 export default function Home_about() {
     return (
@@ -40,7 +41,9 @@ export default function Home_about() {
                                 </div>
 
                                 <div className='text-center md:text-start'>
+                                    <Link href='/about'>
                                     <Button btnTitle="Read More" style="bg-[#2370C8] hover:bg-sky-700 text-md text-white hover:translate-x-2 hover:scale-100 duration-500" />
+                                    </Link>
                                 </div>
                             </div>
 

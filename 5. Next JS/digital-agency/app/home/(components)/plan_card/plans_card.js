@@ -6,7 +6,7 @@ export default function Plans_card(props) {
     return (
         <>
             <div className='flex justify-center'>
-                <div className={`bg-[#E7E7E7] w-52 md:w-full max-h-[130vh] hover:bg-[#2370C8] hover:shadow-2xl hover:text-white transition-all flex flex-col justify-center items-center pt-5 pb-2`}>
+                <div className={`bg-[#E7E7E7] w-72 md:w-full max-h-[130vh] hover:bg-[#2370C8] hover:shadow-2xl hover:text-white transition-all flex flex-col justify-center items-center pt-5 pb-2`}>
 
                     <h2 className='text-xl font-bold'>Basic Plan</h2>
                     <div className='py-5'>
