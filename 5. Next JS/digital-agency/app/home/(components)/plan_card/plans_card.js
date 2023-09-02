@@ -6,7 +6,7 @@ export default function Plans_card(props) {
     return (
         <>
             <div className='flex justify-center'>
-                <div className={`bg-[#E7E7E7] w-72 sm:w-full max-h-[130vh] hover:bg-[#2370C8] hover:shadow-2xl hover:text-white transition-all flex flex-col justify-center items-center pt-5 pb-2`}>
+                <div className={`bg-[#E7E7E7] w-52 md:w-full max-h-[130vh] hover:bg-[#2370C8] hover:shadow-2xl hover:text-white transition-all flex flex-col justify-center items-center pt-5 pb-2`}>
 
                     <h2 className='text-xl font-bold'>Basic Plan</h2>
                     <div className='py-5'>
@@ -26,7 +26,7 @@ export default function Plans_card(props) {
                         SEO Marketing <br />
                         Business Analysis
                     </div>
-                    <Button btnTitle="Start Now" bgColor="hover:bg-white text-white hover:text-[#2370C8] font-bold" />
+                    <Button btnTitle="Start Now" style="border-2 border-[#E7E7E7] my-3 text-md hover:bg-white hover:text-black hover:-translate-y-1 hover:scale-100 duration-500" />
                 </div>
             </div>
         </>

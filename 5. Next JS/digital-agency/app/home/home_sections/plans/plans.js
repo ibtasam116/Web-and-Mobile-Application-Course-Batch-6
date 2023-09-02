@@ -31,7 +31,7 @@ export default function Plans() {
 
                     </div>
 
-                    <div className='grid sm:grid-cols-2 md:grid-cols-3  gap-5 my-8'>
+                    <div className='grid md:grid-cols-3  gap-5 my-8'>
                         <Plans_card imgSrc={plan1} price="50" />
                         <Plans_card imgSrc={plan2} price="99" />
                         <Plans_card imgSrc={plan3} price="150" />
