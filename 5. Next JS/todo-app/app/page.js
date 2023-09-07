@@ -42,8 +42,21 @@ export default function Home() {
     time: "9 PM",
   },]
 
+
+  // const newarray = [1, 2, 3, 4, 5]
   return (
     <>
+
+      {/* {newarray.map((item, i) => {
+        return (
+          <>
+          {item}
+          <h1>{i}</h1>
+          </>
+        )
+      })} */}
+
+      <hr />
 
       <button>{2 !== 2 ? "true" : "False"}</button>
 
