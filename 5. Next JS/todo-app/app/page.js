@@ -53,8 +53,8 @@ export default function Home() {
     // let response = await fetch("https://api.github.com/users/naveed-rana", { method: "GET" });
     // response = await response.json()
     // console.log("Response", response)
-    // let response = await axios.get('https://api.github.com/users/naveed-rana/followers')
-    let response = await axios.get('https://api.github.com/users/naveed-rana')
+    // let response = await axios.get('https://api.github.com/users/naveed-rana')
+    let response = await axios.get('https://api.github.com/users/naveed-rana/followers')
     setData(response.data)
     console.log("response", response.data)
 
@@ -64,6 +64,17 @@ export default function Home() {
   // const newarray = [1, 2, 3, 4, 5]
   return (
     <>
+
+      {
+        data.map((item, i) => {
+          return (
+            <div key={i}>
+              follower login - {item.login}
+            </div>
+          )
+        })
+      }
+
       <h1>Github Name:- {data.name} <br /> Followers:- {data.followers}</h1>
       <div className="text-center">
         <button onClick={loadDataFromServer} className="my-3 border-2 border-slate-400 rounded-2xl py-3 px-5 bg-slate-700 text-white hover:shadow-md hover:bg-slate-400 hover:border-slate-700">Load</button>
