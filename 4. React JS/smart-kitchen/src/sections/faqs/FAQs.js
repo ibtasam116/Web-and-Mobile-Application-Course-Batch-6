@@ -1,6 +1,7 @@
 import React from 'react'
 import "./FAQs.css"
 import Sections_Header from '../../components/sections_header/Sections_Header'
+import { Link } from 'react-router-dom'
 
 
 export default function FAQs() {
@@ -45,8 +46,8 @@ export default function FAQs() {
                                     <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo"
                                         data-bs-parent="#accordionExample">
                                         <div className="accordion-body">
-                                            <strong>Yes Sure!! </strong>Please check out our happy menu. <a
-                                                href="menu.html">Link</a>
+                                            <strong>Yes Sure!! </strong>Please check out our happy menu. <Link
+                                                to="/Menu">Link</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -79,7 +80,7 @@ export default function FAQs() {
                                     <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour"
                                         data-bs-parent="#accordionExample">
                                         <div className="accordion-body">
-                                            <strong>Yes. </strong>please <a href="contact.html">Contact Us.</a>
+                                            <strong>Yes. </strong>please <Link to="/contact">Contact Us.</Link>
                                         </div>
                                     </div>
                                 </div>
