@@ -9,7 +9,7 @@ export default function Home() {
 
   const userName = ["Ali", "Naeem", "Umair"]
 
-  const student = [{
+  const [student, setStudents] = useState([{
     studentName: "ALi",
     rollNo: 12,
     section: "A",
@@ -28,10 +28,22 @@ export default function Home() {
     studentName: "Ibtasam",
     rollNo: 6,
     section: "D",
-  }]
+  },
+  {
+    studentName: "Ibtasam",
+    rollNo: 6,
+    section: "D",
+  }])
 
-  const deleteHandler = () => {
-
+  const deleteHandler = (rollNo) => {
+    console.log("studentRollNo", rollNo)
+    let restStudents = student.filter((student) => {
+      if (student.rollNo !== rollNo) {
+        return student
+      }
+    })
+    console.log("restStudents", restStudents);
+    setStudents(restStudents);
   }
 
 
@@ -56,8 +68,6 @@ export default function Home() {
     // console.log("Response", response)
     // let response = await axios.get('https://api.github.com/users/naveed-rana')
     let response = await axios.get('https://api.github.com/users/naveed-rana/followers')
-    // let response = await axios.get('https://api.github.com/users/naveed-rana/following')
-    // let response = await axios.get('https://api.github.com/users/naveed-rana/id')
     setData(response.data)
     console.log("response", response.data)
 
@@ -67,8 +77,6 @@ export default function Home() {
   // const newarray = [1, 2, 3, 4, 5]
   return (
     <>
-
-
 
       <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
         <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
@@ -125,10 +133,10 @@ export default function Home() {
       </div>
 
 
-      <h1>Github Name:- {data.name} <br /> Followers:- {data.followers}</h1>
+      {/* <h1>Github Name:- {data.name} <br /> Followers:- {data.followers}</h1>
       <div className="text-center">
         <button onClick={loadDataFromServer} className="my-3 border-2 border-slate-400 rounded-2xl py-3 px-5 bg-slate-700 text-white hover:shadow-md hover:bg-slate-400 hover:border-slate-700">Load</button>
-      </div>
+      </div> */}
 
       {/* {newarray.map((item, i) => {
         return (
@@ -198,7 +206,7 @@ export default function Home() {
                   <td>{student.studentName}</td>
                   <td>{student.rollNo}</td>
                   <td>{student.section}</td>
-                  <td><button onClick={deleteHandler} >Delete</button></td>
+                  <td><button onClick={() => deleteHandler(student.rollNo)} >Delete</button></td>
                 </tr>
               </>
             )
