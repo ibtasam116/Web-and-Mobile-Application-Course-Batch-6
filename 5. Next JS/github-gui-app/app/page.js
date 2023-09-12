@@ -3,14 +3,14 @@ import { useState } from "react";
 
 export default function page() {
 
-  const [data, setData] = useState([])
-  const [userName, setUserName] = useState()
 
+  const [userName, setUserName] = useState()
   const handleChange = (e) => {
     setUserName(e.target.value)
     console.log(userName);
   }
 
+  const [data, setData] = useState([])
   const loadDataAPI = async () => {
 
     const link = await fetch(`https://api.github.com/users/${userName}`, {
@@ -31,6 +31,7 @@ export default function page() {
   }
 
 
+
   return (
     <>
 
@@ -48,37 +49,40 @@ export default function page() {
 
       <section>
         <div className="container w-[100%] mx-auto px-2">
-          <div className="col-12">
-            {data.map((item, i) => {
-              return (
-                <>
+          <div className="row">
+            <div className="col-12">
+              {data.map((item, i) => {
+                return (
+                  <>
 
-                  < div className="col-span-4">
-                    <div>
-                      <img src={item.avatar_url} className="rounded-full" alt="" width={300} height={300} />
+                    < div className="col-span-4">
+                      <div>
+                        <img src={item.avatar_url} className="rounded-full" alt="" width={300} height={300} />
+                      </div>
+                      <div className="my-5">
+                        <h1 className="text-2xl font-bold">{item.name}</h1>
+                        <h1 className="text-gray-400">{item.company}</h1>
+                      </div>
+                      <div>
+                        <p className="w-80">{item.bio}</p>
+                      </div>
+                      <div className="w-80 my-3">
+                        <button className="bg-gray-200 hover:bg-gray-300 rounded-md border border-gray-400 w-[100%] py-1 text-gray-700 text-sm font-semibold">Edit profile</button>
+                      </div>
+                      <div className="text-gray-600 text-sm my-3">
+                        <span><a href="" onClick={loadDataAPI} className="hover:text-blue-700"><span className="font-bold text-gray-600">{item.followers}</span> Followers</a> . </span>
+                        <span><a href="" className="hover:text-blue-700"><span className="font-bold text-gray-600">{item.following}</span> Following</a></span>
+                      </div>
                     </div>
-                    <div className="my-5">
-                      <h1 className="text-2xl font-bold">{item.name}</h1>
-                      <h1 className="text-gray-400">{item.company}</h1>
-                    </div>
-                    <div>
-                      <p className="w-80">{item.bio}</p>
-                    </div>
-                    <div>
-                      <button className="">Edit Profile</button>
-                    </div>
-                    <div>
-                      <span>{item.followers}</span>
-                      <span>{item.following}</span>
-                    </div>
-                  </div>
 
-                </>
-              )
-            })
-            }
-            <div className="col-span-8">
-              {/* {userName} */}
+
+                    <div className="col-span-2">
+                      {item.followers}
+                    </div>
+                  </>
+                )
+              })
+              }
             </div>
           </div>
         </div>
