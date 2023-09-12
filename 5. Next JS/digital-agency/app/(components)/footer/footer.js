@@ -2,6 +2,10 @@ import React from 'react'
 import Footer_card from './(components)/footer_card/footer_card'
 
 export default function Footer() {
+
+    const now = new Date();
+    const year = now.getFullYear();
+
     return (
         <>
             <section className='max-h-[100%] bg-[#F2F9FF] border-b-2 border-[#7AB8FF]'>
@@ -17,6 +21,7 @@ export default function Footer() {
                         </div>
 
                         <Footer_card
+                            color="text-[#2370C8]"
                             title="Our Links"
                             link1="Home"
                             link2="About Us"
@@ -57,7 +62,7 @@ export default function Footer() {
             </section>
             <footer className='bg-[#F2F9FF]'>
                 <p className='py-3 text-center font-xs text-[#4b4b4b80]'>
-                    &copy; Copyright 2020 <span className='text-[#2370c880]'>Brandoxide.</span> <span className='block sm:inline'>All rights reserved.</span>
+                    &copy; Copyright {year} <span className='text-[#2370c880]'>Brandoxide.</span> <span className='block sm:inline'>All rights reserved.</span>
                 </p>
             </footer>
         </>

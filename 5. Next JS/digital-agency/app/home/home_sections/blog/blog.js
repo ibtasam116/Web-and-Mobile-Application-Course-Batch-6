@@ -1,4 +1,3 @@
-import Button from "@/app/(components)/button/button";
 import Blog_card from "../../(components)/blog_card/blog_card";
 
 export default function blog() {
@@ -52,9 +51,6 @@ export default function blog() {
                     </div>
 
                 </div>
-                {/* <div className="">
-                <Button />
-                </div> */}
 
             </section>
         </>

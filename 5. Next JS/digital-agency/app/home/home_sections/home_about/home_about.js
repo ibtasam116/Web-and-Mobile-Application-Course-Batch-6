@@ -23,7 +23,7 @@ export default function Home_about() {
                             <div className='xl:p-5'>
 
                                 <div className='flex justify-center md:justify-start'>
-                                    <h3 className='text-[#2370C8] text-lg uppercase sm:text-start hover:underline underline-offset-4 inline transition-all cursor-default'>ABOUT US</h3>
+                                    <h3 className='text-[#2370C8] text-lg uppercase sm:text-start hover:underline underline-offset-4 inline transition-all cursor-default mt-2'>ABOUT US</h3>
                                 </div>
 
                                 <div>
