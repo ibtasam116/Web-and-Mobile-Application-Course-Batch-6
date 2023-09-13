@@ -10,7 +10,7 @@ export default function Footer() {
     return (
 
         <>
-            <footer className="footer mt-5">
+            <footer className="footer mt-5" id="links">
                 <div className="container-fluid">
                     <div className="row">
                         <ul className="footerlinks text-center">

@@ -12,7 +12,7 @@ import imgCard6 from '../../assets/images/Rectangle38.png'
 export default function Cards() {
     return (
         <>
-            <main>
+            <main id="projects">
                 <div className="container">
                     <div className="row my-3">
                         <div className="col-12 text-center">

@@ -16,7 +16,7 @@ export default function Main_02_03() {
     return (
         <>
             <main id="main02">
-                <div className="container">
+                <div className="container" id="blog">
                     <div className="row">
                         <div className="col-md-8 col-lg-6 offset-md-2 offset-lg-3 mt-4">
                             <div className="line"></div>
@@ -86,7 +86,7 @@ export default function Main_02_03() {
                         <img className="w-100" src={rectangle} alt="Rectangle8" />
                     </div>
                 </div>
-                <div className="col-12 col-md-6 col-lg-4 offset-md-3 offset-lg-4 text-center">
+                <div className="col-12 col-md-6 col-lg-4 offset-md-3 offset-lg-4 text-center" id="about">
                     <p className="caption1">Image caption centered this way and I'll make this a bit longer to indicate the
                         amount of line-height. </p>
                 </div>

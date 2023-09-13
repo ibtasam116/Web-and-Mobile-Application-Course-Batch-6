@@ -2,7 +2,7 @@ import './App.scss';
 
 import 'bootstrap/dist/js/bootstrap.bundle';
 
-import Navbar from './components/header/navbar/Navbar';
+import Navbar from './components/navbar/Navbar';
 
 import Main01 from './sections/main_01/Main_01';
 
@@ -15,6 +15,7 @@ import Footer from './components/footer/Footer';
 function App() {
   return (
     <>
+
       <Navbar />
 
       <Main01 />
@@ -24,6 +25,7 @@ function App() {
       <Cards />
 
       <Footer />
+
     </>
   );
 }

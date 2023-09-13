@@ -1,0 +1,58 @@
+/* ================================== Header ==================================  */
+.navbar {
+    background: #fff;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.16);
+}
+
+.navbar-brand {
+    margin-left: 30px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+}
+
+.navbar-brand:hover {
+    color: blueviolet;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.nav-item a {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0px 30px 0px 30px;
+}
+
+.nav-item a:hover {
+    color: blueviolet;
+    text-decoration: underline;
+    transition: all ease 1s;
+}
+
+@media screen and (max-width: 767px) {
+
+    .navbar-brand {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+    .navbar-brand {
+        margin-left: 2px;
+    }
+
+}
+
+@media screen and (max-width: 280px) {
+
+    .navbar-brand {
+        margin-left: 2px;
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+
+}
