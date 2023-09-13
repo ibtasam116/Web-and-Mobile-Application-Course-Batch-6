@@ -1,5 +1,107 @@
 /* ================================== Header ==================================  */
-.nav {
+.navbar {
+    background: #fff;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.16);
+}
+
+.nordic {
+    margin-left: 30px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+}
+
+.nordic:hover {
+    color: blueviolet;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.nav-lis ul {
+    display: flex;
+    margin-top: 10px;
+}
+
+.nav-lis ul li {
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0px 30px 0px 30px;
+}
+
+.nav-lis ul li:hover {
+    color: blueviolet;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: all ease 1s;
+}
+
+/* .nav-lis ul :first-child {
+    border-bottom: 2px black solid;
+
+} */
+
+@media screen and (max-width: 992px) {
+
+    .nav-lis ul {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .nav-lis ul li {
+
+        margin: 10px 150px 10px 150px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .nordic {
+        font-size: 18px;
+    }
+
+    .nav-lis ul {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .nav-lis ul li {
+
+        margin: 10px 110px 10px 110px;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+    .nordic {
+        margin-left: 2px;
+    }
+
+    .nav-lis ul li {
+
+        margin: 10px 50px 10px 50px;
+    }
+
+}
+
+@media screen and (max-width: 280px) {
+
+    .nordic {
+        margin-left: 2px;
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+
+}
+
+
+
+/* ================================== Header ==================================  */
+/* .nav {
     height: 60px;
     line-height: 60px;
     background: #fff;
@@ -92,4 +194,4 @@
         left: 85%;
     }
 
-}
+} */

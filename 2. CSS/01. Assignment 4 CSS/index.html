@@ -29,32 +29,42 @@
     <link rel="stylesheet" href="css/footer.css">
 
     <link rel="stylesheet" href="css/style.css">
-    <title>Assignment # 4</title>
+
+    <title>Nordic Rose CSS Template</title>
+
 </head>
 
 <body>
 
     <!-- Header Section -->
-    <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <!-- <a class="navbar-brand" href="#">Navbar scroll</a> -->
-                <span class="nordic fw-bold">nordic rose</span>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="nav-lis" id="navbarScroll">
-                    <ul class="">
-                        <li>blog</li>
-                        <li>about</li>
-                        <li>links</li>
-                        <li>projects</li>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">nordic rose</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0"> </ul>
+                <span class="navbar-text d-flex justify-content-end">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#blog">blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#links">links</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">projects</a>
+                        </li>
                     </ul>
-                </div>
+                </span>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <!-- Main-01 Section -->
     <main id="main01">
@@ -96,7 +106,7 @@
 
     <!-- Main-02 Section -->
     <main id="main02">
-        <div class="container">
+        <div class="container" id="blog">
             <div class="row">
                 <div class="col-md-8 col-lg-6 offset-md-2 offset-lg-3 mt-4">
                     <div class="line"></div>
@@ -168,7 +178,7 @@
                 <img class="w-100" src="./assests/images/Rectangle8.png" alt="Rectangle8">
             </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4 offset-md-3 offset-lg-4 text-center">
+        <div class="col-12 col-md-6 col-lg-4 offset-md-3 offset-lg-4 text-center" id="about">
             <p class="caption1">Image caption centered this way and I'll make this a bit longer to indicate the
                 amount of line-height. </p>
         </div>
@@ -265,7 +275,7 @@
     </div>
 
     <!-- Cards -->
-    <main>
+    <main id="projects">
         <div class="container">
             <div class="row my-3">
                 <div class="col-12 text-center">
@@ -355,7 +365,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer mt-5">
+    <footer class="footer mt-5" id="links">
         <div class="container-fluid">
             <div class="row">
                 <ul class="footerlinks text-center">

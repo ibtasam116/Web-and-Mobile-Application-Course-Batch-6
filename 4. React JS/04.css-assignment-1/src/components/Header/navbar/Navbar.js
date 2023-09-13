@@ -6,7 +6,29 @@ import { MdOutlineMenu } from "react-icons/md"
 export default function Navbar() {
     return (
         <>
-            <header className="sticky-top">
+
+            <header class="sticky-top">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container">
+                        <span class="nordic fw-bold">nordic rose</span>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="nav-lis" id="navbarScroll">
+                            <ul class="">
+                                <li>blog</li>
+                                <li>about</li>
+                                <li>links</li>
+                                <li>projects</li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+
+            {/* <header className="sticky-top">
                 <div className="container-fluid">
                     <div className="row nav">
                         <div className="col-sm-6 col-lg-6">
@@ -23,7 +45,7 @@ export default function Navbar() {
                         </div>
                     </div>
                 </div>
-            </header>
+            </header> */}
         </>
     )
 }
