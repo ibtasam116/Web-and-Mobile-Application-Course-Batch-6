@@ -54,7 +54,8 @@ export default function page() {
               </div>
 
               <div>
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-500 leading-tight focus:outline-[#3c6e71] focus:shadow-outline" id="dob" type="date" placeholder="Whatsapp *" />
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-500 leading-tight focus:outline-[#3c6e71] focus:shadow-outline" id="dob" type="date" />
+                <label className="text-xs text-[#3c6e71] font-bold" htmlFor="">Date of Birth *</label>
               </div>
 
               <div>
@@ -62,10 +63,55 @@ export default function page() {
                 <label className="text-xs text-[#3c6e71] font-bold" htmlFor="">CNIC or B-Form Number (only numbers without hyphens), we will verify it.</label>
               </div>
 
+              <div className="sm:col-span-2">
+                <div class="relative">
+                  <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-400 leading-tight focus:outline-[#3c6e71] focus:shadow-outline" id="religion">
+                    <option>Selet Highest Qualification *</option>
+                    <option>None</option>
+                    <option>Primary</option>
+                    <option>Middle</option>
+                    <option>Matriculation</option>
+                    <option>O-Level</option>
+                    <option>Intermediate</option>
+                    <option>A-Level</option>
+                    <option>Undergraduate</option>
+                    <option>Graduate</option>
+                    <option>Post-Graduate</option>
+                  </select>
+                  <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-[#3c6e71] focus:shadow-outline" id="address" type="text" placeholder="Address" />
+              </div>
+
+              <div className="flex items-center gap-3 text-[#3c6e71] font-bold">
+                <label htmlFor="">Gender *:</label>
+                <input className="" type="radio" name="gender" id="male"/>
+                <label htmlFor="male">Male</label>
+                <input className="" type="radio" name="gender" id="female"/>
+                <label htmlFor="female">Female</label>
+              </div>
+
+            <div className="sm:col-span-2 text-center">
+              <button className="bg-[#3c6e71] hover:bg-[#3c6e71e0] transition-all w-full sm:w-[50%] py-2 rounded-xl text-white font-bold my-5">Apply Now</button>
+            </div>
 
             </div>
+
           </form>
         </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </section>
     </>
   )
