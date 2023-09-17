@@ -80,7 +80,7 @@ export default function page() {
                     name="religion"
                     id="religion"
                     class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-[#3c6e71] focus:shadow-outline">
-                    <option>Selet Religion *</option>
+                    <option>Selet Religion</option>
                     <option>Islam</option>
                     <option>Other</option>
                   </select>
@@ -107,7 +107,7 @@ export default function page() {
                   name="email"
                   id="email"
                   class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-[#3c6e71] focus:shadow-outline"
-                  placeholder="Email *" />
+                  placeholder="Email *" required />
               </div>
 
               <div>
@@ -116,7 +116,7 @@ export default function page() {
                   name="phone"
                   id="phone"
                   class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-[#3c6e71] focus:shadow-outline"
-                  placeholder="Phone Number *" />
+                  placeholder="Phone Number *" required />
               </div>
 
               <div>
@@ -125,9 +125,9 @@ export default function page() {
                   name="phoneWhatsapp"
                   id="phoneWhatsapp"
                   class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-[#3c6e71] focus:shadow-outline"
-                  placeholder="Whatsapp *" />
+                  placeholder="Whatsapp" />
               </div>
-             
+
               <div>
                 <input onChange={handleChange}
                   type="date"
@@ -135,7 +135,7 @@ export default function page() {
                   id="dob"
                   class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-500 leading-tight focus:outline-[#3c6e71] focus:shadow-outline"
                 />
-                <label className="text-xs text-[#3c6e71] font-bold" htmlFor="">Date of Birth *</label>
+                <label className="text-xs text-[#3c6e71] font-bold" htmlFor="">Date of Birth</label>
               </div>
 
               <div>
@@ -144,7 +144,7 @@ export default function page() {
                   name="id"
                   id="id"
                   class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-[#3c6e71] focus:shadow-outline"
-                  placeholder="CNIC or B-Form Number" />
+                  placeholder="CNIC or B-Form Number *" required />
                 <label className="text-xs text-[#3c6e71] font-bold" htmlFor="">CNIC or B-Form Number (only numbers without hyphens), we will verify it.</label>
               </div>
 
@@ -155,7 +155,7 @@ export default function page() {
                     name="qualification"
                     id="qualification"
                     class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-400 leading-tight focus:outline-[#3c6e71] focus:shadow-outline">
-                    <option>Selet Highest Qualification *</option>
+                    <option>Selet Highest Qualification</option>
                     <option>None</option>
                     <option>Primary</option>
                     <option>Middle</option>
@@ -183,13 +183,31 @@ export default function page() {
                   placeholder="Address" />
               </div>
 
-              <div className="flex items-center gap-3 text-[#3c6e71] font-bold">
-                <label htmlFor="">Gender *:</label>
-                <input className="" type="radio" name="gender" id="male" />
+              <div>
+                <div class="relative">
+
+                  <select onChange={handleChange}
+                    name="gender"
+                    id="gender"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-[#3c6e71] focus:shadow-outline">
+                    <option>Gender</option>
+                    <option>Male</option>
+                    <option>female</option>
+                  </select>
+
+                  <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
+                  </div>
+                </div>
+              </div>
+
+              {/* <div className="flex items-center gap-3 text-[#3c6e71] font-bold">
+                <label htmlFor="">Gender:</label>
+                <input className="" onChange={handleChange} type="radio" name="gender" id="male" />
                 <label htmlFor="male">Male</label>
                 <input className="" type="radio" name="gender" id="female" />
                 <label htmlFor="female">Female</label>
-              </div>
+              </div> */}
 
               <div className="sm:col-span-2 text-center">
                 <button type="submit" className="bg-[#3c6e71] hover:bg-[#3c6e71e0] transition-all w-full sm:w-[50%] py-2 rounded-xl text-white font-bold my-5">Apply Now</button>
@@ -243,11 +261,17 @@ export default function page() {
                         <th scope="col" class="px-6 py-3">
                           Whatsapp
                         </th>
+                        <th scope="col" class="px-6 py-3">
+                          Whatsapp
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                          Whatsapp
+                        </th>
                       </tr>
                     </thead>
 
                     <tbody>
-                      <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                      <tr class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                         <th class="px-6 py-4">
                           {item.name}
                         </th>
@@ -315,15 +339,19 @@ export default function page() {
                         <td class="px-6 py-4">
                           {item.qualification}
                         </td>
-                        <td class="px-6 py-4">
+                        <td class="px-6 py-4" colSpan="2">
                           {item.address}
                         </td>
-                        <td class="px-6 py-4" colSpan="2">
+                        <td class="px-6 py-4">
                           {item.gender}
                         </td>
 
-                        <td class="px-6 py-4">
-                          <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                        <td scope="col" class="px-6 py-3">
+                          <button onClick={() => deleteHandler(item.html_url)} className="px-6 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                            </svg>
+                          </button>
                         </td>
                       </tr>
 
