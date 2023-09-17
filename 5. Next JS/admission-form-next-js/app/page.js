@@ -1,7 +1,28 @@
+"use client"
+
+import { useState } from "react";
 
 export default function page() {
+
+  const [userName, SetUserName] = useState("");
+
+  const onChangeHandler = (e) => {
+    // console.log("event", e);     e is a event and is a object from react
+    let val = e.target.value;
+    console.log(val);
+
+    SetUserName(e.target.value)
+
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("hi", e);
+  }
+
   return (
     <>
+    {userName}
       <section className="bg-gray-200 py-9 px-3 md:px-0">
         <div className="container p-5 mx-auto bg-white rounded-lg shadow-lg">
           <div className="text-center sm:my-7">
@@ -9,11 +30,11 @@ export default function page() {
             <h3 className="text-gray-400 font-bold text-center mt-3 sm:mt-5 text-xs sm:text-[15px]">The field with * mark is required</h3>
             <h1 className="text-center sm:text-xl text-[#3c6e71] mt-2 sm:mt-5 text-md font-medium mb-5 sm:mb-0">Personal Information</h1>
           </div>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
 
               <div>
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-[#3c6e71] focus:shadow-outline" id="firstName" type="text" placeholder="First Name *" />
+                <input onChange={(e) => onChangeHandler(e)} class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-[#3c6e71] focus:shadow-outline" id="firstName" type="text" placeholder="First Name *" />
               </div>
 
               <div>
@@ -90,20 +111,164 @@ export default function page() {
 
               <div className="flex items-center gap-3 text-[#3c6e71] font-bold">
                 <label htmlFor="">Gender *:</label>
-                <input className="" type="radio" name="gender" id="male"/>
+                <input className="" type="radio" name="gender" id="male" />
                 <label htmlFor="male">Male</label>
-                <input className="" type="radio" name="gender" id="female"/>
+                <input className="" type="radio" name="gender" id="female" />
                 <label htmlFor="female">Female</label>
               </div>
 
-            <div className="sm:col-span-2 text-center">
-              <button className="bg-[#3c6e71] hover:bg-[#3c6e71e0] transition-all w-full sm:w-[50%] py-2 rounded-xl text-white font-bold my-5">Apply Now</button>
-            </div>
+              <div className="sm:col-span-2 text-center">
+                <button type="submit" className="bg-[#3c6e71] hover:bg-[#3c6e71e0] transition-all w-full sm:w-[50%] py-2 rounded-xl text-white font-bold my-5">Apply Now</button>
+              </div>
 
             </div>
 
           </form>
         </div>
+
+        <div className="container p-5 mx-auto bg-white rounded-lg shadow-lg mt-5">
+          <div className="text-center">
+            <h1 className="text-center text-xl sm:text-3xl text-[#3c6e71] font-bold border-b-2 border-orange-200 inline">Output</h1>
+          </div>
+
+
+          <div class="relative overflow-x-auto shadow-md sm:rounded-lg mt-5">
+            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+              <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <tr>
+
+                  <th scope="col" class="px-6 py-3">
+                    #
+                  </th>
+
+                  <th scope="col" class="px-6 py-3">
+                    Name
+                  </th>
+
+                  <th scope="col" class="px-6 py-3">
+                    Father Name
+                  </th>
+
+                  <th scope="col" class="px-6 py-3">
+                    Religion
+                  </th>
+
+                  <th scope="col" class="px-6 py-3">
+                    Profession
+                  </th>
+
+                  <th scope="col" class="px-6 py-3">
+                    Email
+                  </th>
+
+                  <th scope="col" class="px-6 py-3">
+                    Phone Number
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    1
+                  </th>
+
+                  <td class="px-6 py-4">
+                    2
+                  </td>
+
+                  <td class="px-6 py-4">
+                    3
+                  </td>
+
+                  <td class="px-6 py-4">
+                    4
+                  </td>
+
+                  <td class="px-6 py-4">
+                    5
+                  </td>
+
+                  <td class="px-6 py-4">
+                    6
+                  </td>
+
+                  <td class="px-6 py-4">
+                    7
+                  </td>
+                </tr>
+              </tbody>
+
+              <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <tr>
+
+                  <th scope="col" class="px-6 py-3">
+                    whatsapp
+                  </th>
+
+                  <th scope="col" class="px-6 py-3">
+                    Date Of Birth
+                  </th>
+
+                  <th scope="col" class="px-6 py-3">
+                    CNIC
+                  </th>
+
+                  <th scope="col" class="px-6 py-3">
+                    Qualification
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                    Address
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                    Gender
+                  </th>
+
+                  <th scope="col" class="px-6 py-3">
+                    <span class="">Action</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    8
+                  </th>
+                  <td class="px-6 py-4">
+                    9
+                  </td>
+                  <td class="px-6 py-4">
+                    10
+                  </td>
+                  <td class="px-6 py-4">
+                    11
+                  </td>
+                  <td class="px-6 py-4">
+                    12
+                  </td>
+                  <td class="px-6 py-4">
+                    13
+                  </td>
+
+                  <td class="px-6 py-4">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
         <br />
         <br />
         <br />
