@@ -13,7 +13,7 @@ export default function About() {
                     <div className="about-col">
                         <h1>We are the world's largest University</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore cumque in accusantium molestias maiores fuga vitae eos, ducimus officiis repudiandae voluptatem error. Laboriosam, numquam blanditiis aspernatur, nobis tempora consequatur id aliquam asperiores voluptatum iste animi voluptatem fugiat totam excepturi dolor.</p>
-                        <Button btnClass="btn" btnTitle="EXPLORE NOW" />
+                        <Button btnHref="/blog" btnClass="btn" btnTitle="EXPLORE NOW" />
                     </div>
                     <div className="about-col">
                         <Image src={img} width={1000} height={340} />

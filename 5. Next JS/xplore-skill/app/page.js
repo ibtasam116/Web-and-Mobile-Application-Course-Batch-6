@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <>
       <Home_header >
-        
+
       </Home_header>
 
       <section className="course">
@@ -100,7 +100,7 @@ export default function Home() {
 
       <section className="cta">
         <h1>GET READY FOR A BRIGHT FUTURE</h1>
-        <Button btnTitle="CONTACT US" />
+        <Button btnHref="/contact" btnTitle="CONTACT US" />
       </section>
 
     </>

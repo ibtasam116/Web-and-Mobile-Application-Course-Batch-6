@@ -1,27 +1,27 @@
+"use client"
 import Link from 'next/link';
 import Button from '../button/button';
 
 export default function Home_header() {
 
-  // var navLinks = document.getElementById("navLinks");
-
+  // navbar toggle menu start
   function showMenu() {
-    navLinks.style.right = "0";
+    document.getElementById("navLinks").style.right = "0";
   }
 
   function hideMenu() {
-    navLinks.style.right = "-200px";
+    document.getElementById("navLinks").style.right = "-200px";
   }
-
+  // navbar toggle menu end
   return (
     <>
       <section class="header">
         <nav>
-          <Link href="index.html" class="logo">Xplore
+          <Link href="/" class="logo">Xplore
             <i class="fab fa-staylinked"></i>kill
           </Link>
           <div class="nav-links" id="navLinks">
-            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <i class="fa fa-times" onClick={hideMenu}></i>
             <ul>
               <li><Link href="/">Home</Link></li>
               <li><Link href="/courses">Course</Link></li>
@@ -30,8 +30,8 @@ export default function Home_header() {
               <li><Link href="/contact">Contact</Link></li>
             </ul>
           </div>
-          <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
+          <i class="fa fa-bars" onClick={showMenu}></i>
+        </nav >
 
         <div class="text_box">
           <h2>GET READY</h2>
@@ -39,10 +39,10 @@ export default function Home_header() {
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit consequuntur corrupti sapiente aut porro
             <br /> esse blanditiis in quae perspiciatis quo.
           </p>
-          <Button btnTitle="Visit Us To Know More" />
+          <Button btnHref="/blog" btnTitle="Visit Us To Know More" />
           {/* <a href="#" class="hero_btn">Visit Us To Know More</a> */}
         </div>
-      </section>
+      </section >
     </>
   )
 }
