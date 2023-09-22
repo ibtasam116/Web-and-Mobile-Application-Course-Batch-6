@@ -22,7 +22,11 @@ import studentImg from "../public/img/user.png"
 import Button from './(components)/button/button';
 import Home_verticalLine from './(components)/home_verticalLine/home_verticalLine';
 
-export default function Home() {
+
+export default async function Home() {
+
+
+
   return (
     <>
       <Home_header >

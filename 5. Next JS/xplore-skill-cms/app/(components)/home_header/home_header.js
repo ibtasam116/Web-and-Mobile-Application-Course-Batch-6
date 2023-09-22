@@ -28,6 +28,7 @@ export default function Home_header() {
               <li><Link href="/blog">Blog</Link></li>
               <li><Link href="/about">About</Link></li>
               <li><Link href="/contact">Contact</Link></li>
+              <li><Link href="/admin">Admin</Link></li>
             </ul>
           </div>
           <i class="fa fa-bars" onClick={showMenu}></i>
