@@ -22,13 +22,21 @@ import studentImg from "../public/img/user.png"
 import Button from './(components)/button/button';
 import Home_verticalLine from './(components)/home_verticalLine/home_verticalLine';
 
+import { client } from '@/sanity/lib/client';
+
+const fetchMajorPrograms = async () => {
+  const majorPrograms = await client.fetch(`*[_type == "majorPrograms"]`, {}, { cache: 'no-cache', });
+  console.log("Program", majorPrograms);
+  return majorPrograms
+}
 
 export default async function Home() {
 
-
+  const majorPrograms = await fetchMajorPrograms();
 
   return (
     <>
+
       <Home_header >
 
       </Home_header>
@@ -41,17 +49,17 @@ export default async function Home() {
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
 
         <div className="row">
-          <Home_program_card title="Undergraduate Programs" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolor corporis, commodi nihil quas
-              soluta labore quisquam impedi distinctio explicabo aut minima quos pariatur unde aliquam earum
-              laborum velit non." />
 
-          <Home_program_card title="Graduate Programs" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolor corporis, commodi nihil quas
-              soluta labore quisquam impedit distinctio explicabo aut minima quos pariatur unde aliquam earum
-              laborum velit non." />
+          {
+            majorPrograms.map((majorProgram) => {
+              return (
+                <>
+                  <Home_program_card title={majorProgram.title} description={majorProgram.description} />
 
-          <Home_program_card title="Adult Learning & Degree Completion" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolor corporis, commodi nihil quas
-              soluta labore quisquam impedit distinctio explicabo aut minima quos pariatur unde aliquam earum
-              laborum velit non." />
+                </>
+              )
+            })
+          }
 
         </div>
       </section>
