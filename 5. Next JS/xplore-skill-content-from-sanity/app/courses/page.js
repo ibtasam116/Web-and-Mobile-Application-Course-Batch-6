@@ -1,4 +1,3 @@
-import { client } from "@/sanity/lib/client";
 import Home_facilities_card from "../(components)/home_facilities_card/home_facilities_card";
 import Home_program_card from "../(components)/home_program_card/home_program_card";
 import Navbar from "../(components)/navbar/navbar";
@@ -8,15 +7,17 @@ import img1 from '../../public/img/course1.png'
 import img2 from '../../public/img/course2.png'
 import img3 from '../../public/img/course3.png'
 
+import { client } from "@/sanity/lib/client";
+
 const fetchCoursePrograms = async () => {
-  const majorPrograms = await client.fetch(`*[_type == 'majorPrograms]`, {}, { cache: 'no-cache', })
-  console.log("Major Programs", majorPrograms);
-  return majorPrograms
+  const coursePrograms = await client.fetch(`*[_type == 'majorPrograms']`, {}, { cache: 'no-cache', })
+  console.log("Major Programs", coursePrograms);
+  return coursePrograms
 }
 
 export default async function Courses() {
 
-  await fetchCoursePrograms();
+  const coursePrograms = await fetchCoursePrograms();
 
   return (
     <>
@@ -31,26 +32,16 @@ export default async function Courses() {
         <div class="row">
 
           {
-
+            coursePrograms.map((program) => {
+              return (
+                <>
+                  <Home_program_card
+                    title={program.title}
+                    description={program.description} />
+                </>
+              )
+            })
           }
-
-          <Home_program_card
-            title="Undergraduate Programs"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolor corporis, commodi nihil quas
-              soluta labore quisquam impedit distinctio explicabo aut minima quos pariatur unde aliquam earum
-              laborum velit non."/>
-
-          <Home_program_card
-            title="Graduate Programs"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolor corporis, commodi nihil quas
-            soluta labore quisquam impedit distinctio explicabo aut minima quos pariatur unde aliquam earum
-            laborum velit non."/>
-
-          <Home_program_card
-            title="Adult Learning & Degree Completion"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolor corporis, commodi nihil quas
-            soluta labore quisquam impedit distinctio explicabo aut minima quos pariatur unde aliquam earum
-            laborum velit non."/>
 
         </div>
       </section>

@@ -23,16 +23,24 @@ import Button from './(components)/button/button';
 import Home_verticalLine from './(components)/home_verticalLine/home_verticalLine';
 
 import { client } from '@/sanity/lib/client';
+import virtualTour from '@/sanity/schemas/virtualTour';
 
 const fetchMajorPrograms = async () => {
   const majorPrograms = await client.fetch(`*[_type == "majorPrograms"]`, {}, { cache: 'no-cache', });
-  console.log("Program", majorPrograms);
+  // console.log("Program", majorPrograms);
   return majorPrograms
+}
+
+const fetchVirtualTour = async () => {
+  const virtualTour = await client.fetch(`*[_type == 'virtualTour']`, {}, { cache: 'no-cache' });
+  console.log("Virtual Tour", virtualTour);
+  return virtualTour
 }
 
 export default async function Home() {
 
   const majorPrograms = await fetchMajorPrograms();
+  const virtualTour = await fetchVirtualTour();
 
   return (
     <>
@@ -73,9 +81,20 @@ export default async function Home() {
         <Section_header sectionTitle="TAKE OUR VIRTUAL TOUR" sectionDescription="Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
 
         <div className="row">
-          <Home_tour_card ImgSrc={img1} title="DELHI" />
+
+          {
+            virtualTour.map((tour) => {
+              return (
+                <>
+                  <Home_tour_card ImgSrc={tour.image.url} title={tour.title} />
+
+                </>
+              )
+            })
+          }
+          {/* <Home_tour_card ImgSrc={img1} title="DELHI" />
           <Home_tour_card ImgSrc={img2} title="HYDERABAD" />
-          <Home_tour_card ImgSrc={img3} title="MUMBAI" />
+          <Home_tour_card ImgSrc={img3} title="MUMBAI" /> */}
         </div>
 
       </section>

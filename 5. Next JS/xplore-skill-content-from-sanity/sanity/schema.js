@@ -5,8 +5,9 @@
 import services from './schemas/services'
 import majorProgram from './schemas/majorPrograms'
 import footer from './schemas/footer'
+import virtualTour from './schemas/virtualTour'
 
 export const schema = {
   // types: [post, author, category, blockContent],
-  types: [services, majorProgram, footer],
+  types: [services, majorProgram, footer, virtualTour],
 }
