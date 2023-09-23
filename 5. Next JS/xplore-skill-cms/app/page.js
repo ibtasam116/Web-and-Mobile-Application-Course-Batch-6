@@ -54,8 +54,10 @@ export default async function Home() {
             majorPrograms.map((majorProgram) => {
               return (
                 <>
-                  <Home_program_card title={majorProgram.title} description={majorProgram.description} />
-
+                  <Home_program_card
+                    title={majorProgram.title}
+                    description={majorProgram.description}
+                  />
                 </>
               )
             })

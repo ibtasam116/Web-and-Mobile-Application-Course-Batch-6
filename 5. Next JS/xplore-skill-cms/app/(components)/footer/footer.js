@@ -1,15 +1,31 @@
 import Link from 'next/link'
-import React from 'react'
 
-export default function Footer() {
+import { client } from '@/sanity/lib/client'
+
+const fetchFooter = async () => {
+    const footerData = await client.fetch(`*[_type == "footer"]`, {}, { cache: 'no-cache', });
+    console.log("FooterData", footerData);
+    return footerData
+}
+
+export default async function Footer() {
+
+    const footerData = await fetchFooter();
+
     return (
         <>
             <section className="footer">
                 <hr />
-                <h4>About Us</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse minima incidunt odio nam facilis, eligendi
-                    <br />Itaque fugiat cupiditate consectetur. Aliquid ab deserunt exercitationem, illum molestiae dolorem.
-                </p>
+                {
+                    footerData.map((data) => {
+                        return (
+                            <>
+                                <h4>{data.title}</h4>
+                                <p>{data.description}</p>
+                            </>
+                        )
+                    })
+                }
 
                 <div className="icons">
                     <i className="fab fa-facebook-f"></i>
