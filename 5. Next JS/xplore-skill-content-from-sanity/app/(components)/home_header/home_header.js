@@ -1,8 +1,15 @@
 "use client"
 import Link from 'next/link';
 import Button from '../button/button';
+import { client } from '@/sanity/lib/client';
 
-export default function Home_header() {
+const fetchNavLinks = async () => {
+  const navLinks = await client.fetch(`*[_type == 'navLinks']`, {}, { cache: 'no-cache' });
+  // console.log("NavLinks", navLinks);
+  return navLinks
+}
+
+export default async function Home_header() {
 
   // navbar toggle menu start
   function showMenu() {
@@ -13,6 +20,9 @@ export default function Home_header() {
     document.getElementById("navLinks").style.right = "-200px";
   }
   // navbar toggle menu end
+
+  const navLinks = await fetchNavLinks();
+
   return (
     <>
       <section class="header">
@@ -23,12 +33,17 @@ export default function Home_header() {
           <div class="nav-links" id="navLinks">
             <i class="fa fa-times" onClick={hideMenu}></i>
             <ul>
-              <li><Link href="/">Home</Link></li>
-              <li><Link href="/courses">Course</Link></li>
-              <li><Link href="/blog">Blog</Link></li>
-              <li><Link href="/about">About</Link></li>
-              <li><Link href="/contact">Contact</Link></li>
-              <li><Link href="/admin" target='_blank'>Admin</Link></li>
+
+              {
+                navLinks.map((link) => {
+                  return (
+                    <>
+                      <li><Link href={link.href}>{link.link}</Link></li>
+                    </>
+                  )
+                })
+              }
+
             </ul>
           </div>
           <i class="fa fa-bars" onClick={showMenu}></i>

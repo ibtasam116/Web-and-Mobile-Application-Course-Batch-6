@@ -1,7 +1,14 @@
 "use client"
 
+import { client } from '@/sanity/lib/client'
 import Link from 'next/link'
 import React from 'react'
+
+const fetchNavLinks = async () => {
+    const navLinks = await client.fetch(`*[_type == 'navLinks]`, {}, { cache: 'no-cache' });
+    console.log('NavLinks', navLinks);
+    return navLinks
+}
 
 export default function Navbar(props) {
 
@@ -15,6 +22,8 @@ export default function Navbar(props) {
     }
     // navbar toggle menu end
 
+    const navLinks = fetchNavLinks();
+
     return (
         <>
             <section className="Sub-header">
@@ -25,6 +34,15 @@ export default function Navbar(props) {
                     <div className="nav-links" id="navLinks">
                         <i className="fa fa-times" onClick={hideMenu}></i>
                         <ul>
+                            {
+                                navLinks.map((link) => {
+                                    return (
+                                        <>
+                                            <li><Link href={link.href}>{link.link}</Link></li>
+                                        </>
+                                    )
+                                })
+                            }
                             <li><Link href="/">Home</Link></li>
                             <li><Link href="/courses">Course</Link></li>
                             <li><Link href="/blog">Blog</Link></li>

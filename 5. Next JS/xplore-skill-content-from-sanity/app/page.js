@@ -87,7 +87,6 @@ export default async function Home() {
               return (
                 <>
                   <Home_tour_card ImgSrc={tour.image.url} title={tour.title} />
-
                 </>
               )
             })
