@@ -9,6 +9,18 @@ import img3 from '../../public/img/course3.png'
 
 import { client } from "@/sanity/lib/client";
 
+const fetchCoursesHeader = async () => {
+  const coursesHeader = await client.fetch(`*[_type == 'coursesHeader']`, {}, { cache: 'no-cache' });
+  console.log("Courses Header", coursesHeader);
+  return coursesHeader
+}
+
+const fetchCourseProgramHeader = async () => {
+  const courseProgramHeader = await client.fetch(`*[_type == 'courseProgramHeader']`, {}, { cache: 'no-cache' });
+  // console.log("Courses Header", courseProgramHeader);
+  return courseProgramHeader
+}
+
 const fetchCoursePrograms = async () => {
   const coursePrograms = await client.fetch(`*[_type == 'majorPrograms']`, {}, { cache: 'no-cache', })
   // console.log("Major Programs", coursePrograms);
@@ -17,17 +29,35 @@ const fetchCoursePrograms = async () => {
 
 export default async function Courses() {
 
+  const coursesHeader = await fetchCoursesHeader();
+  const courseProgramHeader = await fetchCourseProgramHeader();
   const coursePrograms = await fetchCoursePrograms();
 
   return (
     <>
-      <Navbar header_title="OUR COURSES" />
+      {
+        coursesHeader.map((content) => {
+          return (
+            <>
+              <Navbar header_title={content.heading} />
+            </>
+          )
+        })
+      }
 
       <section class="course">
 
-        <Section_header
-          sectionTitle="Course We Offer"
-          sectionDescription="Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
+        {
+          courseProgramHeader.map((content) => {
+            return (
+              <>
+                <Section_header
+                  sectionTitle={content.heading}
+                  sectionDescription={content.description} />
+              </>
+            )
+          })
+        }
 
         <div class="row">
 

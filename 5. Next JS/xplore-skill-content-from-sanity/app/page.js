@@ -23,6 +23,7 @@ import Button from './(components)/button/button';
 import Home_verticalLine from './(components)/home_verticalLine/home_verticalLine';
 
 import { client } from '@/sanity/lib/client';
+import { urlForImage } from '@/sanity/lib/image';
 
 const fetchMajorProgramHeader = async () => {
   const majorProgramHeader = await client.fetch(`*[_type == 'majorProgramHeader']`, {}, { cache: 'no-cache' });
@@ -62,7 +63,7 @@ const fetchFacilities = async () => {
 
 const fetchTestimonialHeader = async () => {
   const testimonialHeader = await client.fetch(`*[_type== 'testimonialHeader']`, {}, { cache: 'no-cache' });
-  console.log("Testimonial Header", testimonialHeader);
+  // console.log("Testimonial Header", testimonialHeader);
   return testimonialHeader
 }
 
@@ -70,6 +71,12 @@ const fetchTestimonials = async () => {
   const testimonials = await client.fetch(`*[_type== 'testimonials']`, {}, { cache: 'no-cache' });
   // console.log("Testimonials", testimonials);
   return testimonials
+}
+
+const fetchHomeContact = async () => {
+  const homeContact = await client.fetch(`*[_type == 'homeContact']`, {}, { cache: 'no-cache' });
+  console.log("Home Contact", homeContact);
+  return homeContact
 }
 
 export default async function Home() {
@@ -82,6 +89,7 @@ export default async function Home() {
   const facilities = await fetchFacilities();
   const testimonialHeader = await fetchTestimonialHeader();
   const testimonials = await fetchTestimonials();
+  const homeContact = await fetchHomeContact();
 
   return (
     <>
@@ -185,6 +193,7 @@ export default async function Home() {
                 <>
                   <Home_facilities_card
                     imgSrc={img4}
+                    // imgSrc={urlForImage(facilitie.image).url()}
                     title={facilitie.heading}
                     description={facilitie.description} />
                 </>
@@ -208,9 +217,9 @@ export default async function Home() {
           testimonialHeader.map((content) => {
             return (
               <>
-                <Section_header 
-                sectionTitle={content.heading}
-                sectionDescription={content.description} 
+                <Section_header
+                  sectionTitle={content.heading}
+                  sectionDescription={content.description}
                 />
               </>
             )
@@ -242,8 +251,18 @@ export default async function Home() {
       </section>
 
       <section className="cta">
-        <h1>GET READY FOR A BRIGHT FUTURE</h1>
-        <Button btnHref="/contact" btnTitle="CONTACT US" />
+
+        {
+          homeContact.map((content) => {
+            return (
+              <>
+                <h1>{content.heading}</h1>
+                <Button btnHref={content.btnHref} btnTitle={content.btnText} />
+              </>
+            )
+          })
+        }
+
       </section>
 
     </>

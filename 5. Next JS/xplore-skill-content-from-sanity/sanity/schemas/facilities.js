@@ -6,7 +6,17 @@ const facilities = {
         {
             name: 'image',
             title: 'Image',
-            type: 'image'
+            type: 'image',
+            option: {
+                hotspot: true,
+            },
+            fields: [
+                {
+                    name: 'alt',
+                    title: 'Alt Text',
+                    type: 'string'
+                }
+            ]
         },
         {
             name: 'heading',

@@ -9,10 +9,15 @@ import majorProgramHeader from './schemas/majorProgramHeader'
 import majorProgram from './schemas/majorPrograms'
 import virtualTourHeader from './schemas/virtualTourHeader'
 import virtualTour from './schemas/virtualTour'
-import facilitiesHeader from './schemas/FacilitiesHeader'
+import facilitiesHeader from './schemas/facilitiesHeader'
 import facilities from './schemas/facilities'
 import testimonialHeader from './schemas/testimonialHeader'
 import testimonials from './schemas/testimonials'
+import homeContact from './schemas/homeContact'
+
+import coursesHeader from './schemas/coursesHeader'
+import courseProgramHeader from './schemas/courseProgramHeader'
+
 import footer from './schemas/footer'
 
 export const schema = {
@@ -29,6 +34,11 @@ export const schema = {
     facilities,
     testimonialHeader,
     testimonials,
+    homeContact,
+
+    coursesHeader,
+    courseProgramHeader,
+
     footer
   ],
 }
