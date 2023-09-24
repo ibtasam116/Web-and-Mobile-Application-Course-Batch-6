@@ -4,7 +4,7 @@ import { client } from '@/sanity/lib/client'
 
 const fetchFooter = async () => {
     const footerData = await client.fetch(`*[_type == "footer"]`, {}, { cache: 'no-cache', });
-    console.log("FooterData", footerData);
+    // console.log("FooterData", footerData);
     return footerData
 }
 

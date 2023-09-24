@@ -1,16 +1,15 @@
 "use client"
 
-import { client } from '@/sanity/lib/client'
 import Link from 'next/link'
-import React from 'react'
+
+import { client } from '@/sanity/lib/client'
 
 const fetchNavLinks = async () => {
-    const navLinks = await client.fetch(`*[_type == 'navLinks]`, {}, { cache: 'no-cache' });
-    console.log('NavLinks', navLinks);
+    const navLinks = await client.fetch(`*[_type == 'navLinks']`, {}, { cache: 'no-cache' });
+    // console.log('NavLinks', navLinks);
     return navLinks
 }
-
-export default function Navbar(props) {
+const Navbar = async (props) => {
 
     // navbar toggle menu start
     function showMenu() {
@@ -22,7 +21,7 @@ export default function Navbar(props) {
     }
     // navbar toggle menu end
 
-    const navLinks = fetchNavLinks();
+    const navLinks = await fetchNavLinks();
 
     return (
         <>
@@ -34,6 +33,7 @@ export default function Navbar(props) {
                     <div className="nav-links" id="navLinks">
                         <i className="fa fa-times" onClick={hideMenu}></i>
                         <ul>
+
                             {
                                 navLinks.map((link) => {
                                     return (
@@ -43,11 +43,7 @@ export default function Navbar(props) {
                                     )
                                 })
                             }
-                            <li><Link href="/">Home</Link></li>
-                            <li><Link href="/courses">Course</Link></li>
-                            <li><Link href="/blog">Blog</Link></li>
-                            <li><Link href="/about">About</Link></li>
-                            <li><Link href="/contact">Contact</Link></li>
+
                         </ul>
                     </div>
                     <i className="fa fa-bars" onClick={showMenu}></i>
@@ -58,3 +54,5 @@ export default function Navbar(props) {
 
     )
 }
+
+export default Navbar

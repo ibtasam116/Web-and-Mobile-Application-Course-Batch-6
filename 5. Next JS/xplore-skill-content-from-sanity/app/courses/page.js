@@ -11,7 +11,7 @@ import { client } from "@/sanity/lib/client";
 
 const fetchCoursePrograms = async () => {
   const coursePrograms = await client.fetch(`*[_type == 'majorPrograms']`, {}, { cache: 'no-cache', })
-  console.log("Major Programs", coursePrograms);
+  // console.log("Major Programs", coursePrograms);
   return coursePrograms
 }
 

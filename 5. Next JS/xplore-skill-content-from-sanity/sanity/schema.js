@@ -3,11 +3,26 @@
 // import post from './schemas/post'
 // import author from './schemas/author'
 import services from './schemas/services'
-import majorProgram from './schemas/majorPrograms'
-import footer from './schemas/footer'
-import virtualTour from './schemas/virtualTour'
 import navLinks from './schemas/navLinks'
+import homeHeader from './schemas/homeHeader'
+import majorProgramHeader from './schemas/majorProgramHeader'
+import majorProgram from './schemas/majorPrograms'
+import virtualTourHeader from './schemas/virtualTourHeader'
+import virtualTour from './schemas/virtualTour'
+import facilitiesHeader from './schemas/FacilitiesHeader'
+import footer from './schemas/footer'
+
 export const schema = {
   // types: [post, author, category, blockContent],
-  types: [services, navLinks, majorProgram, footer, virtualTour],
+  types: [
+    services,
+    navLinks,
+    homeHeader,
+    majorProgramHeader,
+    majorProgram,
+    virtualTourHeader,
+    virtualTour,
+    facilitiesHeader,
+    footer
+  ],
 }

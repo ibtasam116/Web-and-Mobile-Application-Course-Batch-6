@@ -9,6 +9,12 @@ const fetchNavLinks = async () => {
   return navLinks
 }
 
+const fetchHomeHeader = async () => {
+  const homeHeader = await client.fetch(`*[_type== 'homeHeader']`, {}, { cache: 'no-cache' });
+  // console.log("Home Header", homeHeader);
+  return homeHeader
+}
+
 export default async function Home_header() {
 
   // navbar toggle menu start
@@ -22,6 +28,7 @@ export default async function Home_header() {
   // navbar toggle menu end
 
   const navLinks = await fetchNavLinks();
+  const homeHeader = await fetchHomeHeader();
 
   return (
     <>
@@ -50,13 +57,22 @@ export default async function Home_header() {
         </nav >
 
         <div class="text_box">
-          <h2>GET READY</h2>
-          <p id="headtext">TO DISCOVER CAMPUS</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit consequuntur corrupti sapiente aut porro
-            <br /> esse blanditiis in quae perspiciatis quo.
-          </p>
-          <Button btnHref="/blog" btnTitle="Visit Us To Know More" />
-          {/* <a href="#" class="hero_btn">Visit Us To Know More</a> */}
+
+          {
+            homeHeader.map((content) => {
+              return (
+                <>
+                  <h2>{content.heading}</h2>
+                  <p id="headtext">{content.subHeading}</p>
+                  <p>{content.description}</p>
+                  {/* <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit consequuntur corrupti sapiente aut porro
+                    <br /> esse blanditiis in quae perspiciatis quo. */}
+                  <Button btnHref={content.btnHref} btnTitle={content.btnText} />
+                </>
+              )
+            })
+          }
+         
         </div>
       </section >
     </>

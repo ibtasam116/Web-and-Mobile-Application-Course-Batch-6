@@ -1,6 +1,6 @@
-const homeHeader = {
-    name: 'homeHeader',
-    title: 'homeHeader',
+const majorProgramHeader = {
+    name: 'majorProgramHeader',
+    title: 'majorProgramHeader',
     type: 'document',
     fields: [
         {
@@ -15,20 +15,10 @@ const homeHeader = {
         },
         {
             name: 'description',
-            title: 'description',
-            type: 'string'
-        },
-        {
-            name: 'btnText',
-            title: 'Btn_Text',
-            type: 'string'
-        },
-        {
-            name: 'btnHref',
-            title: 'Btn_Href',
+            title: 'Description',
             type: 'string'
         },
     ],
 }
 
-export default homeHeader
+export default majorProgramHeader

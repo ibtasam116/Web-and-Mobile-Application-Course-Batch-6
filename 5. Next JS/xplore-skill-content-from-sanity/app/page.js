@@ -23,7 +23,12 @@ import Button from './(components)/button/button';
 import Home_verticalLine from './(components)/home_verticalLine/home_verticalLine';
 
 import { client } from '@/sanity/lib/client';
-import virtualTour from '@/sanity/schemas/virtualTour';
+
+const fetchMajorProgramHeader = async () => {
+  const majorProgramHeader = await client.fetch(`*[_type == 'majorProgramHeader']`, {}, { cache: 'no-cache' });
+  // console.log("Major Program Header", majorProgramHeader);
+  return majorProgramHeader
+}
 
 const fetchMajorPrograms = async () => {
   const majorPrograms = await client.fetch(`*[_type == "majorPrograms"]`, {}, { cache: 'no-cache', });
@@ -31,16 +36,31 @@ const fetchMajorPrograms = async () => {
   return majorPrograms
 }
 
+const fetchVirtualTourHeader = async () => {
+  const virtualTourHeader = await client.fetch(`*[_type == 'virtualTourHeader']`, {}, { cache: 'no-cache' });
+  // console.log("Virtual Tour Header", virtualTourHeader);
+  return virtualTourHeader
+}
+
 const fetchVirtualTour = async () => {
   const virtualTour = await client.fetch(`*[_type == 'virtualTour']`, {}, { cache: 'no-cache' });
-  console.log("Virtual Tour", virtualTour);
+  // console.log("Virtual Tour", virtualTour);
   return virtualTour
+}
+
+const fetchfacilitiesHeader = async () => {
+  const facilitiesHeader = await client.fetch(`*[_type == 'facilitiesHeader']`, {}, { cache: 'no-cache' });
+  console.log('Facilities Header', facilitiesHeader);
+  return facilitiesHeader
 }
 
 export default async function Home() {
 
+  const majorProgramHeader = await fetchMajorProgramHeader();
   const majorPrograms = await fetchMajorPrograms();
+  const virtualTourHeader = await fetchVirtualTourHeader();
   const virtualTour = await fetchVirtualTour();
+  const facilitiesHeader = await fetchfacilitiesHeader();
 
   return (
     <>
@@ -52,9 +72,16 @@ export default async function Home() {
       <section className="course">
 
         <Home_verticalLine />
-
-        <h1>EXPLORE OUR 60+ <br /> MAJOR PROGRAMS</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        {
+          majorProgramHeader.map((content) => {
+            return (
+              <>
+                <h1>{content.heading}<br />{content.subHeading}</h1>
+                <p>{content.description}</p>
+              </>
+            )
+          })
+        }
 
         <div className="row">
 
@@ -78,7 +105,19 @@ export default async function Home() {
 
         <Home_verticalLine />
 
-        <Section_header sectionTitle="TAKE OUR VIRTUAL TOUR" sectionDescription="Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
+        {
+          virtualTourHeader.map((content) => {
+            return (
+              <>
+                <Section_header
+                  sectionTitle={content.heading}
+                  sectionDescription={content.description}
+                />
+              </>
+            )
+          })
+        }
+
 
         <div className="row">
 
@@ -103,7 +142,17 @@ export default async function Home() {
 
         <Home_verticalLine />
 
-        <Section_header sectionTitle="Our Facilities" sectionDescription="Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
+        {
+          facilitiesHeader.map((content) => {
+            return (
+              <>
+                <Section_header 
+                sectionTitle={content.heading} 
+                sectionDescription={content.description} />
+              </>
+            )
+          })
+        }
 
         <div className="row">
           <Home_facilities_card imgSrc={img4} title="Best Libary" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio omnis asperiores atque aperiam." />
