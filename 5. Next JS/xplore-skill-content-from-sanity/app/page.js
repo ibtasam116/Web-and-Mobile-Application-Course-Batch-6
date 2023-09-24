@@ -50,8 +50,26 @@ const fetchVirtualTour = async () => {
 
 const fetchfacilitiesHeader = async () => {
   const facilitiesHeader = await client.fetch(`*[_type == 'facilitiesHeader']`, {}, { cache: 'no-cache' });
-  console.log('Facilities Header', facilitiesHeader);
+  // console.log('Facilities Header', facilitiesHeader);
   return facilitiesHeader
+}
+
+const fetchFacilities = async () => {
+  const facilities = await client.fetch(`*[_type == 'facilities']`, {}, { cache: 'no-cache' })
+  // console.log("Facilities", facilities);
+  return facilities
+}
+
+const fetchTestimonialHeader = async () => {
+  const testimonialHeader = await client.fetch(`*[_type== 'testimonialHeader']`, {}, { cache: 'no-cache' });
+  console.log("Testimonial Header", testimonialHeader);
+  return testimonialHeader
+}
+
+const fetchTestimonials = async () => {
+  const testimonials = await client.fetch(`*[_type== 'testimonials']`, {}, { cache: 'no-cache' });
+  // console.log("Testimonials", testimonials);
+  return testimonials
 }
 
 export default async function Home() {
@@ -61,6 +79,9 @@ export default async function Home() {
   const virtualTourHeader = await fetchVirtualTourHeader();
   const virtualTour = await fetchVirtualTour();
   const facilitiesHeader = await fetchfacilitiesHeader();
+  const facilities = await fetchFacilities();
+  const testimonialHeader = await fetchTestimonialHeader();
+  const testimonials = await fetchTestimonials();
 
   return (
     <>
@@ -68,6 +89,7 @@ export default async function Home() {
       <Home_header >
 
       </Home_header>
+
 
       <section className="course">
 
@@ -100,6 +122,7 @@ export default async function Home() {
 
         </div>
       </section>
+
 
       <section className="campus">
 
@@ -146,36 +169,75 @@ export default async function Home() {
           facilitiesHeader.map((content) => {
             return (
               <>
-                <Section_header 
-                sectionTitle={content.heading} 
-                sectionDescription={content.description} />
+                <Section_header
+                  sectionTitle={content.heading}
+                  sectionDescription={content.description} />
               </>
             )
           })
         }
 
         <div className="row">
-          <Home_facilities_card imgSrc={img4} title="Best Libary" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio omnis asperiores atque aperiam." />
+
+          {
+            facilities.map((facilitie) => {
+              return (
+                <>
+                  <Home_facilities_card
+                    imgSrc={img4}
+                    title={facilitie.heading}
+                    description={facilitie.description} />
+                </>
+              )
+            })
+          }
+
+          {/* <Home_facilities_card imgSrc={img4} title="Best Libary" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio omnis asperiores atque aperiam." />
           <Home_facilities_card imgSrc={img5} title="Athletics" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio omnis asperiores atque aperiam." />
-          <Home_facilities_card imgSrc={img6} title="Tasty and Healthy Food" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio omnis asperiores atque aperiam." />
+          <Home_facilities_card imgSrc={img6} title="Tasty and Healthy Food" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio omnis asperiores atque aperiam." /> */}
         </div>
 
       </section>
+
 
       <section className="testimonials">
 
         <Home_verticalLine />
 
-        <Section_header sectionTitle="What Our Student Says" sectionDescription="Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
+        {
+          testimonialHeader.map((content) => {
+            return (
+              <>
+                <Section_header 
+                sectionTitle={content.heading}
+                sectionDescription={content.description} 
+                />
+              </>
+            )
+          })
+        }
 
         <div className="row">
-          <Home_student_card studentImgSrc={studentImg} studentDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi maiores in nostrum rerum voluptatem
-                        praesentium veritatis alias omnis voluptate nisi aperiam, voluptatum quibusdam itaque a
-                        deserunt. In quia repellat maxime." studentName="Student Name" star_className="fa-star" />
 
-          <Home_student_card studentImgSrc={studentImg} studentDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi maiores in nostrum rerum voluptatem
+          {
+            testimonials.map((testimonial) => {
+              return (
+                <>
+                  <Home_student_card
+                    studentImgSrc={studentImg}
+                    studentDescription={testimonial.description}
+                    studentName={testimonial.heading}
+                    star_className="fa-star"
+                  // star_className="fa-star-half-alt"
+                  />
+                </>
+              )
+            })
+          }
+
+          {/* <Home_student_card studentImgSrc={studentImg} studentDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi maiores in nostrum rerum voluptatem
                         praesentium veritatis alias omnis voluptate nisi aperiam, voluptatum quibusdam itaque a
-                        deserunt. In quia repellat maxime." studentName="Student Name" star_className="fa-star-half-alt" />
+                        deserunt. In quia repellat maxime." studentName="Student Name" star_className="fa-star-half-alt" /> */}
         </div>
       </section>
 
