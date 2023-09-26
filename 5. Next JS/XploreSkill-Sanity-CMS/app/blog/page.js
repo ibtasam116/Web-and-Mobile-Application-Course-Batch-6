@@ -6,46 +6,90 @@ import Blog_para from "./(components)/blog_para/blog_para";
 import Blog_input from "./(components)/blog_input/blog_input";
 import Button from "../(components)/button/button";
 import Blog_categories from "./(components)/blog_categories/blog_categories";
+import { client } from "@/sanity/lib/client";
 
-export default function Blog() {
+const fetchBlogHeader = async () => {
+    const blogHeader = await client.fetch(`*[_type == 'blogHeader']`, {}, { cache: 'no-cache' });
+    // console.log("Blog Header", blogHeader);
+    return blogHeader
+}
+
+const fetchBlogCertificateAndOnlineProgram = async () => {
+    const blogCertificateAndOnlineProgram = await client.fetch(`*[_type == 'blogCertificateAndOnlineProgram']`, {}, { cache: 'no-cache' });
+    // console.log("Blog Certificate And Online Program", blogCertificateAndOnlineProgram);
+    return blogCertificateAndOnlineProgram
+}
+
+const fetchBlogCertificateDetailParas = async () => {
+    const blogCertificateDetailParas = await client.fetch(`*[_type == 'blogCertificateDetailParas']`, {}, { cache: 'no-cache' });
+    // console.log("Blog Certificate Detail Paragraphs", blogCertificateDetailParas);
+    return blogCertificateDetailParas
+}
+
+const fetchBlogPostHeading = async () => {
+    const blogPostHeading = await client.fetch(`*[_type == 'blogPostHeading']`, {}, { cache: 'no-cache' });
+    console.log("Blog Post Heading", blogPostHeading);
+    return blogPostHeading
+}
+
+const fetchBlogPosts = async () => {
+    const blogPosts = await client.fetch(`*[_type == 'blogPosts']`, {}, { cache: 'no-cache' });
+    console.log("Blog Posts", blogPosts);
+    return blogPosts
+}
+
+
+export default async function Blog() {
+
+    const blogHeader = await fetchBlogHeader();
+    const blogCertificateAndOnlineProgram = await fetchBlogCertificateAndOnlineProgram();
+    const blogCertificateDetailParas = await fetchBlogCertificateDetailParas();
+    const blogPostHeading = await fetchBlogPostHeading();
+    const blogPosts = await fetchBlogPosts();
+
     return (
         <>
-            <Navbar header_title="OUR POST" />
+
+            {
+                blogHeader.map((content) => {
+                    return (
+                        <>
+                            <Navbar header_title={content.heading} />
+                        </>
+                    )
+                })
+            }
+
+            {/* <Navbar header_title="OUR POST" /> */}
 
             <section class="blog-content">
                 <div class="row">
                     <div class="blog-left">
 
-                        <h2>Our Certificate & Online Program</h2>
-                        <h5>Aug 1, 2021</h5>
+                        {
+                            blogCertificateAndOnlineProgram.map((content) => {
+                                return (
+                                    <>
+                                        {/* <h2>{content.heading}</h2> */}
+                                        <h5>{content.date}</h5>
 
-                        <Image src={img} width={300} height={470} />
+                                        <Image src={img} width={300} height={470} />
+                                    </>
+                                )
+                            })
+                        }
 
-                        <Blog_para para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolor consequatur, nobis quae obcaecati delectus at aspernatur, placeat quasi iure mollitia. Repellendus a ut nostrum dolore velit odit cumque, quos doloribus sint id aperiam eius aliquam quo modi sequi rem quia exercitationem laborum, ratione expedita! Deleniti velit officia incidunt illum." />
+                        {
+                            blogCertificateDetailParas.map((para) => {
+                                return (
+                                    <>
+                                        <Blog_para para={para.paragraph} />
 
-                        <br />
-
-                        <Blog_para para="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore corrupti blanditiis deserunt
-                incidunt itaque ut laudantium a amet omnis nihil, dolor doloribus. Voluptatum, accusantium? Quo,
-                aperiam nobis labore pariatur, esse vitae amet repellendus libero architecto nisi facere unde
-                ducimus perspiciatis, laudantium alias porro. Sapiente voluptatem eligendi at voluptatum optio
-                facilis?"/>
-
-                        <br />
-
-                        <Blog_para para="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore corrupti blanditiis deserunt
-                            incidunt itaque ut laudantium a amet omnis nihil, dolor doloribus. Voluptatum, accusantium? Quo,
-                            aperiam nobis labore pariatur, esse vitae amet repellendus libero architecto nisi facere unde
-                            ducimus perspiciatis, laudantium alias porro. Sapiente voluptatem eligendi at voluptatum optio
-                            facilis?" />
-
-                        <br />
-
-                        <Blog_para para="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore corrupti blanditiis deserunt
-                            incidunt itaque ut laudantium a amet omnis nihil, dolor doloribus. Voluptatum, accusantium? Quo,
-                            aperiam nobis labore pariatur, esse vitae amet repellendus libero architecto nisi facere unde
-                            ducimus perspiciatis, laudantium alias porro. Sapiente voluptatem eligendi at voluptatum optio
-                            facilis?" />
+                                        <br />
+                                    </>
+                                )
+                            })
+                        }
 
                         <div class="comment-box">
                             <h3>Leave a Comment</h3>
@@ -64,13 +108,28 @@ export default function Blog() {
 
                     <div class="blog-right">
 
-                        <h3>Post Categories</h3>
+                        {
+                            blogPostHeading.map((post) => {
+                                return (
+                                    <>
+                                        <h3>{post.heading}</h3>
+                                    </>
+                                )
+                            })
+                        }
 
-                        <Blog_categories cate="Business Analytics" num="12" />
-                        <Blog_categories cate="Machine Learning" num="29" />
-                        <Blog_categories cate="Computer Science" num="15" />
-                        <Blog_categories cate="Data Analytics" num="22" />
-                        <Blog_categories cate="Full Stack" num="20" />
+                        {
+                            blogPosts.map((post) => {
+                                return (
+                                    <>
+                                        <Blog_categories
+                                            cate={post.postName}
+                                            num={post.postLevel}
+                                        />
+                                    </>
+                                )
+                            })
+                        }
 
                     </div>
                 </div>

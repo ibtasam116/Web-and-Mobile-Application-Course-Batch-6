@@ -1,13 +1,13 @@
-const facilities = {
-    name: 'facilities',
-    title: 'facilities',
+const bestCourses = {
+    name: 'bestCourses',
+    title: 'bestCourses',
     type: 'document',
     fields: [
         {
-            name: 'mainImage',
+            name: 'image',
             title: 'Image',
             type: 'image',
-            option: {
+            Option: {
                 hotspot: true,
             },
             fields: [
@@ -15,8 +15,8 @@ const facilities = {
                     name: 'alt',
                     title: 'Alt Text',
                     type: 'string'
-                }
-            ]
+                },
+            ],
         },
         {
             name: 'heading',
@@ -25,9 +25,9 @@ const facilities = {
         },
         {
             name: 'description',
-            title: 'description',
+            title: 'Description',
             type: 'string'
-        }
+        },
     ],
 }
-export default facilities
+export default bestCourses

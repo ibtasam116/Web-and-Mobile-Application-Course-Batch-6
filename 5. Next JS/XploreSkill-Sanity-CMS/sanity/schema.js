@@ -17,13 +17,30 @@ import homeContact from './schemas/homeContact'
 
 import coursesHeader from './schemas/coursesHeader'
 import courseProgramHeader from './schemas/courseProgramHeader'
+import bestCoursesHeader from './schemas/bestCoursesHeader'
+import bestCourses from './schemas/bestCourses'
+
+import aboutUsHeader from './schemas/aboutUsHeader'
+import aboutUsContent from './schemas/aboutUsContent'
+
+import blogHeader from './schemas/blogHeader'
+import blogCertificateAndOnlineProgram from './schemas/blogCertificateAndOnlineProgram'
+import blogCertificateDetailParas from './schemas/blogCertificateDetailParas'
+import blogPostHeading from './schemas/blogPostHeading'
+import blogPosts from './schemas/blogPosts'
+
+import contactUsHeader from './schemas/contactUsHeader'
+import contactUsMap from './schemas/contactUsMap'
+import contactUsAddressContactEmail from './schemas/contactUsAddressContactEmail'
 
 import footer from './schemas/footer'
 
 export const schema = {
   // types: [post, author, category, blockContent],
   types: [
+
     services,
+
     navLinks,
     homeHeader,
     majorProgramHeader,
@@ -38,6 +55,21 @@ export const schema = {
 
     coursesHeader,
     courseProgramHeader,
+    bestCoursesHeader,
+    bestCourses,
+
+    aboutUsHeader,
+    aboutUsContent,
+
+    blogHeader,
+    blogCertificateAndOnlineProgram,
+    blogCertificateDetailParas,
+    blogPostHeading,
+    blogPosts,
+
+    contactUsHeader,
+    contactUsMap,
+    contactUsAddressContactEmail,
 
     footer
   ],
