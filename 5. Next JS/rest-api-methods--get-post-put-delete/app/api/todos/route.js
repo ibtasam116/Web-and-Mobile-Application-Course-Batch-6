@@ -18,3 +18,7 @@ var posts = [
 export const GET = () => {
     return NextResponse.json(posts)
 }
+
+export const POST = () => {
+    return NextResponse
+}
