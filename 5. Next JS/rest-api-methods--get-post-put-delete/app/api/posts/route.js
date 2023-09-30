@@ -1,4 +1,4 @@
-const { NextResponse } = require("next/server")
+import { NextResponse } from "next/server"
 
 var posts = [
     {
@@ -17,4 +17,11 @@ var posts = [
 
 export const GET = () => {
     return NextResponse.json(posts);
+}
+
+export const POST = async (req) => {
+    const body = await req.json()
+    posts.push(body);
+    // return NextResponse.json({ message: "Post Created" })
+    return NextResponse.json(posts)
 }
