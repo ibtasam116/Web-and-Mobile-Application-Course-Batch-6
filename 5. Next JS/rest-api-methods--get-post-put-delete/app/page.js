@@ -13,9 +13,11 @@ const Page = async () => {
       {posts.map((post) => {
         return (
           <>
-          <br />
-            {post.id}
             <br />
+            <h1>{post.id}</h1>
+            <h2>{post.title} </h2>
+            <p>{post.description}</p>
+            <img src={post.image} alt="" />
             <br />
             <hr />
           </>
